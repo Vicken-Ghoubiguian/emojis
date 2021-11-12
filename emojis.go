@@ -58,9 +58,17 @@ func (ej *Emoji) GetSubGroup() string {
 }
 
 //
-func GetAll() map[string]Emoji {
+func GetAll(accessKey string) map[string]Emoji {
 
 	var emojisWithAll map[string]Emoji
 
 	return emojisWithAll
+}
+
+//
+func GetOneParticularEmoji(unicodeName string, accessKey string) Emoji {
+
+	var returnedEmoji Emoji
+
+	return returnedEmoji
 }
