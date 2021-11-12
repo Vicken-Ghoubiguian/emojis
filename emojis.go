@@ -63,11 +63,29 @@ func (ej *Emoji) GetSubGroup() string {
 }
 
 //
-func GetAll(accessKey string) map[string]Emoji {
+func fromCodePointToEmoji(codePointOfEmoji string) (string, error) {
+
+	resultAsRune, err := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
+
+	return string(rune(resultAsRune)), err
+}
+
+//
+func GetAllDatasFromEmojis(accessKey string) map[string]Emoji {
 
 	var emojisWithAll map[string]Emoji
 
 	return emojisWithAll
+}
+
+//
+func GetAllEmojis(accessKey string) map[string]string {
+
+	//var brutEmojis map[string]Emoji
+
+	var emojis map[string]string
+
+	return emojis
 }
 
 //
@@ -76,12 +94,4 @@ func GetOneParticularEmoji(unicodeName string, accessKey string) Emoji {
 	var returnedEmoji Emoji
 
 	return returnedEmoji
-}
-
-//
-func fromCodePointToEmoji(codePointOfEmoji string) (string, error) {
-
-	resultAsRune, err := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
-
-	return string(rune(resultAsRune)), err
 }
