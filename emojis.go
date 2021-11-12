@@ -22,37 +22,45 @@ func (ej *Emoji) InitializeWeatherModule(slug string, character string, unicodeN
 }
 
 //
-func (ej *Emoji) getSlug() string {
+func (ej *Emoji) GetSlug() string {
 
 	return ej.slug
 }
 
 //
-func (ej *Emoji) getCharacter() string {
+func (ej *Emoji) GetCharacter() string {
 
 	return ej.character
 }
 
 //
-func (ej *Emoji) getUnicodeName() string {
+func (ej *Emoji) GetUnicodeName() string {
 
 	return ej.unicodeName
 }
 
 //
-func (ej *Emoji) getCodePoint() string {
+func (ej *Emoji) GetCodePoint() string {
 
 	return ej.codePoint
 }
 
 //
-func (ej *Emoji) getGroup() string {
+func (ej *Emoji) GetGroup() string {
 
 	return ej.group
 }
 
 //
-func (ej *Emoji) getSubGroup() string {
+func (ej *Emoji) GetSubGroup() string {
 
 	return ej.subGroup
+}
+
+//
+func GetAll() map[string]Emoji {
+
+	var emojisWithAll map[string]Emoji
+
+	return emojisWithAll
 }
