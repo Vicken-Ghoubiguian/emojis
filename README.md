@@ -1,3 +1,3 @@
 # emojis
 
-https://emoji-api.com
+* [Open Emoji API](https://emoji-api.com)
