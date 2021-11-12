@@ -1,5 +1,10 @@
 package emoji
 
+import (
+	"strconv"
+	"strings"
+)
+
 // Defining the type 'Emoji' which define an emoji
 type Emoji struct {
 	slug        string
@@ -71,4 +76,12 @@ func GetOneParticularEmoji(unicodeName string, accessKey string) Emoji {
 	var returnedEmoji Emoji
 
 	return returnedEmoji
+}
+
+//
+func fromCodePointToEmoji(codePointOfEmoji string) (string, error) {
+
+	resultAsRune, err := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
+
+	return string(rune(resultAsRune)), err
 }
