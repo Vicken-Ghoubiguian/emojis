@@ -101,7 +101,7 @@ func GetOneParticularEmoji(unicodeName string, accessKey string) string {
 
 	var brutEmoji Emoji
 
-	emoji, _ := fromCodePointToEmoji(brutEmoji.codePoint)
+	emoji, _ := GetEmojiFromCodePoint(brutEmoji.codePoint)
 
 	return emoji
 }
