@@ -107,7 +107,7 @@ func GetEmojiFromCodePoint(codePointOfEmoji string) (string, error) {
 }
 
 //
-func GetAllDatasFromEmojis(accessKey string) map[string]Emoji {
+func GetAllEmojis(accessKey string) map[string]Emoji {
 
 	var emojisWithAll map[string]Emoji
 
@@ -115,29 +115,9 @@ func GetAllDatasFromEmojis(accessKey string) map[string]Emoji {
 }
 
 //
-func GetAllEmojis(accessKey string) map[string]string {
-
-	//var brutEmojis map[string]Emoji
-
-	var emojis map[string]string
-
-	return emojis
-}
-
-//
-func GetDatasFromOneParticularEmoji(unicodeName string, accessKey string) Emoji {
+func GetOneParticularEmoji(unicodeName string, accessKey string) Emoji {
 
 	var returnedEmoji Emoji
 
 	return returnedEmoji
-}
-
-//
-func GetOneParticularEmoji(unicodeName string, accessKey string) string {
-
-	var brutEmoji Emoji
-
-	emoji, _ := GetEmojiFromCodePoint(brutEmoji.codePoint)
-
-	return emoji
 }
