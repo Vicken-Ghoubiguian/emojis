@@ -8,7 +8,7 @@ import (
 )
 
 /*
- * ()...
+ * NEW 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
  */
 
 // Defining the type 'Emoji' which define an emoji
@@ -72,8 +72,8 @@ func (ej *Emoji) GetSubGroup() string {
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
 
-// Function which display other errors when they occurs
-func otherErrorHandlerFunction(err error) {
+// Function which display errors when they occurs
+func errorHandlerFunction(err error) {
 
 	// If the error is null (in this case, there is no error)
 	if err != nil {
