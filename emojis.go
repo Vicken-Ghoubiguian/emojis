@@ -132,8 +132,8 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji
 	return searchedForEmojis
 }
 
-//
-func GetInCategoryEmojis(searchedFor string, accessKey string) map[string]Emoji {
+// Function to retrieve all emojis by a given category
+func GetInCategoryEmojis(category string, accessKey string) map[string]Emoji {
 
 	var inCategoryEmojis map[string]Emoji
 
