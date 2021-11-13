@@ -99,11 +99,13 @@ func errorHandlerFunction(err error) {
  */
 
 //
-func GetEmojiFromCodePoint(codePointOfEmoji string) (string, error) {
+func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 
-	resultAsRune, err := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
+	resultAsRune, error := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
 
-	return string(rune(resultAsRune)), err
+	errorHandlerFunction(error)
+
+	return string(rune(resultAsRune))
 }
 
 //
