@@ -68,6 +68,14 @@ func (ej *Emoji) GetSubGroup() string {
 	return ej.subGroup
 }
 
+//
+func (ej *Emoji) GetEmoji() string {
+
+	resultAsRune, _ := strconv.ParseInt(strings.TrimPrefix(ej.codePoint, "\\U"), 16, 32)
+
+	return string(rune(resultAsRune))
+}
+
 /*
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
