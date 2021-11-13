@@ -7,7 +7,9 @@ import (
 	"os"
 )
 
-/**/
+/*
+ * ()...
+ */
 
 // Defining the type 'Emoji' which define an emoji
 type Emoji struct {
@@ -66,7 +68,9 @@ func (ej *Emoji) GetSubGroup() string {
 	return ej.subGroup
 }
 
-/**/
+/*
+ * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
+ */
 
 // Function which display other errors when they occurs
 func otherErrorHandlerFunction(err error) {
@@ -82,7 +86,9 @@ func otherErrorHandlerFunction(err error) {
 	}
 }
 
-/**/
+/*
+ * PUBLIC FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE IN EVERY GO PROJECTS...
+ */
 
 //
 func GetEmojiFromCodePoint(codePointOfEmoji string) (string, error) {
