@@ -131,3 +131,11 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji
 
 	return searchedForEmojis
 }
+
+//
+func GetInCategoryEmojis(searchedFor string, accessKey string) map[string]Emoji {
+
+	var inCategoryEmojis map[string]Emoji
+
+	return inCategoryEmojis
+}
