@@ -63,7 +63,7 @@ func (ej *Emoji) GetSubGroup() string {
 }
 
 //
-func fromCodePointToEmoji(codePointOfEmoji string) (string, error) {
+func GetEmojiFromCodePoint(codePointOfEmoji string) (string, error) {
 
 	resultAsRune, err := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
 
