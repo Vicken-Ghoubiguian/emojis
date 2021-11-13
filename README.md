@@ -4,6 +4,16 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 🇳🇺 
 
 ## Contents
 
+* [Introduction](#introduction)
+* [Presentation](#presentation)
+* [Project's structure](#project_s_structure)
+* [How was this project developed ?](#how_was_this_project_developed)
+* [How to use this package ?](#how_to_use_this_package)
+* [A little example](#a_little_example)
+* [Where to use it ?](#where_to_use_it)
+* [Useful links](#useful_links)
+* [Conclusion](#conclusion)
+
 <a name="introduction"></a>
 ## Introduction
 
