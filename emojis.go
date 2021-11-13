@@ -11,7 +11,7 @@ import (
  * NEW 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
  */
 
-// Defining the type 'Emoji' which define an emoji
+// Defining the type 'Emoji' which define an emoji...
 type Emoji struct {
 	slug        string
 	character   string
@@ -21,7 +21,7 @@ type Emoji struct {
 	subGroup    string
 }
 
-// Defining the Emoji initializer
+// Defining the Emoji initializer...
 func (ej *Emoji) InitializeWeatherModule(slug string, character string, unicodeName string, codePoint string, group string, subGroup string) {
 
 	ej.slug = slug
@@ -80,16 +80,16 @@ func (ej *Emoji) GetEmoji() string {
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
 
-// Function which display errors when they occurs
+// Function which display errors when they occurs...
 func errorHandlerFunction(err error) {
 
-	// If the error is null (in this case, there is no error)
+	// If the error is null (in this case, there is no error)...
 	if err != nil {
 
-		// To display the error in red
+		// To display the error in red...
 		fmt.Println("\033[31m" + err.Error() + "\033[0m")
 
-		// Exit the program (with exit code 1 (with error))
+		// Exit the program (with exit code 1 (with error))...
 		os.Exit(1)
 	}
 }
@@ -132,7 +132,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji
 	return searchedForEmojis
 }
 
-// Function to retrieve all emojis by a given category
+// Function to retrieve all emojis by a given category...
 func GetInCategoryEmojis(category string, accessKey string) map[string]Emoji {
 
 	var inCategoryEmojis map[string]Emoji
