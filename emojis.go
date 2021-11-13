@@ -1,10 +1,10 @@
 package emojis
 
 import (
-	"strconv"
-	"strings"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 /*
@@ -117,9 +117,17 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 }
 
 //
-func GetOneParticularEmoji(unicodeName string, accessKey string) Emoji {
+func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
 	var returnedEmoji Emoji
 
 	return returnedEmoji
+}
+
+//
+func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji {
+
+	var searchedForEmojis map[string]Emoji
+
+	return searchedForEmojis
 }
