@@ -29,8 +29,16 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🇳
 <a name="how_to_use_this_package"></a>
 ## How to use this package ?
 
+```bash
+go get -u github.com/Vicken-Ghoubiguian/emojis
+```
+
 <a name="a_little_example"></a>
 ## A little example
+
+```bash
+go get -u github.com/Vicken-Ghoubiguian/emojis
+```
 
 <a name="where_to_use_it"></a>
 ## Where to use it ?
