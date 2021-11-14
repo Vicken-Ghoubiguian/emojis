@@ -71,7 +71,7 @@ func (ej *Emoji) GetSubGroup() string {
 	return ej.subGroup
 }
 
-//
+// Defining the emoticon getter...
 func (ej *Emoji) GetEmoji() string {
 
 	resultAsRune, _ := strconv.ParseInt(strings.TrimPrefix(ej.codePoint, "\\U"), 16, 32)
