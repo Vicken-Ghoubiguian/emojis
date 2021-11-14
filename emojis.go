@@ -122,6 +122,9 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 //
 func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
+	//
+	var returnedEmoji_0 []interface{}
+
 	var returnedEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
@@ -140,11 +143,12 @@ func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 	errorHandlerFunction(err)
 
 	//
-	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &returnedEmoji)
+	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &returnedEmoji_0)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
+	//
 	return returnedEmoji
 }
 
