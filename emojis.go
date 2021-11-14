@@ -123,8 +123,12 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
 	//
-	var returnedEmoji_0 []interface{}
+	var emojiSInterface []interface{}
 
+	//
+	var emojiSMap map[string]interface{}
+
+	//
 	var returnedEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
@@ -143,10 +147,16 @@ func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 	errorHandlerFunction(err)
 
 	//
-	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &returnedEmoji_0)
+	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojiSInterface)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
+
+	//
+	emojiSMap = emojiSInterface[0].(map[string]interface{})
+
+	//
+	returnedEmoji.InitializeWeatherModule(fmt.Sprintf("%v", emojiSMap["slug"]), fmt.Sprintf("%v", emojiSMap["character"]), fmt.Sprintf("%v", emojiSMap["unicodeName"]), fmt.Sprintf("%v", emojiSMap["codePoint"]), fmt.Sprintf("%v", emojiSMap["group"]), fmt.Sprintf("%v", emojiSMap["subGroup"]))
 
 	//
 	return returnedEmoji
