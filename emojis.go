@@ -35,37 +35,37 @@ func (ej *Emoji) InitializeWeatherModule(slug string, character string, unicodeN
 	ej.subGroup = subGroup
 }
 
-//
+// Defining the 'slug' field getter...
 func (ej *Emoji) GetSlug() string {
 
 	return ej.slug
 }
 
-//
+// Defining the 'character' field getter...
 func (ej *Emoji) GetCharacter() string {
 
 	return ej.character
 }
 
-//
+// Defining the 'unicodeName' field getter...
 func (ej *Emoji) GetUnicodeName() string {
 
 	return ej.unicodeName
 }
 
-//
+// Defining the 'codePoint' field getter...
 func (ej *Emoji) GetCodePoint() string {
 
 	return ej.codePoint
 }
 
-//
+// Defining the 'group' field getter...
 func (ej *Emoji) GetGroup() string {
 
 	return ej.group
 }
 
-//
+// Defining the 'subGroup' field getter...
 func (ej *Emoji) GetSubGroup() string {
 
 	return ej.subGroup
