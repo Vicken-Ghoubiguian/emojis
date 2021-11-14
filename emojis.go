@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"net/http"
+	"io/ioutil"
+	"encoding/json"
 	"strings"
 )
 
@@ -120,6 +123,27 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
 	var returnedEmoji Emoji
+
+	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
+	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis/" + unicodeName + "?access_key=" + accessKey
+
+	// Execution of the Get HTTPS request to get all emojis from the Open Emoji API...
+	getEmojiFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	// Take the body of the previous Get HTTPS request's response in the 'getEmojiFromTheOpenEmojiAPIAPIResp' variable...
+	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIAPIResp.Body)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	//
+	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &returnedEmoji)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
 
 	return returnedEmoji
 }
