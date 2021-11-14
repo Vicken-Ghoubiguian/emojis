@@ -47,6 +47,8 @@ go get -u github.com/Vicken-Ghoubiguian/emojis
 ## Useful links
 
 * [Open Emoji API](https://emoji-api.com)
+* [golang convert interface to map - GitHub Gist](https://gist.github.com/nevzatalkan/f5c5ef66e88dd446976401967b6731e8)
+* [Convert interface to string - yourbasic.org](https://yourbasic.org/golang/interface-to-string/)
 
 <a name="conclusion"></a>
 ## Conclusion
