@@ -119,16 +119,16 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	return emojisWithAll
 }
 
-//
+// Function to take the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
 func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
-	//
+	// Declaration of the 'emojiSInterface' interface...
 	var emojiSInterface []interface{}
 
-	//
+	// Declaration of the 'emojiSMap' map[string]interface{}...
 	var emojiSMap map[string]interface{}
 
-	//
+	// Declaration of the 'returnedEmoji' emoji...
 	var returnedEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
@@ -146,19 +146,19 @@ func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Unmarshall all of received datas in the 'emojiSInterface' interface...
 	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojiSInterface)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Conversion of the first element of the 'emojiSInterface' interface to a map[string]interface{}...
 	emojiSMap = emojiSInterface[0].(map[string]interface{})
 
-	//
+	// Initialization of the 'returnedEmoji' current emoji...
 	returnedEmoji.InitializeWeatherModule(fmt.Sprintf("%v", emojiSMap["slug"]), fmt.Sprintf("%v", emojiSMap["character"]), fmt.Sprintf("%v", emojiSMap["unicodeName"]), fmt.Sprintf("%v", emojiSMap["codePoint"]), fmt.Sprintf("%v", emojiSMap["group"]), fmt.Sprintf("%v", emojiSMap["subGroup"]))
 
-	//
+	// Returning the 'returnedEmoji' initialized emoji...
 	return returnedEmoji
 }
 
