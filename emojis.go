@@ -156,7 +156,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	//
 	for i := 0; i < emojisInterfaceLen; i++ {
 
-		//allEmojis[emojisInterface[i].] =
+		//allEmojis[emojisInterface[i].unicodeName] = currentEmoji.InitializeWeatherModule(emojisInterface[i].slug, emojisInterface[i].character, emojisInterface[i].unicodeName, emojisInterface[i].codePoint, emojisInterface[i].group, emojisInterface[i].subGroup)
 	}
 
 	//
