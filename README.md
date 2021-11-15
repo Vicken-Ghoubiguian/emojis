@@ -40,8 +40,8 @@ go get -u github.com/Vicken-Ghoubiguian/emojis
 package main
 
 import (
+	
 	"fmt"
-
 	"github.com/Vicken-Ghoubiguian/emojis"
 )
 
@@ -55,11 +55,12 @@ func main() {
 
 	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "829bac05e9629ad331988082ad505da32c50fea0")
 
-	fmt.Println(anatomicalHeartEmoji)
-
-	fmt.Println("\n\n\n")
-
 	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
+	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
+	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
+	fmt.Println("Code point: " + anatomicalHeartEmoji.GetCodePoint())
+	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
+	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
 
 	fmt.Println("\n\n\n")
 }
