@@ -9,7 +9,8 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 * [Project's structure](#project_s_structure)
 * [How was this project developed ?](#how_was_this_project_developed)
 * [How to use this package ?](#how_to_use_this_package)
-* [A little example](#a_little_example)
+* [Little examples](#little_examples)
+	* [Example 1](#example_1)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
@@ -33,8 +34,11 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 go get -u github.com/Vicken-Ghoubiguian/emojis
 ```
 
-<a name="a_little_example"></a>
-## A little example
+<a name="little_examples"></a>
+## Little examples
+
+<a name="example_1"></a>
+### Example 1
 
 ```go
 package main
