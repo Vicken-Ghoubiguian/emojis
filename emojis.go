@@ -118,9 +118,6 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	var emojisInterface []interface{}
 
 	//
-	//var emojisMap map[string]interface{}
-
-	//
 	var allEmojis map[string]Emoji
 
 	//
@@ -145,10 +142,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	errorHandlerFunction(err)
 
 	//
-	//emojisMap = emojisInterface[0].(map[string]interface{})
-
-	//
-	fmt.Println(emojisInterface[13])
+	fmt.Println(emojisInterface[25])
 
 	//
 	return allEmojis
