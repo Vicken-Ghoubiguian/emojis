@@ -173,8 +173,8 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	return allEmojis
 }
 
-// Function to return the emoji specified by its unicode name by taken the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
-func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
+// Function to return the emoji specified by its slug by taken the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
+func GetASingleEmoji(slug string, accessKey string) Emoji {
 
 	// Declaration of the 'emojiSInterface' interface...
 	var emojiSInterface []interface{}
@@ -186,7 +186,7 @@ func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 	var returnedEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
-	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis/" + unicodeName + "?access_key=" + accessKey
+	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis/" + slug + "?access_key=" + accessKey
 
 	// Execution of the Get HTTPS request to get the wished emoji from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
