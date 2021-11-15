@@ -25,7 +25,7 @@ type Emoji struct {
 }
 
 // Defining the Emoji initializer...
-func (ej *Emoji) InitializeWeatherModule(slug string, character string, unicodeName string, codePoint string, group string, subGroup string) {
+func (ej *Emoji) InitializeEmoji(slug string, character string, unicodeName string, codePoint string, group string, subGroup string) {
 
 	ej.slug = slug
 	ej.character = character
@@ -124,7 +124,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	var emojisInterfaceLen int
 
 	//
-	//var currentEmoji Emoji
+	var currentEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
@@ -157,7 +157,13 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	for i := 0; i < emojisInterfaceLen; i++ {
 
 		//
-		//allEmojis[emojisInterface[i].unicodeName] = currentEmoji.InitializeWeatherModule(emojisInterface[i].slug, emojisInterface[i].character, emojisInterface[i].unicodeName, emojisInterface[i].codePoint, emojisInterface[i].group, emojisInterface[i].subGroup)
+		//currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
+
+		//
+		currentEmoji.InitializeEmoji("", "", "", "", "", "")
+
+		//
+		allEmojis[""] = currentEmoji
 	}
 
 	//
@@ -201,7 +207,7 @@ func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 	emojiSMap = emojiSInterface[0].(map[string]interface{})
 
 	// Initialization of the 'returnedEmoji' current emoji...
-	returnedEmoji.InitializeWeatherModule(fmt.Sprintf("%v", emojiSMap["slug"]), fmt.Sprintf("%v", emojiSMap["character"]), fmt.Sprintf("%v", emojiSMap["unicodeName"]), fmt.Sprintf("%v", emojiSMap["codePoint"]), fmt.Sprintf("%v", emojiSMap["group"]), fmt.Sprintf("%v", emojiSMap["subGroup"]))
+	returnedEmoji.InitializeEmoji(fmt.Sprintf("%v", emojiSMap["slug"]), fmt.Sprintf("%v", emojiSMap["character"]), fmt.Sprintf("%v", emojiSMap["unicodeName"]), fmt.Sprintf("%v", emojiSMap["codePoint"]), fmt.Sprintf("%v", emojiSMap["group"]), fmt.Sprintf("%v", emojiSMap["subGroup"]))
 
 	// Returning the 'returnedEmoji' initialized emoji...
 	return returnedEmoji
