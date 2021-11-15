@@ -120,6 +120,9 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	//
 	var allEmojis map[string]Emoji
 
+	//
+	var emojisInterfaceLen int
+
 	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
 
@@ -142,7 +145,12 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	errorHandlerFunction(err)
 
 	//
-	fmt.Println(emojisInterface[25])
+	emojisInterfaceLen = len(emojisInterface)
+
+	//
+	for i := 0; i < emojisInterfaceLen; i++ {
+
+	}
 
 	//
 	return allEmojis
