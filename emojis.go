@@ -228,8 +228,3 @@ func GetInCategoryEmojis(category string, accessKey string) map[string]Emoji {
 
 	return inCategoryEmojis
 }
-
-//
-func GetAllEmojisCount() {
-
-}
