@@ -49,16 +49,22 @@ import (
 	"github.com/Vicken-Ghoubiguian/emojis"
 )
 
+// Definition of the main function...
 func main() {
 
+	//
 	allEmojisMap := emojis.GetAllEmojis("<Your_access_key>")
 
+	//
 	fmt.Println(allEmojisMap)
 
+	//
 	fmt.Println("\n\n\n")
 
+	//
 	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your_access_key>")
 
+	//
 	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
 	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
 	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
@@ -66,6 +72,7 @@ func main() {
 	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
 	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
 
+	//
 	fmt.Println("\n\n\n")
 }
 ```
