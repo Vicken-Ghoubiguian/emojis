@@ -111,7 +111,7 @@ func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 	return string(rune(resultAsRune))
 }
 
-// Function to take your personal 'accessKey' of the Open Emoji API as arguments...
+// Function to return all emojis by taken your personal 'accessKey' of the Open Emoji API as argument...
 func GetAllEmojis(accessKey string) map[string]Emoji {
 
 	// Declaration of the 'emojiSInterface' interface...
@@ -148,7 +148,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	return allEmojis
 }
 
-// Function to take the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
+// Function to return the emoji specified by its unicode name by taken the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
 func GetASingleEmoji(unicodeName string, accessKey string) Emoji {
 
 	// Declaration of the 'emojiSInterface' interface...
@@ -199,7 +199,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji
 	return searchedForEmojis
 }
 
-// Function to retrieve all emojis by a given category...
+//
 func GetInCategoryEmojis(category string, accessKey string) map[string]Emoji {
 
 	var inCategoryEmojis map[string]Emoji
