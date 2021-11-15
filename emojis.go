@@ -120,8 +120,11 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	//
 	var allEmojis map[string]Emoji
 
-	//
+	// Declaration of the 'emojisInterfaceLen' variable which contains the length of the 'emojisInterface' interface...
 	var emojisInterfaceLen int
+
+	//
+	//var currentEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
@@ -148,8 +151,12 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	emojisInterfaceLen = len(emojisInterface)
 
 	//
+	allEmojis = make(map[string]Emoji)
+
+	//
 	for i := 0; i < emojisInterfaceLen; i++ {
 
+		//allEmojis[emojisInterface[i].] =
 	}
 
 	//
