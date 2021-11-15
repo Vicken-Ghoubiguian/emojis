@@ -157,13 +157,13 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	for i := 0; i < emojisInterfaceLen; i++ {
 
 		//
-		//currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
+		currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
 
 		//
-		currentEmoji.InitializeEmoji("", "", "", "", "", "")
+		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
 		//
-		allEmojis[""] = currentEmoji
+		allEmojis[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
 	//
