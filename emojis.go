@@ -150,22 +150,22 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Initialization of the 'emojisInterfaceLen' variable with the 'emojisInterface' interface length...
 	emojisInterfaceLen = len(emojisInterface)
 
 	//
 	allEmojis = make(map[string]Emoji)
 
-	//
+	// Initialization of the main loop of this function...
 	for i := 0; i < emojisInterfaceLen; i++ {
 
-		//
+		// Conversion of the 'emojisInterface' interface to a map[string]interface{}...
 		currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
 
-		//
+		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
-		// Adding this emoji in the 'allEmojis' map[string]Emoji...
+		// Adding the 'currentEmoji' emoji in the 'allEmojis' map[string]Emoji...
 		allEmojis[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
