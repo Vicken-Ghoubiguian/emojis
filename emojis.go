@@ -104,10 +104,13 @@ func errorHandlerFunction(err error) {
 //
 func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 
+	//
 	resultAsRune, error := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
 
+	//
 	errorHandlerFunction(error)
 
+	//
 	return string(rune(resultAsRune))
 }
 
@@ -117,13 +120,13 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	// Declaration of the 'emojiSInterface' interface...
 	var emojisInterface []interface{}
 
-	// Declaration
+	// Declaration of the 'allEmojis' map[string]Emoji...
 	var allEmojis map[string]Emoji
 
 	// Declaration of the 'emojisInterfaceLen' variable which contains the length of the 'emojisInterface' interface...
 	var emojisInterfaceLen int
 
-	// Declaration
+	// Declaration of the 'currentEmoji' emoji...
 	var currentEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
@@ -166,7 +169,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 		allEmojis[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
-	//
+	// Returning the completed 'allEmojis' map[string]Emoji which now contains all existing emojis...
 	return allEmojis
 }
 
