@@ -111,7 +111,7 @@ func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 	return string(rune(resultAsRune))
 }
 
-//
+// Function to take your personal 'accessKey' of the Open Emoji API as arguments...
 func GetAllEmojis(accessKey string) map[string]Emoji {
 
 	// Declaration of the 'emojiSInterface' interface...
@@ -120,7 +120,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	//
 	var allEmojis map[string]Emoji
 
-	//
+	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
 
 	//
@@ -135,7 +135,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Unmarshall all of received datas of all received emojis in the 'emojisInterface' interface...
 	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojisInterface)
 
 	// Manage the possible occured error...
