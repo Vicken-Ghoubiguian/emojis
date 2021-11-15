@@ -140,11 +140,11 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	//
 	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojisInterface)
 
-	//
-	fmt.Println(emojisInterface)
-
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
+
+	//
+	fmt.Println(emojisInterface)
 
 	//
 	return allEmojis
