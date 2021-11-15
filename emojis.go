@@ -165,7 +165,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 		//
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
-		//
+		// Adding this emoji in the 'allEmojis' map[string]Emoji...
 		allEmojis[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
