@@ -1,12 +1,12 @@
 package emojis
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"os"
 	"strconv"
-	"net/http"
-	"io/ioutil"
-	"encoding/json"
 	"strings"
 )
 
@@ -114,9 +114,40 @@ func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 //
 func GetAllEmojis(accessKey string) map[string]Emoji {
 
-	var emojisWithAll map[string]Emoji
+	// Declaration of the 'emojiSInterface' interface...
+	var emojisInterface []interface{}
 
-	return emojisWithAll
+	//
+
+	//
+	var allEmojis map[string]Emoji
+
+	//
+	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
+
+	//
+	getEmojiFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	//
+	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIAPIResp.Body)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	//
+	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojisInterface)
+
+	//
+	fmt.Println(emojisInterface)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	//
+	return allEmojis
 }
 
 // Function to take the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
