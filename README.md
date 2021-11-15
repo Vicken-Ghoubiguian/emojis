@@ -51,13 +51,13 @@ import (
 
 func main() {
 
-	allEmojisMap := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+	allEmojisMap := emojis.GetAllEmojis("<Your key access>")
 
 	fmt.Println(allEmojisMap)
 
 	fmt.Println("\n\n\n")
 
-	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "829bac05e9629ad331988082ad505da32c50fea0")
+	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your key access>")
 
 	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
 	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
