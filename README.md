@@ -53,10 +53,10 @@ import (
 func main() {
 
 	//
-	allEmojisMap := emojis.GetAllEmojis("<Your_access_key>")
+	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
 	//
-	fmt.Println(allEmojisMap)
+	fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
 	//
 	fmt.Println("\n\n\n")
