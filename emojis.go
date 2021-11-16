@@ -132,13 +132,16 @@ func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 }
 
 // Function to return all emojis by taken your personal 'accessKey' of the Open Emoji API as argument...
-func GetAllEmojis(accessKey string) map[string]Emoji {
+func GetAllEmojis(accessKey string) ListOfEmojis {
 
 	// Declaration of the 'emojiSInterface' interface...
 	var emojisInterface []interface{}
 
-	// Declaration of the 'allEmojis' map[string]Emoji...
-	var allEmojis map[string]Emoji
+	// Declaration of the 'allEmojisMap' map[string]Emoji...
+	var allEmojisMap map[string]Emoji
+
+	// Declaration of the 'allEmojis' list of emojis...
+	var allEmojis ListOfEmojis
 
 	// Declaration of the 'emojisInterfaceLen' variable which contains the length of the 'emojisInterface' interface...
 	var emojisInterfaceLen int
@@ -171,7 +174,7 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 	emojisInterfaceLen = len(emojisInterface)
 
 	//
-	allEmojis = make(map[string]Emoji)
+	allEmojisMap = make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
 	for i := 0; i < emojisInterfaceLen; i++ {
@@ -182,11 +185,14 @@ func GetAllEmojis(accessKey string) map[string]Emoji {
 		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
-		// Adding the 'currentEmoji' emoji in the 'allEmojis' map[string]Emoji...
-		allEmojis[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
+		// Adding the 'currentEmoji' emoji in the 'allEmojisMap' map[string]Emoji...
+		allEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
-	// Returning the completed 'allEmojis' map[string]Emoji which now contains all existing emojis...
+	// Initialization of the 'allEmojis' ListOfEmojis to make it contain all existing emojis...
+	allEmojis.InitializeListOfEmojis(allEmojisMap)
+
+	// Returning the completed 'allEmojisMap' ListOfEmojis which now contains all existing emojis...
 	return allEmojis
 }
 
