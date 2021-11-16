@@ -11,6 +11,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 * [How to use this package ?](#how_to_use_this_package)
 * [Little examples](#little_examples)
 	* [Example 1](#example_1)
+	* [Example 2](#example_2)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
@@ -75,6 +76,12 @@ func main() {
 	//
 	fmt.Println("\n\n\n")
 }
+```
+
+<a name="example_2"></a>
+### Example 2
+
+```go
 ```
 
 <a name="where_to_use_it"></a>
