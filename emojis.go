@@ -81,19 +81,27 @@ func (ej *Emoji) GetEmoji() string {
 
 // Defining the type 'ListOfEmojis' which define a list of emojis...
 type ListOfEmojis struct {
-	mapOfEmojis map[string]Emoji
+	mapOfEmojis   map[string]Emoji
+	emojisAccount int
 }
 
 // Defining the ListOfEmojis initializer...
 func (loe *ListOfEmojis) InitializeListOfEmojis(listOfEmojis map[string]Emoji) {
 
 	loe.mapOfEmojis = listOfEmojis
+	loe.emojisAccount = len(listOfEmojis)
 }
 
 // Defining the 'mapOfEmojis' field getter...
 func (loe *ListOfEmojis) GetListOfEmojis() map[string]Emoji {
 
 	return loe.mapOfEmojis
+}
+
+// Defining the 'emojisAccount' field getter...
+func (loe *ListOfEmojis) GetEmojisAccount() int {
+
+	return loe.emojisAccount
 }
 
 /*
