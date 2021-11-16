@@ -234,17 +234,17 @@ func GetASingleEmoji(slug string, accessKey string) Emoji {
 }
 
 //
-func GetSearchedForEmojis(searchedFor string, accessKey string) map[string]Emoji {
+func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 
-	var searchedForEmojis map[string]Emoji
+	var searchedForEmojis ListOfEmojis
 
 	return searchedForEmojis
 }
 
 //
-func GetInCategoryEmojis(category string, accessKey string) map[string]Emoji {
+func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 
-	var inCategoryEmojis map[string]Emoji
+	var inCategoryEmojis ListOfEmojis
 
 	return inCategoryEmojis
 }
