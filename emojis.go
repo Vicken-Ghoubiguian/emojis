@@ -90,6 +90,12 @@ func (loe *ListOfEmojis) InitializeListOfEmojis(listOfEmojis map[string]Emoji) {
 	loe.mapOfEmojis = listOfEmojis
 }
 
+// Defining the 'mapOfEmojis' field getter...
+func (loe *ListOfEmojis) GetListOfEmojis() map[string]Emoji {
+
+	return loe.mapOfEmojis
+}
+
 /*
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
