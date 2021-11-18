@@ -79,6 +79,10 @@ func (ej *Emoji) GetEmoji() string {
 	return string(rune(resultAsRune))
 }
 
+/*
+ * NEW 'LISTOFEMOJIS' STRUCTURE TO DEFINE AN EMOJI'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
+ */
+
 // Defining the type 'ListOfEmojis' which define a list of emojis...
 type ListOfEmojis struct {
 	mapOfEmojis   map[string]Emoji
@@ -102,6 +106,16 @@ func (loe *ListOfEmojis) GetListOfEmojis() map[string]Emoji {
 func (loe *ListOfEmojis) GetEmojisAccount() int {
 
 	return loe.emojisAccount
+}
+
+//
+func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
+
+	//
+	var returnedListOfEmojis ListOfEmojis
+
+	//
+	return returnedListOfEmojis
 }
 
 /*
