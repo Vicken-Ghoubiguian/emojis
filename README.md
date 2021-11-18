@@ -53,19 +53,19 @@ import (
 // Definition of the main function...
 func main() {
 
-	//
+	// Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
 	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
-	//
+	// Display the whole 'allEmojisListOfEmojis' list of all existing emojis...
 	fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
 	// Break 3 lines...
 	fmt.Println("\n\n\n")
 
-	//
+	// Declaration and initialization of the 'anatomicalHeartEmoji' variable which will contain the 'anatomical heart' emoji...
 	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your_access_key>")
 
-	//
+	// Display all attributes of the 'anatomical heart' emoji...
 	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
 	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
 	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
