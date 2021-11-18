@@ -164,32 +164,32 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 }
 
 /*
- * 'CATHEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
+ * 'CATEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
  */
 
 // Defining the type 'Cathegory' which define a cathegory of emojis...
-type Cathegory struct {
-	slug                  string
-	subCathegoriesArray   []string
-	subCathegoriesAccount int
+type Category struct {
+	slug                 string
+	subCategoriesArray   []string
+	subCategoriesAccount int
 }
 
 //
-func (cath *Cathegory) GetSlug() string {
+func (catg *Category) GetSlug() string {
 
-	return cath.slug
+	return catg.slug
 }
 
 //
-func (cath *Cathegory) GetCathegoriesArray() []string {
+func (catg *Category) GetCategoriesArray() []string {
 
-	return cath.subCathegoriesArray
+	return catg.subCategoriesArray
 }
 
 //
-func (cath *Cathegory) GetSubCathegoriesAccount() int {
+func (catg *Category) GetSubCategoriesAccount() int {
 
-	return cath.subCathegoriesAccount
+	return catg.subCategoriesAccount
 }
 
 /*
@@ -293,7 +293,7 @@ func GetAllEmojis(accessKey string) ListOfEmojis {
 }
 
 //
-func GetAllCathegories() {
+func GetAllCategories() {
 
 }
 
