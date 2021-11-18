@@ -137,10 +137,27 @@ func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
 }
 
 //
-func (loe *ListOfEmojis) GetEmojisFromSubGroup(group string) ListOfEmojis {
+func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 
 	//
 	var returnedListOfEmojis ListOfEmojis
+
+	//
+	returnedEmojisMap := make(map[string]Emoji)
+
+	//
+	for slug, emoji := range loe.GetListOfEmojis() {
+
+		//
+		if emoji.GetSubGroup() == subGroup {
+
+			//
+			returnedEmojisMap[slug] = emoji
+		}
+	}
+
+	//
+	returnedListOfEmojis.InitializeListOfEmojis(returnedEmojisMap)
 
 	//
 	return returnedListOfEmojis
