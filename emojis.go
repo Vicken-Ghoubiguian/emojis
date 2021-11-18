@@ -11,7 +11,7 @@ import (
 )
 
 /*
- * NEW 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
+ * 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
  */
 
 // Defining the type 'Emoji' which define an emoji...
@@ -81,7 +81,7 @@ func (ej *Emoji) GetEmoji() string {
 }
 
 /*
- * NEW 'LISTOFEMOJIS' STRUCTURE TO DEFINE AN EMOJI'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
+ * 'LISTOFEMOJIS' STRUCTURE TO DEFINE AN EMOJI'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
  */
 
 // Defining the type 'ListOfEmojis' which define a list of emojis...
@@ -161,6 +161,35 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 
 	//
 	return returnedListOfEmojis
+}
+
+/*
+ * 'CATHEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
+ */
+
+// Defining the type 'Cathegory' which define a cathegory of emojis...
+type Cathegory struct {
+	slug                  string
+	subCathegoriesArray   []string
+	subCathegoriesAccount int
+}
+
+//
+func (cath *Cathegory) GetSlug() string {
+
+	return cath.slug
+}
+
+//
+func (cath *Cathegory) GetCathegoriesArray() []string {
+
+	return cath.subCathegoriesArray
+}
+
+//
+func (cath *Cathegory) GetSubCathegoriesAccount() int {
+
+	return cath.subCathegoriesAccount
 }
 
 /*
