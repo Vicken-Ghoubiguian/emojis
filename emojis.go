@@ -174,19 +174,19 @@ type Category struct {
 	subCategoriesAccount int
 }
 
-//
+// Defining the 'slug' field getter...
 func (catg *Category) GetSlug() string {
 
 	return catg.slug
 }
 
-//
+// Defining the 'subCategoriesArray' field getter...
 func (catg *Category) GetCategoriesArray() []string {
 
 	return catg.subCategoriesArray
 }
 
-//
+// Defining the 'subCategoriesAccount' field getter...
 func (catg *Category) GetSubCategoriesAccount() int {
 
 	return catg.subCategoriesAccount
