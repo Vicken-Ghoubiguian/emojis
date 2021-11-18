@@ -59,7 +59,7 @@ func main() {
 	//
 	fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
-	//
+	// Break 3 lines...
 	fmt.Println("\n\n\n")
 
 	//
@@ -73,7 +73,7 @@ func main() {
 	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
 	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
 
-	//
+	// Break 3 lines...
 	fmt.Println("\n\n\n")
 }
 ```
