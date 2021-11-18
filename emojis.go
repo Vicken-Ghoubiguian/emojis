@@ -74,6 +74,7 @@ func (ej *Emoji) GetSubGroup() string {
 // Defining the emoticon getter...
 func (ej *Emoji) GetEmoji() string {
 
+	//
 	resultAsRune, _ := strconv.ParseInt(strings.TrimPrefix(ej.codePoint, "\\U"), 16, 32)
 
 	return string(rune(resultAsRune))
@@ -110,6 +111,33 @@ func (loe *ListOfEmojis) GetEmojisAccount() int {
 
 //
 func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
+
+	//
+	var returnedListOfEmojis ListOfEmojis
+
+	//
+	returnedEmojisMap := make(map[string]Emoji)
+
+	//
+	for slug, emoji := range loe.GetListOfEmojis() {
+
+		//
+		if emoji.GetGroup() == group {
+
+			//
+			returnedEmojisMap[slug] = emoji
+		}
+	}
+
+	//
+	returnedListOfEmojis.InitializeListOfEmojis(returnedEmojisMap)
+
+	//
+	return returnedListOfEmojis
+}
+
+//
+func (loe *ListOfEmojis) GetEmojisFromSubGroup(group string) ListOfEmojis {
 
 	//
 	var returnedListOfEmojis ListOfEmojis
