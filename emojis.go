@@ -381,6 +381,6 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
 	//getEmojisFromCategoryFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories/" + category + "?access_key=" + accessKey
 
-	//
+	// Returning the completed 'inCategoryEmojis' ListOfEmojis which now contains all existing emojis in the wished category...
 	return inCategoryEmojis
 }
