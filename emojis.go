@@ -223,16 +223,16 @@ func errorHandlerFunction(err error) {
  * PUBLIC FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE IN EVERY GO PROJECTS...
  */
 
-//
+// Function to return the emoji calculated from the 'codePointOfEmoji' codePoint...
 func GetEmojiFromCodePoint(codePointOfEmoji string) string {
 
 	//
 	resultAsRune, error := strconv.ParseInt(strings.TrimPrefix(codePointOfEmoji, "\\U"), 16, 32)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(error)
 
-	//
+	// Returning finally the emoticon with some necessary operations...
 	return string(rune(resultAsRune))
 }
 
