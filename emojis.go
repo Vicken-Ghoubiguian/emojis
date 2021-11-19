@@ -360,7 +360,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	return searchedForEmojis
 }
 
-//
+// Function to return all emojis from a wished 'category' category of emojis as a ListOfEmojis...
 func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 
 	// Declaration of the 'inCategoryEmojisInterface' interface...
