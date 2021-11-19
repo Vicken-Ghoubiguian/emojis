@@ -60,11 +60,26 @@ func main() {
 	// Display the whole 'allEmojisListOfEmojis' list of all existing emojis...
 	//fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
-	// Break 3 lines...
-	fmt.Println("\n\n\n")
+	// Display a separator...
+	fmt.Println("\n==================================\n")
 
-	// Break 3 lines...
-	fmt.Println("\n\n\n")
+	// Defining the loop to display datas of all existing emojis...
+	for slug, emoji := range allEmojisListOfEmojis.GetListOfEmojis() {
+
+		// Display datas of the current emojis...
+		fmt.Println("Character: " + allEmojisListOfEmojis[slug].GetCharacter())
+		fmt.Println("Slug: " + allEmojisListOfEmojis[slug].GetSlug())
+		fmt.Println("Unicode name: " + allEmojisListOfEmojis[slug].GetUnicodeName())
+		fmt.Println("Code point: " + allEmojisListOfEmojis[slug].GetCodePoint())
+		fmt.Println("Group: " + allEmojisListOfEmojis[slug].GetGroup())
+		fmt.Println("Subgroup: " + allEmojisListOfEmojis[slug].GetSubGroup())
+
+		// Break 3 lines...
+		fmt.Println("\n\n\n")
+	}
+
+	// Display a separator...
+	fmt.Println("\n==================================\n")
 }
 ```
 
