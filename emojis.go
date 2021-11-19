@@ -378,6 +378,9 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Declaration of the 'currentEmoji' emoji...
 	//var currentEmoji Emoji
 
+	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
+	//getEmojisFromCategoryFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories/" + category + "?access_key=" + accessKey
+
 	//
 	return inCategoryEmojis
 }
