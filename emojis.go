@@ -77,6 +77,7 @@ func (ej *Emoji) GetEmoji() string {
 	//
 	resultAsRune, _ := strconv.ParseInt(strings.TrimPrefix(ej.codePoint, "\\U"), 16, 32)
 
+	//
 	return string(rune(resultAsRune))
 }
 
@@ -109,30 +110,30 @@ func (loe *ListOfEmojis) GetEmojisAccount() int {
 	return loe.emojisAccount
 }
 
-//
+// Defining the 'GetEmojisFromGroup' function to get and return all emojis from a wished 'group' group in a 'ListOfEmojis' variable...
 func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
 
-	//
+	// Declaration of the 'returnedListOfEmojis' ListOfEmojis...
 	var returnedListOfEmojis ListOfEmojis
 
-	//
+	// Allocation of all necessary memory for the 'returnedEmojisMap' map[string]Emoji...
 	returnedEmojisMap := make(map[string]Emoji)
 
-	//
+	// Initialization of the main loop of this function...
 	for slug, emoji := range loe.GetListOfEmojis() {
 
-		//
+		// If the current emoji's group is equal to the wished 'group' group so...
 		if emoji.GetGroup() == group {
 
-			//
+			// Adding the emoji to the 'returnedEmojisMap' map[string]Emoji...
 			returnedEmojisMap[slug] = emoji
 		}
 	}
 
-	//
+	// Initialization of the 'returnedListOfEmojis' ListOfEmojis which will contain all existing emojis in the wished group...
 	returnedListOfEmojis.InitializeListOfEmojis(returnedEmojisMap)
 
-	//
+	// Returning the completed 'returnedListOfEmojis' ListOfEmojis which now contains all existing emojis in the wished group...
 	return returnedListOfEmojis
 }
 
