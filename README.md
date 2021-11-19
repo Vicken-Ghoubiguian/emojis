@@ -58,21 +58,21 @@ func main() {
 	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
 	// Display the whole 'allEmojisListOfEmojis' list of all existing emojis...
-	fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
+	//fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
 	// Break 3 lines...
 	fmt.Println("\n\n\n")
 
 	// Declaration and initialization of the 'anatomicalHeartEmoji' variable which will contain the 'anatomical heart' emoji...
-	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your_access_key>")
+	//anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your_access_key>")
 
 	// Display all attributes of the 'anatomical heart' emoji...
-	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
+	/*fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
 	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
 	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
 	fmt.Println("Code point: " + anatomicalHeartEmoji.GetCodePoint())
 	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
-	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
+	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())*/
 
 	// Break 3 lines...
 	fmt.Println("\n\n\n")
