@@ -363,7 +363,9 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 //
 func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 
+	//
 	var inCategoryEmojis ListOfEmojis
 
+	//
 	return inCategoryEmojis
 }
