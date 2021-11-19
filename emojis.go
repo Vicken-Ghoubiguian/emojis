@@ -175,6 +175,14 @@ type Category struct {
 	subCategoriesAccount int
 }
 
+// Defining the Category initializer...
+func (catg *Category) InitializeCategory(slug string, subCategoriesArray []string) {
+
+	catg.slug = slug
+	catg.subCategoriesArray = subCategoriesArray
+	catg.subCategoriesAccount = len(subCategoriesArray)
+}
+
 // Defining the 'slug' field getter...
 func (catg *Category) GetSlug() string {
 
