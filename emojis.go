@@ -77,7 +77,7 @@ func (ej *Emoji) GetEmoji() string {
 	//
 	resultAsRune, _ := strconv.ParseInt(strings.TrimPrefix(ej.codePoint, "\\U"), 16, 32)
 
-	//
+	// Returning finally the emoticon with some necessary operations...
 	return string(rune(resultAsRune))
 }
 
