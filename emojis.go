@@ -137,30 +137,30 @@ func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
 	return returnedListOfEmojis
 }
 
-//
+// Defining the 'GetEmojisFromSubGroup' function to get and return all emojis from a wished 'subGroup' subgroup in a 'ListOfEmojis' variable...
 func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 
-	//
+	// Declaration of the 'returnedListOfEmojis' ListOfEmojis...
 	var returnedListOfEmojis ListOfEmojis
 
-	//
+	// Allocation of all necessary memory for the 'returnedEmojisMap' map[string]Emoji...
 	returnedEmojisMap := make(map[string]Emoji)
 
-	//
+	// Initialization of the main loop of this function...
 	for slug, emoji := range loe.GetListOfEmojis() {
 
-		//
+		// If the current emoji's subgroup is equal to the wished 'subGroup' subgroup so...
 		if emoji.GetSubGroup() == subGroup {
 
-			//
+			// Adding the emoji to the 'returnedEmojisMap' map[string]Emoji...
 			returnedEmojisMap[slug] = emoji
 		}
 	}
 
-	//
+	// Initialization of the 'returnedListOfEmojis' ListOfEmojis which will contain all existing emojis in the wished subgroup...
 	returnedListOfEmojis.InitializeListOfEmojis(returnedEmojisMap)
 
-	//
+	// Returning the completed 'returnedListOfEmojis' ListOfEmojis which now contains all existing emojis in the wished subgroup...
 	return returnedListOfEmojis
 }
 
