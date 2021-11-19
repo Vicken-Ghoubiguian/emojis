@@ -83,6 +83,34 @@ func main() {
 ### Example 2
 
 ```go
+package main
+
+import (
+	
+	"fmt"
+	"github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+	// Declaration and initialization of the 'anatomicalHeartEmoji' variable which will contain the 'anatomical heart' emoji...
+	anatomicalHeartEmoji := emojis.GetASingleEmoji("anatomical-heart", "<Your_access_key>")
+
+	// Break 3 lines...
+	fmt.Println("\n\n\n")	
+
+	// Display all attributes of the 'anatomical heart' emoji...
+	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
+	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
+	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
+	fmt.Println("Code point: " + anatomicalHeartEmoji.GetCodePoint())
+	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
+	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
+
+	// Break 3 lines...
+	fmt.Println("\n\n\n")
+}
 ```
 
 <a name="example_3"></a>
