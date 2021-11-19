@@ -363,8 +363,20 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 //
 func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 
+	// Declaration of the 'inCategoryEmojisInterface' interface...
+	//var inCategoryEmojisInterface []interface{}
+
+	// Declaration of the 'inCategoryEmojisMap' map[string]Emoji...
+	//var inCategoryEmojisMap map[string]Emoji
+
 	//
 	var inCategoryEmojis ListOfEmojis
+
+	// Declaration of the 'inCategoryEmojisInterfaceLen' variable which contains the length of the 'inCategoryEmojisInterface' interface...
+	//var inCategoryEmojisInterfaceLen int
+
+	// Declaration of the 'currentEmoji' emoji...
+	//var currentEmoji Emoji
 
 	//
 	return inCategoryEmojis
