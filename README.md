@@ -14,6 +14,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 2](#example_2)
 	* [Example 3](#example_3)
 	* [Example 4](#example_4)
+	* [Example 5](#example_5)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
@@ -161,6 +162,24 @@ func main() {
 
 <a name="example_4"></a>
 ### Example 4
+
+```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+}
+```
+
+<a name="example_5"></a>
+### Example 5
 
 ```go
 package main
