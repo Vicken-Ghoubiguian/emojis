@@ -219,6 +219,29 @@ import (
 // Definition of the main function...
 func main() {
 
+    // Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'smileys-emotion' category...
+    allSmileysEmojisListOfEmojis := emojis.GetInCategoryEmojis("smileys-emotion", "<Your_access_key>")
+
+	// Display a separator...
+	fmt.Println("\n==================================\n")
+
+	// Defining the loop to display datas of all existing emojis of the 'smileys-emotion' category...
+	for _, emoji := range allSmileysEmojisListOfEmojis.GetListOfEmojis() {
+
+			// Display datas of the current emojis...
+			fmt.Println("Character: " + emoji.GetCharacter())
+			fmt.Println("Slug: " + emoji.GetSlug())
+			fmt.Println("Unicode name: " + emoji.GetUnicodeName())
+			fmt.Println("Code point: " + emoji.GetCodePoint())
+			fmt.Println("Group: " + emoji.GetGroup())
+			fmt.Println("Subgroup: " + emoji.GetSubGroup())
+
+			// Break one line...
+			fmt.Println("\n")
+		}
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
 }
 ```
 

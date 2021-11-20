@@ -386,11 +386,15 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Execution of the Get HTTPS request to get all existing emojis in the wished category from the Open Emoji API...
 	getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
 
+	fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp)
+
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	// Read the HTTP response's body in the 'getEmojisFromCategoryFromTheOpenEmojiAPIJsonString' string variable...
 	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
+
+	fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
