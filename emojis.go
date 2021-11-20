@@ -364,9 +364,6 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	//var searchedForEmojisMap map[string]Emoji
 
 	//
-	//getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
-
-	//
 	var searchedForEmojis ListOfEmojis
 
 	//
@@ -374,6 +371,9 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 
 	//
 	//var currentEmoji Emoji
+
+	//
+	//getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
 
 	//
 	return searchedForEmojis
