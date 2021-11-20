@@ -375,6 +375,50 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	//
 	//getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
 
+	/*
+
+		// Execution of the Get HTTPS request to get all existing emojis in the wished category from the Open Emoji API...
+		getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
+
+			// Manage the possible occured error...
+			errorHandlerFunction(err)
+
+			// Read the HTTP response's body in the 'getEmojisFromCategoryFromTheOpenEmojiAPIJsonString' string variable...
+			getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
+
+			// Manage the possible occured error...
+			errorHandlerFunction(err)
+
+			// Unmarshall all of received datas of all received emojis belonging to the wished category in the 'inCategoryEmojisInterface' interface...
+			err = json.Unmarshal(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, &inCategoryEmojisInterface)
+
+			// Manage the possible occured error...
+			errorHandlerFunction(err)
+
+				// Initialization of the 'inCategoryEmojisInterfaceLen' variable with the 'inCategoryEmojisInterface' interface length...
+				inCategoryEmojisInterfaceLen = len(inCategoryEmojisInterface)
+
+				// Allocation of all necessary memory for the 'inCategoryEmojisMap' map[string]Emoji...
+				inCategoryEmojisMap = make(map[string]Emoji)
+
+				// Initialization of the main loop of this function...
+				for i := 0; i < inCategoryEmojisInterfaceLen; i++ {
+
+					// Conversion of the 'inCategoryEmojisInterface' interface to a map[string]interface{}...
+					currentEmojiAsMap := inCategoryEmojisInterface[i].(map[string]interface{})
+
+					// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
+					currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
+
+					// Adding the 'currentEmoji' emoji in the 'inCategoryEmojisMap' map[string]Emoji...
+					inCategoryEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
+				}
+
+				// Initialization of the 'inCategoryEmojis' ListOfEmojis to make it contain all existing emojis belonging to the wished category...
+				inCategoryEmojis.InitializeListOfEmojis(inCategoryEmojisMap)
+
+	*/
+
 	//
 	return searchedForEmojis
 }
