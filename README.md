@@ -132,11 +132,8 @@ func main() {
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
         allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
-        //
+        // Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'smileys-emotion' category...
         allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
-
-        //
-        fmt.Println(allSmileysEmojisListOfEmojis)
 
 		// Display a separator...
 		fmt.Println("\n==================================\n")
