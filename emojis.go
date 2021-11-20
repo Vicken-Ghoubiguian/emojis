@@ -430,6 +430,9 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 		inCategoryEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
+	// Initialization of the 'inCategoryEmojis' ListOfEmojis to make it contain all existing emojis belonging to the wished category...
+	inCategoryEmojis.InitializeListOfEmojis(inCategoryEmojisMap)
+
 	// Returning the completed 'inCategoryEmojis' ListOfEmojis which now contains all existing emojis in the wished category...
 	return inCategoryEmojis
 }
