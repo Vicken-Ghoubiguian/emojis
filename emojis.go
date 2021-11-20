@@ -366,22 +366,59 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 
 	// Declaration of the 'inCategoryEmojisInterface' interface...
-	//var inCategoryEmojisInterface []interface{}
+	var inCategoryEmojisInterface []interface{}
 
 	// Declaration of the 'inCategoryEmojisMap' map[string]Emoji...
-	//var inCategoryEmojisMap map[string]Emoji
+	var inCategoryEmojisMap map[string]Emoji
 
 	// Declaration of the 'inCategoryEmojis' list of emojis...
 	var inCategoryEmojis ListOfEmojis
 
 	// Declaration of the 'inCategoryEmojisInterfaceLen' variable which contains the length of the 'inCategoryEmojisInterface' interface...
-	//var inCategoryEmojisInterfaceLen int
+	var inCategoryEmojisInterfaceLen int
 
 	// Declaration of the 'currentEmoji' emoji...
-	//var currentEmoji Emoji
+	var currentEmoji Emoji
 
 	// Definition of the HTTPS request's URL to get the wished emoji from the Open Emoji API...
-	//getEmojisFromCategoryFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories/" + category + "?access_key=" + accessKey
+	getEmojisFromCategoryFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories/" + category + "?access_key=" + accessKey
+
+	// Execution of the Get HTTPS request to get all existing emojis from the Open Emoji API...
+	getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	// Read the HTTP response's body in the 'getEmojiFromTheOpenEmojiAPIJsonString' string variable...
+	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	// Unmarshall all of received datas of all received emojis in the 'inCategoryEmojisInterface' interface...
+	err = json.Unmarshal(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, &inCategoryEmojisInterface)
+
+	// Manage the possible occured error...
+	errorHandlerFunction(err)
+
+	// Initialization of the 'emojisInterfaceLen' variable with the 'emojisInterface' interface length...
+	inCategoryEmojisInterfaceLen = len(inCategoryEmojisInterface)
+
+	// Allocation of all necessary memory for the 'inCategoryEmojisMap' map[string]Emoji...
+	inCategoryEmojisMap = make(map[string]Emoji)
+
+	// Initialization of the main loop of this function...
+	for i := 0; i < inCategoryEmojisInterfaceLen; i++ {
+
+		// Conversion of the 'inCategoryEmojisInterface' interface to a map[string]interface{}...
+		currentEmojiAsMap := inCategoryEmojisInterface[i].(map[string]interface{})
+
+		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
+		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
+
+		// Adding the 'currentEmoji' emoji in the 'allEmojisMap' map[string]Emoji...
+		inCategoryEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
+	}
 
 	// Returning the completed 'inCategoryEmojis' ListOfEmojis which now contains all existing emojis in the wished category...
 	return inCategoryEmojis
