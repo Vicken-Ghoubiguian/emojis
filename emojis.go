@@ -386,7 +386,7 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Execution of the Get HTTPS request to get all existing emojis in the wished category from the Open Emoji API...
 	getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
 
-	fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp)
+	//fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -394,7 +394,7 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Read the HTTP response's body in the 'getEmojisFromCategoryFromTheOpenEmojiAPIJsonString' string variable...
 	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
 
-	fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString)
+	//fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -405,7 +405,7 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	fmt.Println(inCategoryEmojisInterface)
+	//fmt.Println(inCategoryEmojisInterface)
 
 	// Initialization of the 'inCategoryEmojisInterfaceLen' variable with the 'inCategoryEmojisInterface' interface length...
 	inCategoryEmojisInterfaceLen = len(inCategoryEmojisInterface)
@@ -413,13 +413,15 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Allocation of all necessary memory for the 'inCategoryEmojisMap' map[string]Emoji...
 	inCategoryEmojisMap = make(map[string]Emoji)
 
-	fmt.Println(inCategoryEmojisMap)
+	//fmt.Println(inCategoryEmojisMap)
 
 	// Initialization of the main loop of this function...
 	for i := 0; i < inCategoryEmojisInterfaceLen; i++ {
 
 		// Conversion of the 'inCategoryEmojisInterface' interface to a map[string]interface{}...
 		currentEmojiAsMap := inCategoryEmojisInterface[i].(map[string]interface{})
+
+		fmt.Println(currentEmojiAsMap)
 
 		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
