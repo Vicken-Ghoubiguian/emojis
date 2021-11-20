@@ -137,6 +137,27 @@ func main() {
 
         //
         fmt.Println(allSmileysEmojisListOfEmojis)
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
+
+		// Defining the loop to display datas of all existing emojis of the 'smileys-emotion' category...
+		for _, emoji := range allSmileysEmojisListOfEmojis.GetListOfEmojis() {
+
+			// Display datas of the current emojis...
+			fmt.Println("Character: " + emoji.GetCharacter())
+			fmt.Println("Slug: " + emoji.GetSlug())
+			fmt.Println("Unicode name: " + emoji.GetUnicodeName())
+			fmt.Println("Code point: " + emoji.GetCodePoint())
+			fmt.Println("Group: " + emoji.GetGroup())
+			fmt.Println("Subgroup: " + emoji.GetSubGroup())
+
+			// Break one line...
+			fmt.Println("\n")
+		}
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
 }
 ```
 
