@@ -357,8 +357,25 @@ func GetASingleEmoji(slug string, accessKey string) Emoji {
 //
 func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 
+	//
+	//var searchedForEmojisInterface []interface{}
+
+	//
+	//var searchedForEmojisMap map[string]Emoji
+
+	//
+	//getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
+
+	//
 	var searchedForEmojis ListOfEmojis
 
+	//
+	//var searchedForEmojisInterfaceLen int
+
+	//
+	//var currentEmoji Emoji
+
+	//
 	return searchedForEmojis
 }
 
