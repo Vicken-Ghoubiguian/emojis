@@ -386,15 +386,11 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Execution of the Get HTTPS request to get all existing emojis in the wished category from the Open Emoji API...
 	getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
 
-	//fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp)
-
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	// Read the HTTP response's body in the 'getEmojisFromCategoryFromTheOpenEmojiAPIJsonString' string variable...
 	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
-
-	//fmt.Println(getEmojisFromCategoryFromTheOpenEmojiAPIJsonString)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -405,15 +401,11 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//fmt.Println(inCategoryEmojisInterface)
-
 	// Initialization of the 'inCategoryEmojisInterfaceLen' variable with the 'inCategoryEmojisInterface' interface length...
 	inCategoryEmojisInterfaceLen = len(inCategoryEmojisInterface)
 
 	// Allocation of all necessary memory for the 'inCategoryEmojisMap' map[string]Emoji...
 	inCategoryEmojisMap = make(map[string]Emoji)
-
-	//fmt.Println(inCategoryEmojisMap)
 
 	// Initialization of the main loop of this function...
 	for i := 0; i < inCategoryEmojisInterfaceLen; i++ {
