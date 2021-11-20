@@ -405,6 +405,8 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
+	fmt.Println(inCategoryEmojisInterface)
+
 	// Initialization of the 'inCategoryEmojisInterfaceLen' variable with the 'inCategoryEmojisInterface' interface length...
 	inCategoryEmojisInterfaceLen = len(inCategoryEmojisInterface)
 
