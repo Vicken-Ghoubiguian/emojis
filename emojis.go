@@ -260,13 +260,13 @@ func GetAllEmojis(accessKey string) ListOfEmojis {
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
 
 	// Execution of the Get HTTPS request to get all existing emojis from the Open Emoji API...
-	getEmojiFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
+	getEmojiFromTheOpenEmojiAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	// Read the HTTP response's body in the 'getEmojiFromTheOpenEmojiAPIJsonString' string variable...
-	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIAPIResp.Body)
+	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -327,13 +327,13 @@ func GetASingleEmoji(slug string, accessKey string) Emoji {
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis/" + slug + "?access_key=" + accessKey
 
 	// Execution of the Get HTTPS request to get the wished emoji from the Open Emoji API...
-	getEmojiFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
+	getEmojiFromTheOpenEmojiAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	// Take the body of the previous Get HTTPS request's response in the 'getEmojiFromTheOpenEmojiAPIAPIResp' variable...
-	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIAPIResp.Body)
+	// Take the body of the previous Get HTTPS request's response in the 'getEmojiFromTheOpenEmojiAPIResp' variable...
+	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -376,13 +376,13 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
 
 	//
-	getSearchedForEmojisFromTheOpenEmojiAPIAPIResp, err := http.Get(getSearchedForEmojisFromTheOpenEmojiAPIRequest)
+	getSearchedForEmojisFromTheOpenEmojiAPIResp, err := http.Get(getSearchedForEmojisFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	//
-	getSearchedForEmojisFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getSearchedForEmojisFromTheOpenEmojiAPIAPIResp.Body)
+	getSearchedForEmojisFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getSearchedForEmojisFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
@@ -441,13 +441,13 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	getEmojisFromCategoryFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories/" + category + "?access_key=" + accessKey
 
 	// Execution of the Get HTTPS request to get all existing emojis in the wished category from the Open Emoji API...
-	getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
+	getEmojisFromCategoryFromTheOpenEmojiAPIResp, err := http.Get(getEmojisFromCategoryFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	// Read the HTTP response's body in the 'getEmojisFromCategoryFromTheOpenEmojiAPIJsonString' string variable...
-	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIAPIResp.Body)
+	getEmojisFromCategoryFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisFromCategoryFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
