@@ -413,6 +413,8 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Allocation of all necessary memory for the 'inCategoryEmojisMap' map[string]Emoji...
 	inCategoryEmojisMap = make(map[string]Emoji)
 
+	fmt.Println(inCategoryEmojisMap)
+
 	// Initialization of the main loop of this function...
 	for i := 0; i < inCategoryEmojisInterfaceLen; i++ {
 
