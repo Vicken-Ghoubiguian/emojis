@@ -251,6 +251,41 @@ func main() {
 ### Example 6
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+	//
+    allCatFacesEmojisListOfEmojis := emojis.GetSearchedForEmojis("computer", "<Your_access_key>")
+
+	// Display a separator...
+	fmt.Println("\n==================================\n")
+
+	//
+	for _, emoji := range allCatFacesEmojisListOfEmojis.GetListOfEmojis() {
+
+		// Display datas of the current emojis...
+		fmt.Println("Character: " + emoji.GetCharacter())
+		fmt.Println("Slug: " + emoji.GetSlug())
+		fmt.Println("Unicode name: " + emoji.GetUnicodeName())
+		fmt.Println("Code point: " + emoji.GetCodePoint())
+		fmt.Println("Group: " + emoji.GetGroup())
+		fmt.Println("Subgroup: " + emoji.GetSubGroup())
+
+		// Break one line...
+		fmt.Println("\n")
+	}
+
+	// Display a separator...
+	fmt.Println("\n==================================\n")
+}
 ```
 
 <a name="example_7"></a>
