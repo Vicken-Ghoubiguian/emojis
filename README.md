@@ -262,13 +262,13 @@ import (
 // Definition of the main function...
 func main() {
 
-	//
+	// 
     allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "<Your_access_key>")
 
 	// Display a separator...
 	fmt.Println("\n==================================\n")
 
-	//
+	// Defining the loop to display datas of all existing emojis attached to the string 'cat'...
 	for _, emoji := range allSearchForCatListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
