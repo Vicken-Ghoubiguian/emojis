@@ -359,19 +359,19 @@ func GetASingleEmoji(slug string, accessKey string) Emoji {
 //
 func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 
-	//
+	// Declaration of the 'searchedForEmojisInterface' interface...
 	var searchedForEmojisInterface []interface{}
 
-	//
+	// Declaration of the 'searchedForEmojisMap' map[string]Emoji...
 	var searchedForEmojisMap map[string]Emoji
 
-	//
+	// Declaration of the 'searchedForEmojis' list of emojis...
 	var searchedForEmojis ListOfEmojis
 
-	//
+	// Declaration of the 'searchedForEmojisInterfaceLen' variable which contains the length of the 'searchedForEmojisInterface' interface...
 	var searchedForEmojisInterfaceLen int
 
-	//
+	// Declaration of the 'currentEmoji' emoji...
 	var currentEmoji Emoji
 
 	//
@@ -417,7 +417,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	//
 	searchedForEmojis.InitializeListOfEmojis(searchedForEmojisMap)
 
-	//
+	// Returning the completed 'searchedForEmojis' ListOfEmojis which now contains all interesting emojis...
 	return searchedForEmojis
 }
 
