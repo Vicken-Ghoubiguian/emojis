@@ -374,7 +374,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	// Declaration of the 'currentEmoji' emoji...
 	var currentEmoji Emoji
 
-	//
+	// Definition of the HTTPS request's URL to get all interesting emojis from the Open Emoji API...
 	getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
 
 	//
