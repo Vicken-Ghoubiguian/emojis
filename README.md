@@ -263,13 +263,13 @@ import (
 func main() {
 
 	//
-    allCatFacesEmojisListOfEmojis := emojis.GetSearchedForEmojis("computer", "<Your_access_key>")
+    allSearchForComputerListOfEmojis := emojis.GetSearchedForEmojis("computer", "<Your_access_key>")
 
 	// Display a separator...
 	fmt.Println("\n==================================\n")
 
 	//
-	for _, emoji := range allCatFacesEmojisListOfEmojis.GetListOfEmojis() {
+	for _, emoji := range allSearchForComputerListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
 		fmt.Println("Character: " + emoji.GetCharacter())
