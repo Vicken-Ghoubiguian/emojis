@@ -311,6 +311,9 @@ func GetAllCategories() map[string]Category {
 	//
 	var currentCategory map[string]Category
 	
+	// Declaration of the 'currentCategory' Category...
+	//var currentCategory Category
+	
 	//
 	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
