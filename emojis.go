@@ -307,9 +307,14 @@ func GetAllEmojis(accessKey string) ListOfEmojis {
 
 //
 func GetAllCategories() map[string]Category {
-
+	
+	//
 	var currentCategory map[string]Category
+	
+	//
+	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
+	//
 	return currentCategory
 }
 
