@@ -209,6 +209,19 @@ func (catg *Category) GetSubCategoriesAccount() int {
  * 'LISTOFCATEGORIES' STRUCTURE TO DEFINE A CATEGORY'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS CATEGORIES WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
  */
 
+//
+type ListOfCategories struct {
+	mapOfCategories   map[string]Category
+	categoriesAccount int
+}
+
+//
+func (loc *ListOfCategories) InitializeListOfCategories(listOfCategories map[string]Category) {
+
+	loc.mapOfCategories = listOfCategories
+	loc.categoriesAccount = len(listOfCategories)
+}
+
 /*
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
