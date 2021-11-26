@@ -307,18 +307,18 @@ func GetAllEmojis(accessKey string) ListOfEmojis {
 
 //
 func GetAllCategories() map[string]Category {
-	
+
 	//
-	var currentCategory map[string]Category
-	
+	var allCategoriesMap map[string]Category
+
 	// Declaration of the 'currentCategory' Category...
 	//var currentCategory Category
-	
+
 	//
 	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
 	//
-	return currentCategory
+	return allCategoriesMap
 }
 
 // Function to return the emoji specified by its slug by taken the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
