@@ -416,19 +416,19 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	// Definition of the HTTPS request's URL to get all interesting emojis from the Open Emoji API...
 	getSearchedForEmojisFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?search=" + searchedFor + "&access_key=" + accessKey
 
-	//
+	// Execution of the Get HTTPS request to get all interesting emojis from the Open Emoji API...
 	getSearchedForEmojisFromTheOpenEmojiAPIResp, err := http.Get(getSearchedForEmojisFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Take the body of the previous Get HTTPS request's response in the 'getSearchedForEmojisFromTheOpenEmojiAPIResp' variable...
 	getSearchedForEmojisFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getSearchedForEmojisFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Unmarshall all of received datas in the 'searchedForEmojisInterface' interface...
 	err = json.Unmarshal(getSearchedForEmojisFromTheOpenEmojiAPIJsonString, &searchedForEmojisInterface)
 
 	// Manage the possible occured error...
@@ -453,7 +453,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 		searchedForEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
-	//
+	// Initialization of the 'searchedForEmojis' current ListOfEmojis...
 	searchedForEmojis.InitializeListOfEmojis(searchedForEmojisMap)
 
 	// Returning the completed 'searchedForEmojis' ListOfEmojis which now contains all interesting emojis...
