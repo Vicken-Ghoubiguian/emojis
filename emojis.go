@@ -443,10 +443,10 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 	// Initialization of the main loop of this function...
 	for i := 0; i < searchedForEmojisInterfaceLen; i++ {
 
-		//
+		// Conversion of the 'searchedForEmojisInterface' interface to a map[string]interface{}...
 		currentEmojiAsMap := searchedForEmojisInterface[i].(map[string]interface{})
 
-		//
+		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
 		//
