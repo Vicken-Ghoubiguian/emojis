@@ -205,6 +205,8 @@ func (catg *Category) GetSubCategoriesAccount() int {
 	return catg.subCategoriesAccount
 }
 
+// =>
+
 /*
  * 'LISTOFCATEGORIES' STRUCTURE TO DEFINE A CATEGORY'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS CATEGORIES WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
  */
