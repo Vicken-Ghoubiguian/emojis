@@ -222,6 +222,18 @@ func (loc *ListOfCategories) InitializeListOfCategories(listOfCategories map[str
 	loc.categoriesAccount = len(listOfCategories)
 }
 
+//
+func (loc *ListOfCategories) GetMapOfCategories() map[string]Category {
+
+	return loc.mapOfCategories
+}
+
+//
+func (loc *ListOfCategories) GetCategoriesAccount() int {
+
+	return loc.categoriesAccount
+}
+
 /*
  * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
  */
