@@ -224,13 +224,13 @@ func (loc *ListOfCategories) InitializeListOfCategories(listOfCategories map[str
 	loc.categoriesAccount = len(listOfCategories)
 }
 
-//
+// Defining the 'mapOfCategories' field getter...
 func (loc *ListOfCategories) GetMapOfCategories() map[string]Category {
 
 	return loc.mapOfCategories
 }
 
-//
+// Defining the 'categoriesAccount' field getter...
 func (loc *ListOfCategories) GetCategoriesAccount() int {
 
 	return loc.categoriesAccount
