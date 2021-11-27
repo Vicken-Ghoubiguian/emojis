@@ -168,6 +168,24 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 
 // => YOU MUST DEFINE AND DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
 
+//
+func (loe *ListOfEmojis) GetASingleEmoji(slug string, accessKey string) Emoji {
+
+	// Declaration of the 'returnedEmoji' emoji...
+	var returnedEmoji Emoji
+
+	// Declaration and initialization of the 'loeListLen' variable with the 'loe' map[string]Emoji length...
+	loeListLen := len(loe.GetListOfEmojis())
+
+	// Initialization of the main loop of this function...
+	for i := 0; i < loeListLen; i++ {
+
+	}
+
+	//
+	return returnedEmoji
+}
+
 /*
  * 'CATEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
  */
