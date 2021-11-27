@@ -255,7 +255,7 @@ func errorHandlerFunction(err error) {
 }
 
 /*
- *
+ * PUBLIC FUNCTIONS OF THE 'EMOJIS' PACKAGE TO USE IN EVERY GO PROJECTS TO GET, TREAT AND USE CATEGORIES OF EMOJIS...
  */
 
 //
@@ -275,7 +275,7 @@ func GetAllCategories() ListOfCategories {
 }
 
 /*
- * PUBLIC FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE IN EVERY GO PROJECTS...
+ * PUBLIC FUNCTIONS OF THE 'EMOJIS' PACKAGE TO USE IN EVERY GO PROJECTS TO GET, TREAT AND USE EMOJIS FROM THE INTERNET...
  */
 
 // Function to return the emoji calculated from the 'codePointOfEmoji' codePoint...
