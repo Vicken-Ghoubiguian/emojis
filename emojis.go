@@ -255,6 +255,26 @@ func errorHandlerFunction(err error) {
 }
 
 /*
+ *
+ */
+
+//
+func GetAllCategories() ListOfCategories {
+
+	//
+	var allCategories ListOfCategories
+
+	// Declaration of the 'currentCategory' Category...
+	//var currentCategory Category
+
+	//
+	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
+
+	//
+	return allCategories
+}
+
+/*
  * PUBLIC FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE IN EVERY GO PROJECTS...
  */
 
@@ -336,22 +356,6 @@ func GetAllEmojis(accessKey string) ListOfEmojis {
 	return allEmojis
 }
 
-//
-func GetAllCategories() ListOfCategories {
-
-	//
-	var allCategories ListOfCategories
-
-	// Declaration of the 'currentCategory' Category...
-	//var currentCategory Category
-
-	//
-	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
-
-	//
-	return allCategories
-}
-
 // Function to return the emoji specified by its slug by taken the 'unicodeName' of the wished emoji and your personal 'accessKey' of the Open Emoji API as arguments...
 func GetASingleEmoji(slug string, accessKey string) Emoji {
 
@@ -395,7 +399,7 @@ func GetASingleEmoji(slug string, accessKey string) Emoji {
 	return returnedEmoji
 }
 
-//
+// Function to return all emojis from a wished 'searchedFor' subGroup of emojis as a ListOfEmojis...
 func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 
 	// Declaration of the 'searchedForEmojisInterface' interface...
