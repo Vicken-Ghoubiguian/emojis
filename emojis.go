@@ -197,7 +197,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 	// Initialization of the main loop of this function...
 	for _, currentEmoji := range loe.GetListOfEmojis() {
 
-		//
+		// In the case where the 'currentEmoji' slug contains the 'searchedFor' string...
 		if strings.Contains(currentEmoji.GetSlug(), searchedFor) {
 
 			// Put the current emoji to the 'mapOfSearchedForEmojis' map[string]Emoji with the current emoji's slug as the key..
