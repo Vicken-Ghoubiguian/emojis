@@ -168,20 +168,20 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 
 // => YOU MUST DEFINE AND DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
 
-//
+// Defining the 'GetASingleEmoji' to return the emoji specified by its slug of the wished emoji of the current map[string]Emoji of 'loe' ListOfEmojis...
 func (loe *ListOfEmojis) GetASingleEmoji(slug string, accessKey string) Emoji {
 
 	// Declaration of the 'returnedEmoji' emoji...
 	var returnedEmoji Emoji
 
-	//
+	// In the case where the 'slug' key exists and have an Emoji...
 	if foundedEmoji, currentEmoji := loe.GetListOfEmojis()[slug]; currentEmoji {
 
-		//
+		// Initialization of the 'returnedEmoji' Emoji with the 'foundedEmoji' Emoji...
 		returnedEmoji = foundedEmoji
 	}
 
-	//
+	// Returning the 'returnedEmoji' emoji...
 	return returnedEmoji
 }
 
