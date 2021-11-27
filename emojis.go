@@ -185,30 +185,30 @@ func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 	return returnedEmoji
 }
 
-//
+// Defining the 'GetSearchedForEmojis' to return a ListOfEmojis which contains all Emojis belonging to a subGroup specified by the 'searchedFor' variable in argument...
 func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 
 	// Declaration of the 'searchedForEmojis' list of emojis...
 	var searchedForEmojis ListOfEmojis
 
-	//
+	// Definition of the 'mapOfSearchedForEmojis' map[string]Emoji which will contain all Emojis belonging to the whished subGroup...
 	var mapOfSearchedForEmojis map[string]Emoji
 
 	// Initialization of the main loop of this function...
 	for _, currentEmoji := range loe.GetListOfEmojis() {
 
-		//
+		// If the subGroup of the 'currentEmoji' current emoji is equal to the 'searchedFor' value, so...
 		if searchedFor == currentEmoji.GetSubGroup() {
 
-			//
+			// Put the current emoji to the 'mapOfSearchedForEmojis' map[string]Emoji with the current emoji's slug as the key..
 			mapOfSearchedForEmojis[currentEmoji.GetSlug()] = currentEmoji
 		}
 	}
 
-	//
+	// Initialization of the 'searchedForEmojis' ListOfEmojis to make it contain all existing emojis belonging to the whished subGroup...
 	searchedForEmojis.InitializeListOfEmojis(mapOfSearchedForEmojis)
 
-	//
+	// Returning the 'searchedForEmojis' ListOfEmojis...
 	return searchedForEmojis
 }
 
