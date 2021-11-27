@@ -572,3 +572,13 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 	// Returning the completed 'inCategoryEmojis' ListOfEmojis which now contains all existing emojis in the wished category...
 	return inCategoryEmojis
 }
+
+// Defining the 'GetEmojisFromSubGroup' function to get and return all emojis from a wished 'subGroup' subgroup in a 'ListOfEmojis' variable...
+func GetEmojisFromSubGroup(subGroup string, accessKey string) ListOfEmojis {
+
+	// Declaration of the 'inCategoryEmojis' list of emojis...
+	var fromSubGroupEmojis ListOfEmojis
+
+	//
+	return fromSubGroupEmojis
+}
