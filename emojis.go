@@ -192,7 +192,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 	var searchedForEmojis ListOfEmojis
 
 	// Definition of the 'mapOfSearchedForEmojis' map[string]Emoji which will contain all Emojis belonging to the whished subGroup...
-	var mapOfSearchedForEmojis map[string]Emoji
+	mapOfSearchedForEmojis := make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
 	for _, currentEmoji := range loe.GetListOfEmojis() {
