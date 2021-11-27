@@ -185,6 +185,33 @@ func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 	return returnedEmoji
 }
 
+//
+func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
+
+	// Declaration of the 'searchedForEmojis' list of emojis...
+	var searchedForEmojis ListOfEmojis
+
+	//
+	var mapOfSearchedForEmojis map[string]Emoji
+
+	// Initialization of the main loop of this function...
+	for _, currentEmoji := range loe.GetListOfEmojis() {
+
+		//
+		if searchedFor == currentEmoji.GetSubGroup() {
+
+			//
+			mapOfSearchedForEmojis[currentEmoji.GetSlug()] = currentEmoji
+		}
+	}
+
+	//
+	searchedForEmojis.InitializeListOfEmojis(mapOfSearchedForEmojis)
+
+	//
+	return searchedForEmojis
+}
+
 /*
  * 'CATEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
  */
