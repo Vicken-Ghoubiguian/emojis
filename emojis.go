@@ -174,12 +174,11 @@ func (loe *ListOfEmojis) GetASingleEmoji(slug string, accessKey string) Emoji {
 	// Declaration of the 'returnedEmoji' emoji...
 	var returnedEmoji Emoji
 
-	// Declaration and initialization of the 'loeListLen' variable with the 'loe' map[string]Emoji length...
-	loeListLen := len(loe.GetListOfEmojis())
+	//
+	if foundedEmoji, currentEmoji := loe.GetListOfEmojis()[slug]; currentEmoji {
 
-	// Initialization of the main loop of this function...
-	for i := 0; i < loeListLen; i++ {
-
+		//
+		returnedEmoji = foundedEmoji
 	}
 
 	//
