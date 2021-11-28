@@ -1,7 +1,5 @@
 package emojis
 
-// => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'CATEGORY' TYPE...
-
 // Defining the type 'Category' which define a category of emojis...
 type Category struct {
 	slug                 string
@@ -34,3 +32,5 @@ func (catg *Category) GetSubCategoriesAccount() int {
 
 	return catg.subCategoriesAccount
 }
+
+// => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'CATEGORY' TYPE...

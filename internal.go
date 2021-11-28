@@ -5,10 +5,6 @@ import (
 	"os"
 )
 
-/*
- * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
- */
-
 // Function which display errors when they occurs...
 func errorHandlerFunction(err error) {
 
