@@ -386,7 +386,7 @@ import (
 func main() {
 
     // Declaration and initialization of the 'allCatFacesEmojisListOfEmojis' variable which will contain all existing emojis of the 'cat-face' sub category...
-    allCatFacesEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromSubGroup("cat-face", "<Your_access_key>")
+    allCatFacesEmojisListOfEmojis := emojis.GetEmojisFromSubGroup("cat-face", "<Your_access_key>")
 
 	// Display a separator...
 	fmt.Println("\n==================================\n")
