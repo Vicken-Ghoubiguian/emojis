@@ -368,6 +368,17 @@ func main() {
 		fmt.Println("\n==================================\n")
 }
 ```
+<a name="example_9"></a>
+### Example 9
+
+```go
+```
+
+<a name="example_10"></a>
+### Example 10
+
+```go
+```
 
 <a name="where_to_use_it"></a>
 ## Where to use it ?
