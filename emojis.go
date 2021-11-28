@@ -576,8 +576,67 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 // Defining the 'GetEmojisFromSubGroup' function to get and return all emojis from a wished 'subGroup' subgroup in a 'ListOfEmojis' variable...
 func GetEmojisFromSubGroup(subGroup string, accessKey string) ListOfEmojis {
 
+	//
+	var emojisInterface []interface{}
+
+	//
+	var fromSubGroupEmojisMap map[string]Emoji
+
 	// Declaration of the 'inCategoryEmojis' list of emojis...
 	var fromSubGroupEmojis ListOfEmojis
+
+	//
+	var emojisInterfaceLen int
+
+	//
+	var currentEmoji Emoji
+
+	//
+	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
+
+	//
+	getEmojiFromTheOpenEmojiAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIResp.Body)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojisInterface)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	emojisInterfaceLen = len(emojisInterface)
+
+	//
+	fromSubGroupEmojisMap = make(map[string]Emoji)
+
+	//
+	for i := 0; i < emojisInterfaceLen; i++ {
+
+		//
+		currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
+
+		//
+		if fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]) == subGroup {
+
+			//
+			currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
+
+			//
+			fromSubGroupEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
+		}
+	}
+
+	//
+	fromSubGroupEmojis.InitializeListOfEmojis(fromSubGroupEmojisMap)
 
 	//
 	return fromSubGroupEmojis
