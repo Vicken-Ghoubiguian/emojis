@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -213,45 +212,6 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 }
 
 /*
- * 'CATEGORY' STRUCTURE TO DEFINE ALL EMOJI'S CATEGORIES WITH THEIR SLUG AND SUBCATHEGORIES FOR EACH ONE FROM THE OPEN EMOJI API...
- */
-
-// Defining the type 'Category' which define a category of emojis...
-type Category struct {
-	slug                 string
-	subCategoriesArray   []string
-	subCategoriesAccount int
-}
-
-// Defining the Category initializer...
-func (catg *Category) InitializeCategory(slug string, subCategoriesArray []string) {
-
-	catg.slug = slug
-	catg.subCategoriesArray = subCategoriesArray
-	catg.subCategoriesAccount = len(subCategoriesArray)
-}
-
-// Defining the 'slug' field getter...
-func (catg *Category) GetSlug() string {
-
-	return catg.slug
-}
-
-// Defining the 'subCategoriesArray' field getter...
-func (catg *Category) GetCategoriesArray() []string {
-
-	return catg.subCategoriesArray
-}
-
-// Defining the 'subCategoriesAccount' field getter...
-func (catg *Category) GetSubCategoriesAccount() int {
-
-	return catg.subCategoriesAccount
-}
-
-// => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'CATEGORY' TYPE...
-
-/*
  * 'LISTOFCATEGORIES' STRUCTURE TO DEFINE A CATEGORY'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS CATEGORIES WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
  */
 
@@ -278,24 +238,6 @@ func (loc *ListOfCategories) GetMapOfCategories() map[string]Category {
 func (loc *ListOfCategories) GetCategoriesAccount() int {
 
 	return loc.categoriesAccount
-}
-
-/*
- * INTERNAL FUNCTIONS OF THE 'EMOJI' PACKAGE TO USE TO MAKE RUN THIS GO PACKAGE...
- */
-
-// Function which display errors when they occurs...
-func errorHandlerFunction(err error) {
-
-	// If the error is null (in this case, there is no error)...
-	if err != nil {
-
-		// To display the error in red...
-		fmt.Println("\033[31m" + err.Error() + "\033[0m")
-
-		// Exit the program (with exit code 1 (with error))...
-		os.Exit(1)
-	}
 }
 
 /*
