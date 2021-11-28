@@ -5,10 +5,6 @@ import (
 	"strconv"
 )
 
-/*
- * 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
- */
-
 // Defining the type 'Emoji' which define an emoji...
 type Emoji struct {
 	slug        string

@@ -1,9 +1,5 @@
 package emojis
 
-/*
- * 'LISTOFCATEGORIES' STRUCTURE TO DEFINE A CATEGORY'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS CATEGORIES WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
- */
-
 // Defining the type 'ListOfCategories' which define a list of emojis categories...
 type ListOfCategories struct {
 	mapOfCategories   map[string]Category

@@ -4,10 +4,6 @@ import (
 	"strings"
 )
 
-/*
- * 'LISTOFEMOJIS' STRUCTURE TO DEFINE AN EMOJI'S MAP WITH ALL RELATED DATAS CONTAINING ALL EMOJIS WITH ALL OF THEIR DATAS FROM THE OPEN EMOJI API...
- */
-
 // Defining the type 'ListOfEmojis' which define a list of emojis...
 type ListOfEmojis struct {
 	mapOfEmojis   map[string]Emoji

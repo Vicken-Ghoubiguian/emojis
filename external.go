@@ -9,10 +9,6 @@ import (
 	"strings"
 )
 
-/*
- * PUBLIC FUNCTIONS OF THE 'EMOJIS' PACKAGE TO USE IN EVERY GO PROJECTS TO GET, TREAT AND USE CATEGORIES OF EMOJIS...
- */
-
 //
 func GetAllCategories() ListOfCategories {
 
@@ -28,10 +24,6 @@ func GetAllCategories() ListOfCategories {
 	//
 	return allCategories
 }
-
-/*
- * PUBLIC FUNCTIONS OF THE 'EMOJIS' PACKAGE TO USE IN EVERY GO PROJECTS TO GET, TREAT AND USE EMOJIS FROM THE INTERNET...
- */
 
 // Function to return the emoji calculated from the 'codePointOfEmoji' codePoint...
 func GetEmojiFromCodePoint(codePointOfEmoji string) string {
