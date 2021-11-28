@@ -618,19 +618,19 @@ func GetEmojisFromSubGroup(subGroup string, accessKey string) ListOfEmojis {
 	// Allocation of all necessary memory for the 'fromSubGroupEmojisMap' map[string]Emoji...
 	fromSubGroupEmojisMap = make(map[string]Emoji)
 
-	//
+	// Initialization of the main loop of this function...
 	for i := 0; i < emojisInterfaceLen; i++ {
 
-		//
+		// Conversion of the 'emojisInterface' interface to a map[string]interface{}...
 		currentEmojiAsMap := emojisInterface[i].(map[string]interface{})
 
-		//
+		// If the current emoji's sub group is equal to the wished 'subGroup' sub group so...
 		if fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]) == subGroup {
 
-			//
+			// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 			currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
-			//
+			// Adding the 'currentEmoji' emoji in the 'fromSubGroupEmojisMap' map[string]Emoji...
 			fromSubGroupEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 		}
 	}
