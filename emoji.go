@@ -1,5 +1,10 @@
 package emojis
 
+import (
+	"strings"
+	"strconv"
+)
+
 /*
  * 'EMOJI' STRUCTURE TO DEFINE AN EMOJI WITH ALL DATAS FROM THE OPEN EMOJI API WITH GETTERS (ALL ARE PUBLIC)...
  */
