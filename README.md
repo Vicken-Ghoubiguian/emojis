@@ -39,6 +39,8 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 <a name="how_to_use_this_package"></a>
 ## How to use this package ?
 
+You must execute this command to install the `emojis` golang package:
+
 ```bash
 go get -u github.com/Vicken-Ghoubiguian/emojis
 ```
