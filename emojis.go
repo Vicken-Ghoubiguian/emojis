@@ -576,46 +576,46 @@ func GetInCategoryEmojis(category string, accessKey string) ListOfEmojis {
 // Defining the 'GetEmojisFromSubGroup' function to get and return all emojis from a wished 'subGroup' subgroup in a 'ListOfEmojis' variable...
 func GetEmojisFromSubGroup(subGroup string, accessKey string) ListOfEmojis {
 
-	//
+	// Declaration of the 'emojiSInterface' interface...
 	var emojisInterface []interface{}
 
-	//
+	// Declaration of the 'fromSubGroupEmojisMap' map[string]Emoji...
 	var fromSubGroupEmojisMap map[string]Emoji
 
 	// Declaration of the 'inCategoryEmojis' list of emojis...
 	var fromSubGroupEmojis ListOfEmojis
 
-	//
+	// Declaration of the 'emojisInterfaceLen' variable which contains the length of the 'emojisInterface' interface...
 	var emojisInterfaceLen int
 
-	//
+	// Declaration of the 'currentEmoji' emoji...
 	var currentEmoji Emoji
 
-	//
+	// Definition of the HTTPS request's URL to get all emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIRequest := "https://emoji-api.com/emojis?access_key=" + accessKey
 
-	//
+	// Execution of the Get HTTPS request to get all existing emojis from the Open Emoji API...
 	getEmojiFromTheOpenEmojiAPIResp, err := http.Get(getEmojiFromTheOpenEmojiAPIRequest)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Read the HTTP response's body in the 'getEmojiFromTheOpenEmojiAPIJsonString' string variable...
 	getEmojiFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojiFromTheOpenEmojiAPIResp.Body)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Unmarshall all of received datas of all received emojis in the 'emojisInterface' interface...
 	err = json.Unmarshal(getEmojiFromTheOpenEmojiAPIJsonString, &emojisInterface)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Initialization of the 'emojisInterfaceLen' variable with the 'emojisInterface' interface length...
 	emojisInterfaceLen = len(emojisInterface)
 
-	//
+	// Allocation of all necessary memory for the 'fromSubGroupEmojisMap' map[string]Emoji...
 	fromSubGroupEmojisMap = make(map[string]Emoji)
 
 	//
@@ -635,9 +635,9 @@ func GetEmojisFromSubGroup(subGroup string, accessKey string) ListOfEmojis {
 		}
 	}
 
-	//
+	// Initialization of the 'fromSubGroupEmojis' ListOfEmojis to make it contain all emojis from the wished sub group...
 	fromSubGroupEmojis.InitializeListOfEmojis(fromSubGroupEmojisMap)
 
-	//
+	// Returning the completed 'fromSubGroupEmojis' ListOfEmojis which now contains all emojis from the wished sub group...
 	return fromSubGroupEmojis
 }
