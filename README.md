@@ -18,6 +18,8 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 6](#example_6)
 	* [Example 7](#example_7)
 	* [Example 8](#example_8)
+	* [Example 9](#example_9)
+	* [Example 10](#example_10)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
