@@ -13,6 +13,21 @@ import (
 func GetAllCategories() ListOfCategories {
 
 	//
+	//var categoriesInterface []interface{}
+
+	//
+	//var allCategoriesMap map[string]Category
+
+	//
+	//var allCategories ListOfCategories
+
+	//
+	//var categoriesInterfaceLen int
+
+	//
+	//var currentCategory Category
+
+	//
 	var allCategories ListOfCategories
 
 	// Declaration of the 'currentCategory' Category...
