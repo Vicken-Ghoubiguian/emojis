@@ -10,34 +10,28 @@ import (
 )
 
 //
-func GetAllCategories() ListOfCategories {
+func GetAllCategories(accessKey string) ListOfCategories {
 
 	//
-	//var categoriesInterface []interface{}
+	var categoriesInterface []interface{}
 
 	//
 	//var allCategoriesMap map[string]Category
 
 	//
-	//var allCategories ListOfCategories
+	var allCategories ListOfCategories
 
 	//
 	//var categoriesInterfaceLen int
-
-	//
-	//var currentCategory Category
-
-	//
-	var allCategories ListOfCategories
 
 	// Declaration of the 'currentCategory' Category...
 	//var currentCategory Category
 
 	//
-	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
+	getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
 	//
-	/*getEmojisCategoriesFromTheOpenEmojiAPIResp, err := http.Get(getEmojisCategoriesFromTheOpenEmojiAPIRequest)
+	getEmojisCategoriesFromTheOpenEmojiAPIResp, err := http.Get(getEmojisCategoriesFromTheOpenEmojiAPIRequest)
 
 	//
 	errorHandlerFunction(err)
@@ -54,11 +48,13 @@ func GetAllCategories() ListOfCategories {
 	//
 	errorHandlerFunction(err)
 
+	fmt.Println(categoriesInterface)
+
 	//
-	emojisInterfaceLen = len(categoriesInterface)
+	/*categoriesInterfaceLen = len(categoriesInterface)
 
 	// Allocation of all necessary memory for the 'allCategoriesMap' map[string]Category...
-	allCategoriesMap = make(map[string]Category) */
+	allCategoriesMap = make(map[string]Category)*/
 
 	//
 	return allCategories
