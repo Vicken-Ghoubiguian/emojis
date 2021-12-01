@@ -7,7 +7,7 @@ type EmojisError struct {
 	message string
 }
 
-//
+// Defining the EmojisError initializer...
 func (ee *EmojisError) InitializeEmojisError(code int, status string, message string) {
 
 	ee.code = code
