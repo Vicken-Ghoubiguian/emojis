@@ -10,19 +10,19 @@ import (
 )
 
 //
-func GetAllCategories(accessKey string) /*ListOfCategories*/ {
+func GetAllCategories(accessKey string) ListOfCategories {
 
 	//
 	var categoriesInterface []interface{}
 
 	//
-	//var allCategoriesMap map[string]Category
+	var allCategoriesMap map[string]Category
 
 	//
-	//var allCategories ListOfCategories
+	var allCategories ListOfCategories
 
 	//
-	//var categoriesInterfaceLen int
+	var categoriesInterfaceLen int
 
 	// Declaration of the 'currentCategory' Category...
 	//var currentCategory Category
@@ -51,13 +51,21 @@ func GetAllCategories(accessKey string) /*ListOfCategories*/ {
 	fmt.Println(categoriesInterface)
 
 	//
-	/*categoriesInterfaceLen = len(categoriesInterface)
+	categoriesInterfaceLen = len(categoriesInterface)
 
 	// Allocation of all necessary memory for the 'allCategoriesMap' map[string]Category...
-	allCategoriesMap = make(map[string]Category)*/
+	allCategoriesMap = make(map[string]Category)
 
 	//
-	//return allCategories
+	for i := 0; i < categoriesInterfaceLen; i++ {
+
+	}
+
+	//
+	allCategories.InitializeListOfCategories(allCategoriesMap)
+
+	//
+	return allCategories
 }
 
 // Function to return the emoji calculated from the 'codePointOfEmoji' codePoint...
