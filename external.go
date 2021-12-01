@@ -37,6 +37,30 @@ func GetAllCategories() ListOfCategories {
 	//getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
 	//
+	/*getEmojisCategoriesFromTheOpenEmojiAPIResp, err := http.Get(getEmojisCategoriesFromTheOpenEmojiAPIRequest)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	getEmojisCategoriesFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisCategoriesFromTheOpenEmojiAPIResp.Body)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	err = json.Unmarshal(getEmojisCategoriesFromTheOpenEmojiAPIJsonString, &categoriesInterface)
+
+	//
+	errorHandlerFunction(err)
+
+	//
+	emojisInterfaceLen = len(categoriesInterface)
+
+	// Allocation of all necessary memory for the 'allCategoriesMap' map[string]Category...
+	allCategoriesMap = make(map[string]Category) */
+
+	//
 	return allCategories
 }
 
