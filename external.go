@@ -10,7 +10,7 @@ import (
 )
 
 //
-func GetAllCategories(accessKey string) ListOfCategories {
+func GetAllCategories(accessKey string) /*ListOfCategories*/ {
 
 	//
 	var categoriesInterface []interface{}
@@ -19,7 +19,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	//var allCategoriesMap map[string]Category
 
 	//
-	var allCategories ListOfCategories
+	//var allCategories ListOfCategories
 
 	//
 	//var categoriesInterfaceLen int
@@ -57,7 +57,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	allCategoriesMap = make(map[string]Category)*/
 
 	//
-	return allCategories
+	//return allCategories
 }
 
 // Function to return the emoji calculated from the 'codePointOfEmoji' codePoint...
