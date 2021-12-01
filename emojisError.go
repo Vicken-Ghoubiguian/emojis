@@ -1,6 +1,6 @@
 package emojis
 
-// Defining the type 'EmojisError' which define an occured error in this package...
+// Defining the type 'EmojisError' which define an occured error in this package from the Open Emoji API...
 type EmojisError struct {
 	code    int
 	status  string
