@@ -50,8 +50,6 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	//
 	errorHandlerFunction(err)
 
-	fmt.Println(categoriesInterface)
-
 	//
 	categoriesInterfaceLen = len(categoriesInterface)
 
