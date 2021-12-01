@@ -27,6 +27,8 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	// Declaration of the 'currentCategory' Category...
 	var currentCategory Category
 
+	var array []string
+
 	//
 	getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
@@ -63,6 +65,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
 
 		//
+		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), array)
 
 		//
 		allCategoriesMap[fmt.Sprintf("%v", currentCategoryAsMap["slug"])] = currentCategory
