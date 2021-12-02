@@ -37,7 +37,7 @@ func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []stri
 
 		fmt.Println("\n")
 
-		fmt.Println(test.String())
+		fmt.Println(test.Interface())
 
 		//
 		returnedArray[i] = currentReflectValue.Index(i).String()
