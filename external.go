@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
+	"reflect"
 )
 
 //
@@ -61,6 +62,9 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		//
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
+
+		//
+		fmt.Println(reflect.ValueOf(currentCategoryAsMap["subCategories"]))
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
