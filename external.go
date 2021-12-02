@@ -67,7 +67,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		truc := reflectValueToStringArrayFunction(lines)
 
-		fmt.Println("\n")
+		//fmt.Println("\n")
 
 		//fmt.Println(lines)
 
@@ -81,7 +81,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		fmt.Println(truc)
 
-		fmt.Println("\n")
+		//fmt.Println("\n")
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
