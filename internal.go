@@ -3,6 +3,7 @@ package emojis
 import (
 	"fmt"
 	"os"
+	"reflect"
 )
 
 // Function which display errors when they occurs...
@@ -17,4 +18,21 @@ func errorHandlerFunction(err error) {
 		// Exit the program (with exit code 1 (with error))...
 		os.Exit(1)
 	}
+}
+
+//
+func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []string {
+
+	//
+	returnedArray := make([]string, currentReflectValue.Len())
+
+	//
+	for i := 0; i < currentReflectValue.Len(); i++ {
+
+		//
+		returnedArray[i] = currentReflectValue.Index(i).String()
+	}
+
+	//
+	return returnedArray
 }
