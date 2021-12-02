@@ -29,6 +29,14 @@ func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []stri
 	//
 	for i := 0; i < currentReflectValue.Len(); i++ {
 
+		fmt.Println("\n")
+
+		fmt.Println(currentReflectValue.Index(i))
+
+		//fmt.Println("\n")
+
+		//fmt.Println(currentReflectValue.Index(i).String())
+
 		//
 		returnedArray[i] = currentReflectValue.Index(i).String()
 	}
