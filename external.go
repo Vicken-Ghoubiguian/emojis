@@ -71,9 +71,11 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		fmt.Println(lines)
 
+		lines2 := lines.Index(0)
+
 		fmt.Println("\n")
 
-		fmt.Println(reflect.TypeOf(lines))
+		fmt.Println(lines2)
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
