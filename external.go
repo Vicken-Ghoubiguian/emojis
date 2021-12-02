@@ -73,13 +73,13 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		//lines2 := lines.Index(0)
 
-		fmt.Println("\n")
+		//fmt.Println("\n")
 
 		//fmt.Println(lines2)
 
-		fmt.Println("\n")
+		//fmt.Println("\n")
 
-		//fmt.Println(truc[0])
+		fmt.Println(truc)
 
 		fmt.Println("\n")
 
