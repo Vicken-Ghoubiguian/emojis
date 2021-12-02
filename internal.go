@@ -26,13 +26,13 @@ func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []stri
 	// Declaration and initialization of the 'returnedArray' array...
 	returnedArray := make([]string, currentReflectValue.Len())
 
-	//
+	// Initialization of the main loop of this function...
 	for i := 0; i < currentReflectValue.Len(); i++ {
 
-		//
+		// Put the element in the interface inside the 'returnedArray' []string array...
 		returnedArray[i] = fmt.Sprintf("%v", currentReflectValue.Index(i).Interface())
 	}
 
-	//
+	// Returning the completed 'returnedArray' []string array...
 	return returnedArray
 }
