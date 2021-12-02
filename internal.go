@@ -31,16 +31,10 @@ func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []stri
 
 		fmt.Println("\n")
 
-		fmt.Println(currentReflectValue.Index(i))
-
-		test := currentReflectValue.Index(i)
-
-		fmt.Println("\n")
-
-		fmt.Println(fmt.Sprintf("%v", test.Interface()))
+		fmt.Println(fmt.Sprintf("%v", currentReflectValue.Index(i).Interface()))
 
 		//
-		returnedArray[i] = fmt.Sprintf("%v", test.Interface())
+		returnedArray[i] = fmt.Sprintf("%v", currentReflectValue.Index(i).Interface())
 	}
 
 	//
