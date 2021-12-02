@@ -63,8 +63,17 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		//
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
 
-		//
 		fmt.Println(reflect.ValueOf(currentCategoryAsMap["subCategories"]))
+
+		lines := reflect.ValueOf(currentCategoryAsMap["subCategories"])
+
+		fmt.Println("\n")
+
+		fmt.Println(lines)
+
+		fmt.Println("\n")
+
+		fmt.Println(reflect.TypeOf(lines))
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
