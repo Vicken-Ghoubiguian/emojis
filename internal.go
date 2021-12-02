@@ -37,10 +37,10 @@ func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []stri
 
 		fmt.Println("\n")
 
-		fmt.Println(test.Interface())
+		fmt.Println(fmt.Sprintf("%v", test.Interface()))
 
 		//
-		returnedArray[i] = currentReflectValue.Index(i).String()
+		returnedArray[i] = fmt.Sprintf("%v", test.Interface())
 	}
 
 	//
