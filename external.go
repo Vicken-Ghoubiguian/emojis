@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"reflect"
 	"strconv"
 	"strings"
-	"reflect"
 )
 
 //
@@ -63,8 +63,6 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		//
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
 
-		fmt.Println(reflect.ValueOf(currentCategoryAsMap["subCategories"]))
-
 		lines := reflect.ValueOf(currentCategoryAsMap["subCategories"])
 
 		fmt.Println("\n")
@@ -76,6 +74,12 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		fmt.Println("\n")
 
 		fmt.Println(lines2)
+
+		fmt.Println("\n")
+
+		fmt.Println(reflectValueToStringArrayFunction(lines))
+
+		fmt.Println("\n")
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
