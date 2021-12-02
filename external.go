@@ -79,7 +79,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 
 		fmt.Println("\n")
 
-		fmt.Println(truc[0])
+		//fmt.Println(truc[0])
 
 		fmt.Println("\n")
 
