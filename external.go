@@ -63,25 +63,8 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		//
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
 
-		lines := reflect.ValueOf(currentCategoryAsMap["subCategories"])
-
-		truc := reflectValueToStringArrayFunction(lines)
-
-		//fmt.Println("\n")
-
-		//fmt.Println(lines)
-
-		//lines2 := lines.Index(0)
-
-		//fmt.Println("\n")
-
-		//fmt.Println(lines2)
-
-		//fmt.Println("\n")
-
-		fmt.Println(truc)
-
-		//fmt.Println("\n")
+		//
+		subCategoriesArray = reflectValueToStringArrayFunction(reflect.ValueOf(currentCategoryAsMap["subCategories"]))
 
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
