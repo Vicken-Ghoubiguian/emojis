@@ -20,7 +20,7 @@ func errorHandlerFunction(err error) {
 	}
 }
 
-//
+// Function which convert a 'reflect.Value' variable to a '[]string' variable and which return it...
 func reflectValueToStringArrayFunction(currentReflectValue reflect.Value) []string {
 
 	//
