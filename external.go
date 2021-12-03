@@ -58,7 +58,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	// Allocation of all necessary memory for the 'allCategoriesMap' map[string]Category...
 	allCategoriesMap = make(map[string]Category)
 
-	//
+	// Initialization of the main loop of this function...
 	for i := 0; i < categoriesInterfaceLen; i++ {
 
 		//
