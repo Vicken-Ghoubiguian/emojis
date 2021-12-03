@@ -429,6 +429,8 @@ import (
 // Definition of the main function...
 func main() {
 
+	// Declaration and initialization of the 'allEmojisCategories' variable which will contain all existing emojis categories...
+	allEmojisCategories := emojis.GetAllCategories("<Your_access_key>")
 }
 ```
 
