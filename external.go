@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-//
+// Function to return all emojis categories inside a ListOfCategories object...
 func GetAllCategories(accessKey string) ListOfCategories {
 
 	//
@@ -36,22 +36,22 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	//
 	getEmojisCategoriesFromTheOpenEmojiAPIResp, err := http.Get(getEmojisCategoriesFromTheOpenEmojiAPIRequest)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	//
 	getEmojisCategoriesFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisCategoriesFromTheOpenEmojiAPIResp.Body)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
 	//
 	err = json.Unmarshal(getEmojisCategoriesFromTheOpenEmojiAPIJsonString, &categoriesInterface)
 
-	//
+	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Initialization of the 'categoriesInterfaceLen' variable with the 'emojisInterface' interface length...
 	categoriesInterfaceLen = len(categoriesInterface)
 
 	// Allocation of all necessary memory for the 'allCategoriesMap' map[string]Category...
@@ -73,10 +73,10 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		allCategoriesMap[fmt.Sprintf("%v", currentCategoryAsMap["slug"])] = currentCategory
 	}
 
-	//
+	// Initialization of the 'allCategories' ListOfCategories to make it contain all existing emojis categories...
 	allCategories.InitializeListOfCategories(allCategoriesMap)
 
-	//
+	// Returning the completed 'allCategories' ListOfCategories which now contains all existing emojis categories...
 	return allCategories
 }
 
