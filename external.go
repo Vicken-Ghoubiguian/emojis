@@ -28,6 +28,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	// Declaration of the 'currentCategory' Category...
 	var currentCategory Category
 
+	//
 	var subCategoriesArray []string
 
 	//
