@@ -61,7 +61,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	// Initialization of the main loop of this function...
 	for i := 0; i < categoriesInterfaceLen; i++ {
 
-		//
+		// Conversion of the current element of the 'categoriesInterface' interface to a map[string]interface{}...
 		currentCategoryAsMap := categoriesInterface[i].(map[string]interface{})
 
 		//
@@ -70,7 +70,7 @@ func GetAllCategories(accessKey string) ListOfCategories {
 		//
 		currentCategory.InitializeCategory(fmt.Sprintf("%v", currentCategoryAsMap["slug"]), subCategoriesArray)
 
-		//
+		// Adding the 'currentCategory' category in the 'allCategoriesMap' map[string]Category...
 		allCategoriesMap[fmt.Sprintf("%v", currentCategoryAsMap["slug"])] = currentCategory
 	}
 
