@@ -435,6 +435,12 @@ func main() {
 	// Display a separator...
 	fmt.Println("\n==================================\n")
 
+	// Defining the loop to display datas of all existing emojis of the 'cat-face' sub category...
+	for _, category := range allEmojisCategories.GetMapOfCategories() {
+
+
+	}
+
 	// Display a separator...
 	fmt.Println("\n==================================\n")
 }
