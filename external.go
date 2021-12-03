@@ -31,22 +31,22 @@ func GetAllCategories(accessKey string) ListOfCategories {
 	// Declaration of the 'subCategoriesArray' []string (array of strings)...
 	var subCategoriesArray []string
 
-	//
+	// Definition of the HTTPS request's URL to get all emojis categories from the Open Emoji API...
 	getEmojisCategoriesFromTheOpenEmojiAPIRequest := "https://emoji-api.com/categories?access_key=" + accessKey
 
-	//
+	// Execution of the Get HTTPS request to get all emojis categories from the Open Emoji API...
 	getEmojisCategoriesFromTheOpenEmojiAPIResp, err := http.Get(getEmojisCategoriesFromTheOpenEmojiAPIRequest)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Read the HTTP response's body in the 'getEmojisCategoriesFromTheOpenEmojiAPIJsonString' string variable...
 	getEmojisCategoriesFromTheOpenEmojiAPIJsonString, err := ioutil.ReadAll(getEmojisCategoriesFromTheOpenEmojiAPIResp.Body)
 
 	// Manage the possible occured error...
 	errorHandlerFunction(err)
 
-	//
+	// Unmarshall all of received datas of all received emojis categories in the 'categoriesInterface' interface...
 	err = json.Unmarshal(getEmojisCategoriesFromTheOpenEmojiAPIJsonString, &categoriesInterface)
 
 	// Manage the possible occured error...
