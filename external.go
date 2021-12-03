@@ -13,22 +13,22 @@ import (
 // Function to return all emojis categories inside a ListOfCategories object...
 func GetAllCategories(accessKey string) ListOfCategories {
 
-	//
+	// Declaration of the 'categoriesInterface' interface...
 	var categoriesInterface []interface{}
 
-	//
+	// Declaration of the 'allCategoriesMap' map[string]Category...
 	var allCategoriesMap map[string]Category
 
-	//
+	// Declaration of the 'allCategories' list of categories...
 	var allCategories ListOfCategories
 
-	//
+	// Declaration of the 'categoriesInterfaceLen' variable which contains the length of the 'categoriesInterface' interface...
 	var categoriesInterfaceLen int
 
 	// Declaration of the 'currentCategory' Category...
 	var currentCategory Category
 
-	//
+	// Declaration of the 'subCategoriesArray' []string (array of strings)...
 	var subCategoriesArray []string
 
 	//
