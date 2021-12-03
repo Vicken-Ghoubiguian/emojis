@@ -418,6 +418,18 @@ func main() {
 ### Example 10
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+}
 ```
 
 <a name="example_11"></a>
