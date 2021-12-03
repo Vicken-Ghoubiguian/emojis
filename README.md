@@ -434,6 +434,9 @@ func main() {
 
 	// Display a separator...
 	fmt.Println("\n==================================\n")
+
+	// Display a separator...
+	fmt.Println("\n==================================\n")
 }
 ```
 
