@@ -256,7 +256,7 @@ func GetSearchedForEmojis(searchedFor string, accessKey string) ListOfEmojis {
 		// Initialization of the 'currentEmoji' emoji with the corresponding collected datas...
 		currentEmoji.InitializeEmoji(fmt.Sprintf("%v", currentEmojiAsMap["slug"]), fmt.Sprintf("%v", currentEmojiAsMap["character"]), fmt.Sprintf("%v", currentEmojiAsMap["unicodeName"]), fmt.Sprintf("%v", currentEmojiAsMap["codePoint"]), fmt.Sprintf("%v", currentEmojiAsMap["group"]), fmt.Sprintf("%v", currentEmojiAsMap["subGroup"]))
 
-		//
+		// Adding the 'currentEmoji' Emoji in the 'searchedForEmojisMap' map[string]Emoji...
 		searchedForEmojisMap[fmt.Sprintf("%v", currentEmojiAsMap["slug"])] = currentEmoji
 	}
 
