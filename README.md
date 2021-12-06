@@ -49,6 +49,8 @@ go get -u github.com/Vicken-Ghoubiguian/emojis
 <a name="little_examples"></a>
 ## Little examples
 
+Below are the examples that show how to use all the functions of this package:
+
 <a name="example_1"></a>
 ### Example 1
 
