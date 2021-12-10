@@ -39,7 +39,7 @@ So this golang package allows you to do the following things with emojis:
 * get the emoji from its code point (),
 * get all the existing emoji categories with the corresponding sub-categories,
 * do different kinds of sorting on emojis (),
-* 
+* do various statistical calculations on emojis ().
 
 <a name="project_s_structure"></a>
 ## Project's structure
