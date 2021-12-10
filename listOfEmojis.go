@@ -169,10 +169,12 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 		newMapOfEmojis[slugs[s]] = truc
 	}
 
-	fmt.Println(newMapOfEmojis)
+	//fmt.Println(newMapOfEmojis)
 
 	//
 	loe.mapOfEmojis = newMapOfEmojis
+
+	fmt.Println(loe.mapOfEmojis)
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
