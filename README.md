@@ -36,7 +36,7 @@ So this golang package allows you to do the following things with emojis:
 * collect all the existing emojis,
 * collect all emojis belonging to a specific category,
 * collect all emojis belonging to a specific sub-category,
-* get the emoji from its code point (for Windows only),
+* get the emoji from its code point (),
 * get all the existing emoji categories with the corresponding sub-categories,
 * do different kinds of sorting on emojis (),
 * 
