@@ -34,6 +34,8 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 So this golang package allows you to do the following things with emojis:
 
 * collect all the existing emojis,
+* collect all emojis belonging to a specific category,
+* get the emoji from its code point (for Windows only),
 
 <a name="project_s_structure"></a>
 ## Project's structure
