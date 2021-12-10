@@ -1,6 +1,7 @@
 package emojis
 
 import (
+	"fmt"
 	"sort"
 	"strings"
 )
@@ -146,6 +147,9 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 
 	//
 	sort.Strings(slugs)
+
+	//
+	fmt.Println(slugs)
 
 	//
 	newMapOfEmojis = make(map[string]Emoji)
