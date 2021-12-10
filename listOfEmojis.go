@@ -128,10 +128,10 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 	return searchedForEmojis
 }
 
-//
+// Defining a function named 'SortAlphabetically' to sort emojis in a list in alphabetical order ...
 func (loe *ListOfEmojis) SortAlphabetically() {
 
-	//
+	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in alphabetical order ...
 	var newMapOfEmojis map[string]Emoji
 
 	//
@@ -144,7 +144,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 		slugs = append(slugs, s)
 	}
 
-	//
+	// Sort the slice containing the slugs in alphabetical order...
 	sort.Strings(slugs)
 
 	//
@@ -157,7 +157,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 	}
 
-	//
+	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
 	loe.mapOfEmojis = newMapOfEmojis
 }
 
