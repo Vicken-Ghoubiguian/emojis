@@ -137,7 +137,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	// Allocation of all necessary memory for the 'slugs' []string...
 	slugs := make([]string, 0, len(loe.mapOfEmojis))
 
-	//
+	// Initialization of the first loop of this function...
 	for s := range loe.mapOfEmojis {
 
 		// Put the 's' string (current slug) in the 'slugs' []string...
@@ -150,10 +150,10 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
 	newMapOfEmojis = make(map[string]Emoji)
 
-	//
+	// Initialization of the second loop of this function...
 	for s := range slugs {
 
-		//
+		// Put the current emoji in the
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 	}
 
