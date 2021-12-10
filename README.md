@@ -31,6 +31,10 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 <a name="presentation"></a>
 ## Presentation
 
+So this golang package allows you to do the following things with emojis:
+
+* collect all the existing emojis,
+
 <a name="project_s_structure"></a>
 ## Project's structure
 
