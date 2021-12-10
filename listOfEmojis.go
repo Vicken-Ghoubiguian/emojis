@@ -134,7 +134,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in alphabetical order ...
 	var newMapOfEmojis map[string]Emoji
 
-	//
+	// Allocation of all necessary memory for the 'slugs' []string...
 	slugs := make([]string, 0, len(loe.mapOfEmojis))
 
 	//
@@ -147,7 +147,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	// Sort the slice containing the slugs in alphabetical order...
 	sort.Strings(slugs)
 
-	//
+	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
 	newMapOfEmojis = make(map[string]Emoji)
 
 	//
