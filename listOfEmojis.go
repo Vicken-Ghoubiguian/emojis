@@ -1,8 +1,8 @@
 package emojis
 
 import (
-	"strings"
 	"sort"
+	"strings"
 )
 
 // Defining the type 'ListOfEmojis' which define a list of emojis...
@@ -132,29 +132,33 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 func (loe *ListOfEmojis) SortAlphabetically() {
 
 	//
-	//var newMapOfEmojis map[string]Emoji
+	var newMapOfEmojis map[string]Emoji
 
 	//
 	slugs := make([]string, 0, len(loe.mapOfEmojis))
-	
-	//
-	emojis := make([]Emoji, 0, len(loe.mapOfEmojis))
 
 	//
-	for s, e := range loe.mapOfEmojis {
+	for s := range loe.mapOfEmojis {
 
 		//
 		slugs = append(slugs, s)
-
-		//
-		emojis = append(emojis, e)
 	}
 
 	//
 	sort.Strings(slugs)
 
 	//
-	
+	newMapOfEmojis = make(map[string]Emoji)
+
+	//
+	for s := range slugs {
+
+		//
+		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+	}
+
+	//
+	loe.mapOfEmojis = newMapOfEmojis
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
