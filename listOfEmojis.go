@@ -160,6 +160,11 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 		//
 		fmt.Println(slugs[s])
 
+		truc := loe.mapOfEmojis[slugs[s]]
+
+		//
+		fmt.Println(truc.GetCharacter())
+
 		//
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 	}
