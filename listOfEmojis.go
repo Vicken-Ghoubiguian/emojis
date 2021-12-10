@@ -140,7 +140,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	//
 	for s := range loe.mapOfEmojis {
 
-		//
+		// Put the 's' string (current slug) in the 'slugs' []string...
 		slugs = append(slugs, s)
 	}
 
