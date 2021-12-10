@@ -1,7 +1,6 @@
 package emojis
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -158,15 +157,15 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	for s := range slugs {
 
 		//
-		fmt.Println(slugs[s])
+		//fmt.Println(slugs[s])
 
 		truc := loe.mapOfEmojis[slugs[s]]
 
 		//
-		fmt.Println(truc.GetCharacter())
+		//fmt.Println(truc.GetCharacter())
 
 		//
-		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+		newMapOfEmojis[slugs[s]] = truc
 	}
 
 	//
