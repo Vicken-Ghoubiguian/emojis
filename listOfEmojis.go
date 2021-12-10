@@ -149,13 +149,16 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	sort.Strings(slugs)
 
 	//
-	fmt.Println(slugs)
+	//fmt.Println(slugs)
 
 	//
 	newMapOfEmojis = make(map[string]Emoji)
 
 	//
 	for s := range slugs {
+
+		//
+		fmt.Println(s)
 
 		//
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
