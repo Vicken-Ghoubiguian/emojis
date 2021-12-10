@@ -35,7 +35,9 @@ So this golang package allows you to do the following things with emojis:
 
 * collect all the existing emojis,
 * collect all emojis belonging to a specific category,
+* collect all emojis belonging to a specific sub-category,
 * get the emoji from its code point (for Windows only),
+* get all the existing emoji categories with the corresponding sub-categories,
 
 <a name="project_s_structure"></a>
 ## Project's structure
