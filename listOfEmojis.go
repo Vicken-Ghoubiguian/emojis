@@ -161,7 +161,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	loe.mapOfEmojis = newMapOfEmojis
 }
 
-//
+// Defining a function named 'SortReverseAlphabetically' to sort 'loe' emojis list in reverse alphabetical order...
 func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
 	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in reverse alphabetical order...
