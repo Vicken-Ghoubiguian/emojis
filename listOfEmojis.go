@@ -131,7 +131,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 // Defining a function named 'SortAlphabetically' to sort 'loe' emojis list in alphabetical order ...
 func (loe *ListOfEmojis) SortAlphabetically() {
 
-	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in alphabetical order ...
+	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in alphabetical order...
 	var newMapOfEmojis map[string]Emoji
 
 	// Allocation of all necessary memory for the 'slugs' []string...
@@ -164,7 +164,14 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 //
 func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
+	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in reverse alphabetical order...
+	var newMapOfEmojis map[string]Emoji
+
+	//
 	//sort.Sort(sort.Reverse(sort.StringSlice(slugs)))
+
+	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
+	loe.mapOfEmojis = newMapOfEmojis
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
