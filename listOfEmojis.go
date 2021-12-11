@@ -164,6 +164,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 //
 func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
+	//sort.Sort(sort.Reverse(sort.StringSlice(slugs)))
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
