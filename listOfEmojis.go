@@ -161,6 +161,11 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	loe.mapOfEmojis = newMapOfEmojis
 }
 
+//
+func (loe *ListOfEmojis) SortReverseAlphabetically() {
+
+}
+
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
 
 // => YOU MUST DEFINE AND DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
