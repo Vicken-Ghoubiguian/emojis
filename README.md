@@ -475,7 +475,7 @@ import (
 func main() {
 
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
-        allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
         // Sort alphabetically the 'allEmojisListOfEmojis' ListOfEmojis...
         allEmojisListOfEmojis.SortAlphabetically()
@@ -483,7 +483,7 @@ func main() {
 		// Display a separator...
 		fmt.Println("\n==================================\n")
 
-        //
+        // Display the 'mapOfEmojis' field (which is a map[string]Emoji) of the 'allEmojisListOfEmojis' ListOfEmojis...
         fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
 
 		// Display a separator...
