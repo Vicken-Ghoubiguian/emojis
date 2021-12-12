@@ -477,11 +477,17 @@ func main() {
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
         allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
 
-        //
+        // Sort alphabetically the 'allEmojisListOfEmojis' ListOfEmojis...
         allEmojisListOfEmojis.SortAlphabetically()
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
 
         //
         fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
 }
 ```
 
