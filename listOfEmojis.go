@@ -148,7 +148,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	// Initialization of the second loop of this function...
 	for s := range slugs {
 
-		//
+		// Display the concerned emoji...
 		fmt.Println(loe.mapOfEmojis[slugs[s]])
 	}
 }
@@ -172,7 +172,7 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 	// Initialization of the second loop of this function...
 	for s := range slugs {
 
-		//
+		// Display the concerned emoji...
 		fmt.Println(loe.mapOfEmojis[slugs[s]])
 	}
 }
