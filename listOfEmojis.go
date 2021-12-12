@@ -181,7 +181,7 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 	// Sort the slice containing the slugs in reverse alphabetical order...
 	sort.Sort(sort.Reverse(sort.StringSlice(slugs)))
 
-	fmt.Println(slugs)
+	//fmt.Println(slugs)
 
 	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
 	newMapOfEmojis = make(map[string]Emoji)
@@ -192,6 +192,8 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 		// Put the current emoji in the
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 	}
+
+	fmt.Println(newMapOfEmojis)
 
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
 	loe.mapOfEmojis = newMapOfEmojis
