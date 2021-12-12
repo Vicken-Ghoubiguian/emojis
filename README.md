@@ -495,6 +495,32 @@ func main() {
 ### Example 12
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+        // Sort reverse alphabetically the 'allEmojisListOfEmojis' ListOfEmojis...
+        allEmojisListOfEmojis.SortReverseAlphabetically()
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
+
+        // Display the 'mapOfEmojis' field (which is a map[string]Emoji) of the 'allEmojisListOfEmojis' ListOfEmojis...
+        fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
+
+		// Display a separator...
+		fmt.Println("\n==================================\n")
+}
 ```
 
 <a name="where_to_use_it"></a>
