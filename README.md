@@ -463,6 +463,26 @@ func main() {
 ### Example 11
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+
+        //
+        allEmojisListOfEmojis.SortAlphabetically()
+
+        //
+        fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
+}
 ```
 
 <a name="example_11"></a>
