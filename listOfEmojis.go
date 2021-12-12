@@ -189,11 +189,13 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 	// Initialization of the second loop of this function...
 	for s := range slugs {
 
+		fmt.Println(slugs[s] + "\n")
+
 		// Put the current emoji in the
 		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 	}
 
-	fmt.Println(newMapOfEmojis)
+	//fmt.Println(newMapOfEmojis)
 
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
 	loe.mapOfEmojis = newMapOfEmojis
