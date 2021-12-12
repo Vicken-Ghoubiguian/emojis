@@ -158,7 +158,7 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 		//newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 
 		//
-		fmt.Println(s)
+		fmt.Println(loe.mapOfEmojis[slugs[s]])
 	}
 
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
@@ -194,7 +194,7 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 		//newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
 
 		//
-		fmt.Println(s)
+		fmt.Println(loe.mapOfEmojis[slugs[s]])
 	}
 
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
