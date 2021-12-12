@@ -451,7 +451,10 @@ func main() {
 	// Defining the loop to display datas of all existing emojis of the 'cat-face' sub category...
 	for _, category := range allEmojisCategories.GetMapOfCategories() {
 
-		
+		//
+		fmt.Println("Slug: " + category.GetSlug())
+		fmt.Println("Sub categories array: " + category.GetSubCategoriesArray())
+		fmt.Println("Sub categories account: " + emoji.GetSubCategoriesAccount())
 
 		// Break one line...
 		fmt.Println("\n")
