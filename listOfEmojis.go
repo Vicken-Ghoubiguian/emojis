@@ -173,7 +173,10 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 	for s := range slugs {
 
 		//
-		fmt.Println(loe.mapOfEmojis[slugs[s]])
+		truc := slugs[s]
+
+		//
+		fmt.Println(loe.mapOfEmojis[truc])
 	}
 }
 
