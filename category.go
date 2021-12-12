@@ -22,7 +22,7 @@ func (catg *Category) GetSlug() string {
 }
 
 // Defining the 'subCategoriesArray' field getter...
-func (catg *Category) GetCategoriesArray() []string {
+func (catg *Category) GetSubCategoriesArray() []string {
 
 	return catg.subCategoriesArray
 }
