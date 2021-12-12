@@ -133,7 +133,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 func (loe *ListOfEmojis) SortAlphabetically() {
 
 	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in alphabetical order...
-	var newMapOfEmojis map[string]Emoji
+	//var newMapOfEmojis map[string]Emoji
 
 	// Allocation of all necessary memory for the 'slugs' []string...
 	slugs := make([]string, 0, len(loe.mapOfEmojis))
@@ -149,24 +149,27 @@ func (loe *ListOfEmojis) SortAlphabetically() {
 	sort.Strings(slugs)
 
 	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
-	newMapOfEmojis = make(map[string]Emoji)
+	//newMapOfEmojis = make(map[string]Emoji)
 
 	// Initialization of the second loop of this function...
 	for s := range slugs {
 
 		// Put the current emoji in the
-		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+		//newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+
+		//
+		fmt.Println(s)
 	}
 
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
-	loe.mapOfEmojis = newMapOfEmojis
+	//loe.mapOfEmojis = newMapOfEmojis
 }
 
 // Defining a function named 'SortReverseAlphabetically' to sort 'loe' emojis list in reverse alphabetical order...
 func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
 	// Definition of the 'newMapOfEmojis' map[string]Emoji to contain all the emojis of 'loe' ListOfEmojis sorted in reverse alphabetical order...
-	var newMapOfEmojis map[string]Emoji
+	//var newMapOfEmojis map[string]Emoji
 
 	// Allocation of all necessary memory for the 'slugs' []string...
 	slugs := make([]string, 0, len(loe.mapOfEmojis))
@@ -181,24 +184,21 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 	// Sort the slice containing the slugs in reverse alphabetical order...
 	sort.Sort(sort.Reverse(sort.StringSlice(slugs)))
 
-	//fmt.Println(slugs)
-
 	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
-	newMapOfEmojis = make(map[string]Emoji)
+	//newMapOfEmojis = make(map[string]Emoji)
 
 	// Initialization of the second loop of this function...
 	for s := range slugs {
 
-		fmt.Println(slugs[s] + "\n")
-
 		// Put the current emoji in the
-		newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+		//newMapOfEmojis[slugs[s]] = loe.mapOfEmojis[slugs[s]]
+
+		//
+		fmt.Println(s)
 	}
 
-	//fmt.Println(newMapOfEmojis)
-
 	// Assignment of the 'newMapOfEmojis' new map[string]Emoji to the 'mapOfEmojis' ListOfEmojis field...
-	loe.mapOfEmojis = newMapOfEmojis
+	//loe.mapOfEmojis = newMapOfEmojis
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
