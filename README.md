@@ -477,17 +477,14 @@ func main() {
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
         allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
-        // Sort alphabetically the 'allEmojisListOfEmojis' ListOfEmojis...
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+
+        //
         allEmojisListOfEmojis.SortAlphabetically()
 
-		// Display a separator...
-		fmt.Println("\n==================================\n")
-
-        // Display the 'mapOfEmojis' field (which is a map[string]Emoji) of the 'allEmojisListOfEmojis' ListOfEmojis...
-        fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
-
-		// Display a separator...
-		fmt.Println("\n==================================\n")
+        // Display a separator...
+        fmt.Println("\n==================================\n")
 }
 ```
 
@@ -509,17 +506,14 @@ func main() {
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
         allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
-        // Sort reverse alphabetically the 'allEmojisListOfEmojis' ListOfEmojis...
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+
+        //
         allEmojisListOfEmojis.SortReverseAlphabetically()
 
-		// Display a separator...
-		fmt.Println("\n==================================\n")
-
-        // Display the 'mapOfEmojis' field (which is a map[string]Emoji) of the 'allEmojisListOfEmojis' ListOfEmojis...
-        fmt.Println(allEmojisListOfEmojis.GetListOfEmojis())
-
-		// Display a separator...
-		fmt.Println("\n==================================\n")
+        // Display a separator...
+        fmt.Println("\n==================================\n")
 }
 ```
 
