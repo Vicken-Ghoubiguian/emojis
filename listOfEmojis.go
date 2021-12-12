@@ -3,6 +3,7 @@ package emojis
 import (
 	"sort"
 	"strings"
+	"fmt"
 )
 
 // Defining the type 'ListOfEmojis' which define a list of emojis...
@@ -179,6 +180,8 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
 	// Sort the slice containing the slugs in reverse alphabetical order...
 	sort.Sort(sort.Reverse(sort.StringSlice(slugs)))
+
+	fmt.Println(slugs)
 
 	// Allocation of all necessary memory for the 'newMapOfEmojis' map[string]Emoji...
 	newMapOfEmojis = make(map[string]Emoji)
