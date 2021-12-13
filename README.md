@@ -454,7 +454,7 @@ func main() {
 		// Display datas of the current emojis categories...
 		fmt.Println("Slug: " + category.GetSlug())
 		fmt.Println("Sub categories array: " + category.GetSubCategoriesArray())
-		fmt.Println("Sub categories account: " + emoji.GetSubCategoriesAccount())
+		fmt.Println("Sub categories account: " + category.GetSubCategoriesAccount())
 
 		// Break one line...
 		fmt.Println("\n")
