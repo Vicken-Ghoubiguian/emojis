@@ -436,6 +436,7 @@ package main
 import (
 
         "fmt"
+		"strings"
 		"strconv"
         "github.com/Vicken-Ghoubiguian/emojis"
 )
