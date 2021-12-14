@@ -85,6 +85,16 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 	return returnedListOfEmojis
 }
 
+//
+func (loe *ListOfEmojis) GetAllCategories() ListOfCategories {
+
+	//
+	var currentListOfCategories ListOfCategories
+
+	//
+	return currentListOfCategories
+}
+
 // Defining the 'GetASingleEmoji' to return the emoji specified by its slug of the wished emoji of the current map[string]Emoji of 'loe' ListOfEmojis...
 func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 
