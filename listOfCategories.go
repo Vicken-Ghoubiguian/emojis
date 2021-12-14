@@ -25,4 +25,13 @@ func (loc *ListOfCategories) GetCategoriesAccount() int {
 	return loc.categoriesAccount
 }
 
+//
+func (loc *ListOfCategories) GetPercentageInListOfEmojis() int {
+
+	//
+
+	//
+	return 0
+}
+
 // => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE LISTOF'CATEGORIES' TYPE...
