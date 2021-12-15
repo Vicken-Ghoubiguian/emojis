@@ -33,4 +33,36 @@ func (catg *Category) GetSubCategoriesAccount() int {
 	return catg.subCategoriesAccount
 }
 
+//
+func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) int {
+
+	//
+	var emojisTotal int
+
+	//
+	var categorySCount int
+
+	//
+	categorySCount = 0
+
+	//
+	emojisTotal = len(loe.GetListOfEmojis())
+
+	// Initialization of the main loop of this function...
+	for _, emoji := range loe.GetListOfEmojis() {
+
+		//
+		if catg.slug == emoji.GetGroup() {
+
+			//
+			categorySCount = categorySCount + 1
+		}
+
+		//alPresentCategoriesSlice = append(presentCategoriesSlice, emoji.GetGroup())
+	}
+
+	//
+	return (categorySCount * 100) / emojisTotal
+}
+
 // => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'CATEGORY' TYPE...
