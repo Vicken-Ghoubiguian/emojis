@@ -85,7 +85,7 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 	return returnedListOfEmojis
 }
 
-// Defining the 'GetAllCategories'
+// Defining the 'GetAllCategories' function to get all categories from the current 'loe' ListOfEmojis...
 func (loe *ListOfEmojis) GetAllCategories() ListOfCategories {
 
 	//
