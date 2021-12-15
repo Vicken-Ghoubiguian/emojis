@@ -562,6 +562,9 @@ func main() {
         catg_9 := allEmojisCategoriesMap["symbols"]
         catg_10 := allEmojisCategoriesMap["flags"]
 
+		// Display a separator...
+        fmt.Println("\n==================================\n")
+
         // Display all calculated percentage for each emojis category...
         fmt.Println(catg_1.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
         fmt.Println(catg_2.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
@@ -573,6 +576,9 @@ func main() {
         fmt.Println(catg_8.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
         fmt.Println(catg_9.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
         fmt.Println(catg_10.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+
+		// Display a separator...
+        fmt.Println("\n==================================\n")
 }
 ```
 
