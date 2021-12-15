@@ -48,7 +48,7 @@ func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) int {
 	//
 	emojisTotal = len(loe.GetListOfEmojis())
 
-	// Initialization of the main loop of this function...
+	//
 	for _, emoji := range loe.GetListOfEmojis() {
 
 		//
@@ -57,8 +57,6 @@ func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) int {
 			//
 			categorySCount = categorySCount + 1
 		}
-
-		//alPresentCategoriesSlice = append(presentCategoriesSlice, emoji.GetGroup())
 	}
 
 	//
