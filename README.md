@@ -542,10 +542,10 @@ import (
 func main() {
 
         // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
-        allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
         // Declaration and initialization of the 'allEmojisCategories' variable which will contain all existing emojis categories...
-        allEmojisCategories := emojis.GetAllCategories("829bac05e9629ad331988082ad505da32c50fea0")
+        allEmojisCategories := emojis.GetAllCategories("<Your_access_key>")
 
         // Declaration and initialization of the 'allEmojisCategories' variable which will contain all existing emojis categories...
         allEmojisCategoriesMap := allEmojisCategories.GetMapOfCategories()
