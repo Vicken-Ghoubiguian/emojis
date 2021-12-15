@@ -530,6 +530,53 @@ func main() {
 ### Example 13
 
 ```go
+package main
+
+import (
+        "fmt"
+
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+
+        // Declaration and initialization of the 'allEmojisCategories' variable which will contain all existing emojis categories...
+        allEmojisCategories := emojis.GetAllCategories("829bac05e9629ad331988082ad505da32c50fea0")
+
+        //
+        allEmojisCategoriesMap := allEmojisCategories.GetMapOfCategories()
+
+        //
+        catg_1 := allEmojisCategoriesMap["smileys-emotion"]
+        catg_2 := allEmojisCategoriesMap["people-body"]
+        catg_3 := allEmojisCategoriesMap["component"]
+        catg_4 := allEmojisCategoriesMap["animals-nature"]
+        catg_5 := allEmojisCategoriesMap["food-drink"]
+        catg_6 := allEmojisCategoriesMap["travel-places"]
+        catg_7 := allEmojisCategoriesMap["activities"]
+        catg_8 := allEmojisCategoriesMap["objects"]
+        catg_9 := allEmojisCategoriesMap["symbols"]
+        catg_10 := allEmojisCategoriesMap["flags"]
+
+        //
+        //t := catg.GetPercentageInListOfEmojis(allEmojisListOfEmojis)
+
+        //
+        fmt.Println(catg_1.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_2.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_3.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_4.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_5.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_6.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_7.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_8.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_9.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Println(catg_10.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+}
 ```
 
 <a name="where_to_use_it"></a>
