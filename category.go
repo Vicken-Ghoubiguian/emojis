@@ -46,7 +46,7 @@ func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) float64 {
 	categorySCount = 0
 
 	// Affectation of the total count of emojis in the 'loe' ListOfEmojis to the 'emojisTotal' variable...
-	emojisTotal = catg.subCategoriesAccount
+	emojisTotal = loe.GetEmojisAccount()
 
 	// Initialization of the main loop of this function...
 	for _, emoji := range loe.GetListOfEmojis() {
