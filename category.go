@@ -33,22 +33,22 @@ func (catg *Category) GetSubCategoriesAccount() int {
 	return catg.subCategoriesAccount
 }
 
-//
+// Defining the 'GetPercentageInListOfEmojis' function to return the presence percentage of 'catg' emoji category in the 'loe' ListOfEmojis...
 func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) float64 {
 
-	//
+	// Declaration of the 'emojisTotal' variable which will contain the total count of emojis in the 'loe' ListOfEmojis...
 	var emojisTotal int
 
-	//
+	// Declaration of the 'categorySCount' variable which will contain the count of emojis in the 'loe' ListOfEmojis of the specific category...
 	var categorySCount int
 
-	//
+	// Affectation of the 0 value to the 'categorySCount' variable...
 	categorySCount = 0
 
-	//
+	// Affectation of the total count of emojis in the 'loe' ListOfEmojis to the 'emojisTotal' variable...
 	emojisTotal = len(loe.GetListOfEmojis())
 
-	//
+	// Initialization of the main loop of this function...
 	for _, emoji := range loe.GetListOfEmojis() {
 
 		//
