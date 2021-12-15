@@ -34,7 +34,7 @@ func (catg *Category) GetSubCategoriesAccount() int {
 }
 
 //
-func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) int {
+func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) float64 {
 
 	//
 	var emojisTotal int
@@ -60,7 +60,7 @@ func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) int {
 	}
 
 	//
-	return (categorySCount * 100) / emojisTotal
+	return (float64(categorySCount) * 100) / float64(emojisTotal)
 }
 
 // => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE 'CATEGORY' TYPE...
