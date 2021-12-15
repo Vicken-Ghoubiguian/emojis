@@ -85,7 +85,7 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 	return returnedListOfEmojis
 }
 
-//
+// Defining the 'GetAllCategories'
 func (loe *ListOfEmojis) GetAllCategories() ListOfCategories {
 
 	//
@@ -95,7 +95,7 @@ func (loe *ListOfEmojis) GetAllCategories() ListOfCategories {
 	return currentListOfCategories
 }
 
-// Defining the 'GetASingleEmoji' to return the emoji specified by its slug of the wished emoji of the current map[string]Emoji of 'loe' ListOfEmojis...
+// Defining the 'GetASingleEmoji' function to return the emoji specified by its slug of the wished emoji of the current map[string]Emoji of 'loe' ListOfEmojis...
 func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 
 	// Declaration of the 'returnedEmoji' emoji...
@@ -112,7 +112,7 @@ func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 	return returnedEmoji
 }
 
-// Defining the 'GetSearchedForEmojis' to return a ListOfEmojis which contains all Emojis belonging to a subGroup specified by the 'searchedFor' variable in argument...
+// Defining the 'GetSearchedForEmojis' function to return a ListOfEmojis which contains all Emojis belonging to a subGroup specified by the 'searchedFor' variable in argument...
 func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 
 	// Declaration of the 'searchedForEmojis' list of emojis...
