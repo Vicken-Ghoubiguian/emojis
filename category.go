@@ -51,15 +51,15 @@ func (catg *Category) GetPercentageInListOfEmojis(loe ListOfEmojis) float64 {
 	// Initialization of the main loop of this function...
 	for _, emoji := range loe.GetListOfEmojis() {
 
-		//
+		// In the case where the 'catg''s slug is equal to the 'emoji''s group...
 		if catg.slug == emoji.GetGroup() {
 
-			//
+			// The 'categorySCount''s value is increased by 1...
 			categorySCount = categorySCount + 1
 		}
 	}
 
-	//
+	// Returning the calculated corresponding percentage...
 	return (float64(categorySCount) * 100) / float64(emojisTotal)
 }
 
