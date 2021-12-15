@@ -566,16 +566,16 @@ func main() {
         fmt.Println("\n==================================\n")
 
         // Display all calculated percentage for each emojis category...
-        fmt.Printf("'smileys-emotion': %f %%\n", catg_1.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'people-body': %f %%\n", catg_2.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'component': %f %%\n", catg_3.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'animals-nature': %f %%\n", catg_4.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'food-drink': %f %%\n", catg_5.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'travel-places': %f %%\n", catg_6.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'activities': %f %%\n", catg_7.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'objects': %f %%\n", catg_8.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'symbols': %f %%\n", catg_9.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
-		fmt.Printf("'flags': %f %%\n", catg_10.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+        fmt.Printf("'smileys-emotion' emojis: %f %%\n", catg_1.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'people-body' emojis: %f %%\n", catg_2.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'component' emojis: %f %%\n", catg_3.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'animals-nature' emojis: %f %%\n", catg_4.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'food-drink' emojis: %f %%\n", catg_5.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'travel-places' emojis: %f %%\n", catg_6.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'activities' emojis: %f %%\n", catg_7.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'objects' emojis: %f %%\n", catg_8.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'symbols' emojis: %f %%\n", catg_9.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
+		fmt.Printf("'flags' emojis: %f %%\n", catg_10.GetPercentageInListOfEmojis(allEmojisListOfEmojis))
 
 		// Display a separator...
         fmt.Println("\n==================================\n")
