@@ -23,6 +23,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 11](#example_11)
 	* [Example 12](#example_12)
 	* [Example 13](#example_13)
+	* [Example 14]()
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
