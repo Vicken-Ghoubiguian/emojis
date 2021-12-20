@@ -53,14 +53,14 @@ So this golang package allows you to do the following things with emojis:
 <a name="how_to_use_this_package"></a>
 ## How to use this package ?
 
-This package can be used in every Go project you develop. However, you can use it only in Go projects.
+The `emojis` Go package can be used in every Go project you develop. However, you can use it only in Go projects.
 To do it, you must execute this command to install the `emojis` golang package:
 
 ```bash
 go get -u github.com/Vicken-Ghoubiguian/emojis
 ```
 
-
+This command will download, from its GitHub repository, and install, on your local machine, the `emojis` Go package.
 
 <a name="little_examples"></a>
 ## Little examples
