@@ -60,7 +60,7 @@ To do it, you must execute this command to install the `emojis` golang package:
 go get -u github.com/Vicken-Ghoubiguian/emojis
 ```
 
-This command will download, from its GitHub repository, and install, on your local machine, the `emojis` Go package.
+This command will download, from its GitHub repository, and install, on your local machine, the `emojis` Go package. You can use it in any directory and Go file in your file system tree..
 
 <a name="little_examples"></a>
 ## Little examples
