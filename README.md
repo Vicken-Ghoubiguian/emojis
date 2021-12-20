@@ -10,10 +10,10 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 * [How was this project developed ?](#how_was_this_project_developed)
 * [How to use this package ?](#how_to_use_this_package)
 * [Little examples](#little_examples)
-	* [Example 1](#example_1)
-	* [Example 2](#example_2)
-	* [Example 3](#example_3)
-	* [Example 4](#example_4)
+	* [Example 1 - Get and display the data of all emojis...](#example_1)
+	* [Example 2 - Get and display the data of one specific emoji...](#example_2)
+	* [Example 3 - Get and display the data of all emojis from a specific category...](#example_3)
+	* [Example 4 - Get and display the data of all emojis from a specific sub group...](#example_4)
 	* [Example 5](#example_5)
 	* [Example 6](#example_6)
 	* [Example 7](#example_7)
@@ -69,7 +69,7 @@ To know how to use this Go package, please take a look at the examples below...
 Below are the examples that show how to use all the functions of this package:
 
 <a name="example_1"></a>
-### Example 1
+### Example 1 - Get and display the data of all emojis...
 
 ```go
 package main
@@ -110,7 +110,7 @@ func main() {
 ```
 
 <a name="example_2"></a>
-### Example 2
+### Example 2 - Get and display the data of one specific emoji...
 
 ```go
 package main
@@ -144,7 +144,7 @@ func main() {
 ```
 
 <a name="example_3"></a>
-### Example 3
+### Example 3 - Get and display the data of all emojis from a specific category...
 
 ```go
 package main
@@ -188,7 +188,7 @@ func main() {
 ```
 
 <a name="example_4"></a>
-### Example 4
+### Example 4 - Get and display the data of all emojis from a specific sub group...
 
 ```go
 package main
