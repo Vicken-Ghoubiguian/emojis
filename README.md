@@ -16,7 +16,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 4 - Get and display the data of all emojis from a specific sub group](#example_4)
 	* [Example 5 - Get and display the data of all emojis from a specific category (2)](#example_5)
 	* [Example 6 - Get and display the data of all emojis attached to a particular string (1)](#example_6)
-	* [Example 7](#example_7)
+	* [Example 7 - ](#example_7)
 	* [Example 8 - Get and display the data of all emojis attached to a particular string (2)](#example_8)
 	* [Example 9](#example_9)
 	* [Example 10](#example_10)
