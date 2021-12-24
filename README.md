@@ -144,7 +144,7 @@ func main() {
 ```
 
 <a name="example_3"></a>
-### Example 3 - Get and display the data of all emojis from a specific category...
+### Example 3 - Get and display the data of all emojis from a specific category (1)...
 
 ```go
 package main
@@ -232,7 +232,7 @@ func main() {
 ```
 
 <a name="example_5"></a>
-### Example 5
+### Example 5 - Get and display the data of all emojis from a specific category (2)...
 
 ```go
 package main
