@@ -610,16 +610,16 @@ import (
 func main() {
 
 	// Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
-	allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
 	//
-	truc := allEmojisListOfEmojis.GetListOfEmojis()
+	allEmojisMapOfEmojis := allEmojisListOfEmojis.GetListOfEmojis()
 
 	//
-	truc2 := truc["grinning-cat"]
+	grinningCatEmoji := allEmojisMapOfEmojis["grinning-cat"]
 	
 	//
-	fmt.Println("Hello world " + truc2.GetCharacter() + "!")
+	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "!")
 }
 ```
 
