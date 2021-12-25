@@ -595,7 +595,7 @@ func main() {
 ```
 
 <a name="example_15"></a>
-### Example 15
+### Example 15 - Get all datas of all emojis and use them in a displayed text...
 
 ```go
 ```
