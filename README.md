@@ -622,7 +622,7 @@ func main() {
 
 	
 	// Display the text with emojis...
-	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "! Welcome to my awesome go package " + foldedHandsEmoji..GetCharacter() + smilingCatWithHeartEyesEmoji.GetCharacter() + "...")
+	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "! Welcome to my awesome go package " + foldedHandsEmoji.GetCharacter() + smilingCatWithHeartEyesEmoji.GetCharacter() + "...")
 }
 ```
 
