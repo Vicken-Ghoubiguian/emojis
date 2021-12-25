@@ -594,6 +594,12 @@ func main() {
 ```go
 ```
 
+<a name="example_15"></a>
+### Example 15
+
+```go
+```
+
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
