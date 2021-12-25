@@ -617,12 +617,12 @@ func main() {
 
 	// Get all necessary emojis...
 	grinningCatEmoji := allEmojisMapOfEmojis["grinning-cat"]
-
+	foldedHandsEmoji := allEmojisMapOfEmojis["folded-hands"]
 	smilingCatWithHeartEyes := allEmojisMapOfEmojis["smiling-cat-with-heart-eyes"]
 
 	
 	// Display the text with emojis...
-	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "! Welcome to my awesome go package " + smilingCatWithHeartEyes.GetCharacter() + "...")
+	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "! Welcome to my awesome go package " + foldedHandsEmoji..GetCharacter() + smilingCatWithHeartEyes.GetCharacter() + "...")
 }
 ```
 
