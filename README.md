@@ -598,6 +598,29 @@ func main() {
 ### Example 15 - Get all datas of all emojis and use them in a displayed text...
 
 ```go
+package main
+
+import (
+	
+	"fmt"
+	"github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+	// Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+	allEmojisListOfEmojis := emojis.GetAllEmojis("829bac05e9629ad331988082ad505da32c50fea0")
+
+	//
+	truc := allEmojisListOfEmojis.GetListOfEmojis()
+
+	//
+	truc2 := truc["grinning-cat"]
+	
+	//
+	fmt.Println("Hello world " + truc2.GetCharacter() + "!")
+}
 ```
 
 <a name="where_to_use_it"></a>
