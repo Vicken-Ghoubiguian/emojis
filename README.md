@@ -618,7 +618,7 @@ func main() {
 	//
 	grinningCatEmoji := allEmojisMapOfEmojis["grinning-cat"]
 	
-	//
+	// Display the text with emojis...
 	fmt.Println("Hello world " + grinningCatEmoji.GetCharacter() + "!")
 }
 ```
