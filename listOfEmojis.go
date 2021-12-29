@@ -157,13 +157,13 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
 
-//
+// Defining a function named 'Contain' which check if the 'emoji' Emoji is in the 'loe' emojis list...
 func (loe *ListOfEmojis) Contain(emoji Emoji) bool {
 
-	//
+	// Initialization of the main loop of this function...
 	for _, currentEmoji := range loe.GetListOfEmojis() {
 
-		//
+		// In the case where the 'emoji' is equal to the 'currentEmoji' emoji in the 'loe' emojis list...
 		if currentEmoji.GetSlug() == emoji.GetSlug() &&
 			currentEmoji.GetCharacter() == emoji.GetCharacter() &&
 			currentEmoji.GetUnicodeName() == emoji.GetUnicodeName() &&
@@ -171,12 +171,12 @@ func (loe *ListOfEmojis) Contain(emoji Emoji) bool {
 			currentEmoji.GetGroup() == emoji.GetGroup() &&
 			currentEmoji.GetSubGroup() == emoji.GetSubGroup() {
 
-			//
+			// Returning 'true' in conclusion...
 			return true
 		}
 	}
 
-	//
+	// Returning 'false' by default...
 	return false
 }
 
