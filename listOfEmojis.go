@@ -193,7 +193,9 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO ...
 
-// => OU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO  ADD AND DELETE EMOJIS IN A 'LISTOFEMOJIS'...
+// => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO ADD AND TO DELETE EMOJIS IN A 'LISTOFEMOJIS'...
+
+// => YOU MUST DEFINE AND DEVELOP SOME FUNCTION TO CHECK IF AN EMOJI IS CONTAINED IN A 'LISTOFEMOJIS'...
 
 //
 func (loe *ListOfEmojis) Delete(emoji Emoji) {
@@ -203,4 +205,9 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 //
 func (loe *ListOfEmojis) Add(emoji Emoji) {
 
+	//
+	loe.mapOfEmojis[emoji.GetSlug()] = emoji
+
+	//
+	loe.emojisAccount = len(loe.mapOfEmojis)
 }
