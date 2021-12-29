@@ -1,1 +1,3 @@
+package emojis
+
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO ...
