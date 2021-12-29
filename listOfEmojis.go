@@ -207,12 +207,12 @@ func (loe *ListOfEmojis) Add(emoji Emoji) {
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
 
-//
+// Defining a function named 'Delete' to delete an emoji in the 'loe' emojis list...
 func (loe *ListOfEmojis) Delete(emoji Emoji) {
 
-	//
+	// Deleting the 'emoji' Emoji in the 'loe' emojis list map[string]Emoji...
 	delete(loe.mapOfEmojis, emoji.GetSlug())
 
-	//
+	// Updating the 'loe' emojis list account...
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
