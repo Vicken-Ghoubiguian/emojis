@@ -157,8 +157,8 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
 
-// Defining a function named 'Contain' which check if the 'emoji' Emoji is in the 'loe' emojis list...
-func (loe *ListOfEmojis) Contain(emoji Emoji) bool {
+// Defining a function named 'Contains' which check if the 'emoji' Emoji is in the 'loe' emojis list...
+func (loe *ListOfEmojis) Contains(emoji Emoji) bool {
 
 	// Initialization of the main loop of this function...
 	for _, currentEmoji := range loe.GetListOfEmojis() {
