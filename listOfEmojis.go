@@ -208,8 +208,26 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 }
 
 //
-func (loe *ListOfEmojis) Contain(emoji Emoji) {
+func (loe *ListOfEmojis) Contain(emoji Emoji) bool {
 
+	//
+	for _, currentEmoji := range loe.GetListOfEmojis() {
+
+		//
+		if currentEmoji.GetSlug() == emoji.GetSlug() &&
+			currentEmoji.GetCharacter() == emoji.GetCharacter() &&
+			currentEmoji.GetUnicodeName() == emoji.GetUnicodeName() &&
+			currentEmoji.GetCodePoint() == emoji.GetCodePoint() &&
+			currentEmoji.GetGroup() == emoji.GetGroup() &&
+			currentEmoji.GetSubGroup() == emoji.GetSubGroup() {
+
+			//
+			return true
+		}
+	}
+
+	//
+	return false
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
