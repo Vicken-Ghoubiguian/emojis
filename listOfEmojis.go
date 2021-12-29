@@ -197,16 +197,6 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTION TO CHECK IF AN EMOJI IS CONTAINED IN A 'LISTOFEMOJIS'...
 
-//
-func (loe *ListOfEmojis) Delete(emoji Emoji) {
-
-	//
-	delete(loe.mapOfEmojis, emoji.GetSlug())
-
-	//
-	loe.emojisAccount = len(loe.mapOfEmojis)
-}
-
 // Defining a function named 'Add' to add an emoji in the 'loe' emojis list...
 func (loe *ListOfEmojis) Add(emoji Emoji) {
 
@@ -214,5 +204,15 @@ func (loe *ListOfEmojis) Add(emoji Emoji) {
 	loe.mapOfEmojis[emoji.GetSlug()] = emoji
 
 	// Updating the 'loe' emojis list account...
+	loe.emojisAccount = len(loe.mapOfEmojis)
+}
+
+//
+func (loe *ListOfEmojis) Delete(emoji Emoji) {
+
+	//
+	delete(loe.mapOfEmojis, emoji.GetSlug())
+
+	//
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
