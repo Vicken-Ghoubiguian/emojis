@@ -194,3 +194,13 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO ...
 
 // => OU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO  ADD AND DELETE EMOJIS IN A 'LISTOFEMOJIS'...
+
+//
+func (loe *ListOfEmojis) Delete(emoji Emoji) {
+
+}
+
+//
+func (loe *ListOfEmojis) Add(emoji Emoji) {
+
+}
