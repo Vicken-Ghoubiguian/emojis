@@ -200,6 +200,11 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 //
 func (loe *ListOfEmojis) Delete(emoji Emoji) {
 
+	//
+	delete(loe.mapOfEmojis, emoji.GetSlug())
+
+	//
+	loe.emojisAccount = len(loe.mapOfEmojis)
 }
 
 // Defining a function named 'Add' to add an emoji in the 'loe' emojis list...
