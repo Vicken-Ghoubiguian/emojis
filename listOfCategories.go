@@ -24,5 +24,3 @@ func (loc *ListOfCategories) GetCategoriesAccount() int {
 
 	return loc.categoriesAccount
 }
-
-// => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE LISTOF'CATEGORIES' TYPE...
