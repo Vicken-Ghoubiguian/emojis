@@ -5,6 +5,8 @@ import (
 	"sort"
 )
 
+// =============================================================== For the 'ListOfEmojis' type ===============================================================
+
 // Defining a function named 'SortAlphabetically' to sort 'loe' emojis list in alphabetical order...
 func (loe *ListOfEmojis) SortAlphabetically() {
 
@@ -54,5 +56,7 @@ func (loe *ListOfEmojis) SortReverseAlphabetically() {
 }
 
 // => YOU MUST DEFINE AND DEVELOP SOME SORT FUNCTIONS FOR THE 'LISTOFEMOJIS' TYPE...
+
+// =============================================================== For the 'ListOfCategories' type ===============================================================
 
 // => YOU MUST DEVELOP SOME STATISTICAL CALCULATION FUNCTIONS FOR THE LISTOF'CATEGORIES' TYPE...
