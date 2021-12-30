@@ -593,7 +593,33 @@ func main() {
 ### Example 14 - Check if an emoji is in a list of emojis...
 
 ```go
+package main
 
+import (
+
+        "fmt"
+        "strconv"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allSearchForCatListOfEmojis' variable which will contain all existing emojis attached to the string 'cat'...
+        allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "<Your_access_key>")
+
+        // Get the 'japanese-application-button' emoji which will be deleted from the 'allSearchForCatListOfEmojis' because it has nothing to do with cats...
+        japaneseApplicationButtonEmoji := allSearchForCatListOfEmojis.GetASingleEmoji("japanese-application-button")
+
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+
+        //
+        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(japaneseApplicationButtonEmoji)))
+
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+}
 ```
 
 <a name="example_15"></a>
