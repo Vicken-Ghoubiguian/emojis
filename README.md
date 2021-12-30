@@ -621,10 +621,10 @@ func main() {
         fmt.Println("\n==================================\n")
 
         //
-        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(japaneseApplicationButtonEmoji)) + "\n")
+        fmt.Println("Is the 'japanese-application-button' emoji contained in the cat's list of emojis ? " + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(japaneseApplicationButtonEmoji)) + "\n")
 
         //
-        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(ZzzEmoji)))
+        fmt.Println("Is the 'zzz' emoji contained in the cat's list of emojis ? " + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(ZzzEmoji)))
 
         // Display a separator...
         fmt.Println("\n==================================\n")
