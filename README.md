@@ -27,6 +27,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 15 - Get all datas of all emojis and use them in a displayed text](#example_15)
 	* [Example 16 - Delete an emoji from a list of emojis](#example_16)
 	* [Example 17 - Add an emoji to a list of emojis](#example_17)
+	* [Example 18](#example_18)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
@@ -718,6 +719,12 @@ func main() {
 
 <a name="example_17"></a>
 ### Example 17 - Add an emoji to a list of emojis...
+
+```go
+```
+
+<a name="example_18"></a>
+### Example 18
 
 ```go
 ```
