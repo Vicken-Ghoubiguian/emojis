@@ -611,11 +611,20 @@ func main() {
         // Get the 'japanese-application-button' emoji which will be deleted from the 'allSearchForCatListOfEmojis' because it has nothing to do with cats...
         japaneseApplicationButtonEmoji := allSearchForCatListOfEmojis.GetASingleEmoji("japanese-application-button")
 
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+        //
+        ZzzEmoji := allEmojisListOfEmojis.GetASingleEmoji("zzz")
+
         // Display a separator...
         fmt.Println("\n==================================\n")
 
         //
-        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(japaneseApplicationButtonEmoji)))
+        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(japaneseApplicationButtonEmoji)) + "\n")
+
+        //
+        fmt.Println("" + strconv.FormatBool(allSearchForCatListOfEmojis.Contains(ZzzEmoji)))
 
         // Display a separator...
         fmt.Println("\n==================================\n")
