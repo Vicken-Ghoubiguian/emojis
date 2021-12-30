@@ -715,6 +715,12 @@ func main() {
 }
 ```
 
+<a name="example_17"></a>
+### Example 17 - Add an emoji to a list of emojis...
+
+```go
+```
+
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
