@@ -69,7 +69,7 @@ To know how to use this Go package, please take a look at the examples below...
 <a name="little_examples"></a>
 ## Little examples
 
-Below are the examples that show how to use all the functions of this package:
+Below are the examples that show how to use, in details, all the functions of this package:
 
 <a name="example_1"></a>
 ### Example 1 - Get and display the data of all emojis...
