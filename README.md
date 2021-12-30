@@ -648,7 +648,7 @@ import (
 func main() {
 
         // Declaration and initialization of the 'allSearchForCatListOfEmojis' variable which will contain all existing emojis attached to the string 'cat'...
-        allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "829bac05e9629ad331988082ad505da32c50fea0")
+        allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "<Your_access_key>")
 
         // Get the 'japanese-application-button' emoji which will be deleted from the 'allSearchForCatListOfEmojis' because it has nothing to do with cats...
         japaneseApplicationButtonEmoji := allSearchForCatListOfEmojis.GetASingleEmoji("japanese-application-button")
