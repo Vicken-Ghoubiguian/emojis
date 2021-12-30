@@ -647,13 +647,13 @@ import (
 // Definition of the main function...
 func main() {
 
-        // Declaration and initialization of the 'allSearchForCatListOfEmojis' variable which will contain all existing emojis all existing emojis attached to the string 'cat'...
+        // Declaration and initialization of the 'allSearchForCatListOfEmojis' variable which will contain all existing emojis attached to the string 'cat'...
         allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "829bac05e9629ad331988082ad505da32c50fea0")
 
-        //
+        // 
         japaneseApplicationButtonEmoji := allSearchForCatListOfEmojis.GetASingleEmoji("japanese-application-button")
 
-        //
+        // Delete the 'japaneseApplicationButtonEmoji' emoji from the 'allSearchForCatListOfEmojis' list of emojis...
         allSearchForCatListOfEmojis.Delete(japaneseApplicationButtonEmoji)
 
         // Display a separator...
