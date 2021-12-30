@@ -541,8 +541,8 @@ func main() {
 package main
 
 import (
-        "fmt"
 
+        "fmt"
         "github.com/Vicken-Ghoubiguian/emojis"
 )
 
