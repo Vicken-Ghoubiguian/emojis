@@ -631,6 +631,53 @@ func main() {
 }
 ```
 
+<a name="example_16"></a>
+### Example 16 - Delete an emoji from a list of emojis...
+
+```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allSearchForCatListOfEmojis' variable which will contain all existing emojis all existing emojis attached to the string 'cat'...
+        allSearchForCatListOfEmojis := emojis.GetSearchedForEmojis("cat", "829bac05e9629ad331988082ad505da32c50fea0")
+
+        //
+        japaneseApplicationButtonEmoji := allSearchForCatListOfEmojis.GetASingleEmoji("japanese-application-button")
+
+        //
+        allSearchForCatListOfEmojis.Delete(japaneseApplicationButtonEmoji)
+
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+
+        // Defining the loop to display datas of all existing emojis attached to the string 'cat'...
+        for _, emoji := range allSearchForCatListOfEmojis.GetListOfEmojis() {
+
+                // Display datas of the current emojis...
+                fmt.Println("Character: " + emoji.GetCharacter())
+                fmt.Println("Slug: " + emoji.GetSlug())
+                fmt.Println("Unicode name: " + emoji.GetUnicodeName())
+                fmt.Println("Code point: " + emoji.GetCodePoint())
+                fmt.Println("Group: " + emoji.GetGroup())
+                fmt.Println("Subgroup: " + emoji.GetSubGroup())
+
+                // Break one line...
+                fmt.Println("\n")
+        }
+
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+}
+```
+
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
