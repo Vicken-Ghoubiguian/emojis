@@ -76,9 +76,11 @@ func (loe *ListOfEmojis) Complement(currentListOfEmojis ListOfEmojis) ListOfEmoj
 }
 
 //
-/*func (loe *ListOfEmojis) CartesianProduct() ListOfEmojis {
+func (loe *ListOfEmojis) CartesianProduct() ListOfEmojis {
 
-	return true
-}*/
+	var cartesianProductEmojis ListOfEmojis
+
+	return cartesianProductEmojis
+}
 
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO MAKE OPERATIONS OF SET THEORY IN LIST OF EMOJIS...
