@@ -1,13 +1,15 @@
 package emojis
 
 //
-/*func (loe *ListOfEmojis) Intersection() ListOfEmojis {
+func (loe *ListOfEmojis) Intersection() ListOfEmojis {
 
-	return true
+	var intersectionEmojis ListOfEmojis
+
+	return intersectionEmojis
 }
 
 //
-func (loe *ListOfEmojis) Union() ListOfEmojis {
+/*func (loe *ListOfEmojis) Union() ListOfEmojis {
 
 	return true
 }
