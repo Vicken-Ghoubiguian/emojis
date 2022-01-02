@@ -3,8 +3,30 @@ package emojis
 //
 func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
+	//
+	var intersectionEmojisMap map[string]Emoji
+
+	//
 	var intersectionEmojis ListOfEmojis
 
+	//
+	intersectionEmojisMap = make(map[string]Emoji)
+
+	//
+	for _, emoji := range loe.GetListOfEmojis() {
+
+		//
+		if currentListOfEmojis.Contains(emoji) {
+
+			//
+			intersectionEmojisMap[emoji.GetSlug()] = emoji
+		}
+	}
+
+	//
+	intersectionEmojis.InitializeListOfEmojis(intersectionEmojisMap)
+
+	//
 	return intersectionEmojis
 }
 
