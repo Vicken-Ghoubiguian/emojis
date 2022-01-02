@@ -9,19 +9,23 @@ func (loe *ListOfEmojis) Intersection() ListOfEmojis {
 }
 
 //
-/*func (loe *ListOfEmojis) Union() ListOfEmojis {
+func (loe *ListOfEmojis) Union() ListOfEmojis {
 
-	return true
+	var unionEmojis ListOfEmojis
+
+	return unionEmojis
 }
 
 //
 func (loe *ListOfEmojis) Complement() ListOfEmojis {
 
-	return true
+	var complementEmojis ListOfEmojis
+
+	return complementEmojis
 }
 
 //
-func (loe *ListOfEmojis) CartesianProduct() ListOfEmojis {
+/*func (loe *ListOfEmojis) CartesianProduct() ListOfEmojis {
 
 	return true
 }*/
