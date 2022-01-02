@@ -1,6 +1,6 @@
 package emojis
 
-//
+// Function to determine the intersection between the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	//
@@ -30,7 +30,7 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 	return intersectionEmojis
 }
 
-//
+// Function to determine the union of the 'loe' ListOfEmojis with the 'currentListOfEmojis' ListOfEmojis...
 func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	//
