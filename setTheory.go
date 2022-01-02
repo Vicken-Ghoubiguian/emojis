@@ -31,12 +31,29 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 }
 
 //
-func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
+/*func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
+	//
+	var unionEmojisMap map[string]Emoji
+
+	//
 	var unionEmojis ListOfEmojis
 
+	//
+	unionEmojisMap = make(map[string]Emoji)
+
+	//
+	for _, emoji := range loe.GetListOfEmojis() {
+
+		//
+		if currentListOfEmojis.Contains(emoji) && {
+
+
+		}
+	}
+
 	return unionEmojis
-}
+}*/
 
 //
 func (loe *ListOfEmojis) Complement(currentListOfEmojis ListOfEmojis) ListOfEmojis {
