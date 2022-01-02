@@ -9,7 +9,7 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 	//
 	var intersectionEmojis ListOfEmojis
 
-	// Definition of the 'intersectionEmojisMap' map[string]Emoji which will contain all Emojis from the intersection of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
+	// Definition of the 'intersectionEmojisMap' map[string]Emoji which will contain all emojis from the intersection of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 	intersectionEmojisMap = make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
@@ -23,7 +23,7 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 		}
 	}
 
-	//
+	// Initialization of the 'intersectionEmojis' ListOfEmojis to make it contain all emojis from the intersection of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 	intersectionEmojis.InitializeListOfEmojis(intersectionEmojisMap)
 
 	//
@@ -39,7 +39,7 @@ func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 	//
 	var unionEmojis ListOfEmojis
 
-	//
+	// Definition of the 'intersectionEmojisMap' map[string]Emoji which will contain all emojis in the 'loe' ListOfEmojis with all emojis in the 'currentListOfEmojis' ListOfEmojis...
 	unionEmojisMap = make(map[string]Emoji)
 
 	// Initialization of the first main loop of this function...
@@ -60,7 +60,7 @@ func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 		}
 	}
 
-	//
+	// Initialization of the 'unionEmojis' ListOfEmojis to make it contain all emojis in the 'loe' ListOfEmojis with all emojis in the 'currentListOfEmojis' ListOfEmojis...
 	unionEmojis.InitializeListOfEmojis(unionEmojisMap)
 
 	//
