@@ -1,7 +1,7 @@
 package emojis
 
 //
-func (loe *ListOfEmojis) Intersection() ListOfEmojis {
+func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	var intersectionEmojis ListOfEmojis
 
@@ -9,7 +9,7 @@ func (loe *ListOfEmojis) Intersection() ListOfEmojis {
 }
 
 //
-func (loe *ListOfEmojis) Union() ListOfEmojis {
+func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	var unionEmojis ListOfEmojis
 
@@ -17,7 +17,7 @@ func (loe *ListOfEmojis) Union() ListOfEmojis {
 }
 
 //
-func (loe *ListOfEmojis) Complement() ListOfEmojis {
+func (loe *ListOfEmojis) Complement(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	var complementEmojis ListOfEmojis
 
