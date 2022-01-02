@@ -60,7 +60,7 @@ func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 		}
 	}
 
-	// Definition of the 'unionEmojis' map[string]Emoji which will contain all Emojis from the union of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
+	//
 	unionEmojis.InitializeListOfEmojis(unionEmojisMap)
 
 	//
