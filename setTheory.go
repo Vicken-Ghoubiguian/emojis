@@ -80,7 +80,7 @@ func (loe *ListOfEmojis) Complement(currentListOfEmojis ListOfEmojis) ListOfEmoj
 }
 
 //
-func (loe *ListOfEmojis) CartesianProduct() ListOfEmojis {
+func (loe *ListOfEmojis) CartesianProduct(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
 	//
 	var cartesianProductEmojisMap map[string]Emoji
