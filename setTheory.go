@@ -1,5 +1,9 @@
 package emojis
 
+//
+type CartesianProductEmojis struct {
+}
+
 // Function to determine the intersection between the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
