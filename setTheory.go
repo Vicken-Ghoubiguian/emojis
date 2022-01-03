@@ -3,10 +3,10 @@ package emojis
 // Function to determine the intersection between the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
-	//
+	// Declaration of the 'intersectionEmojisMap' map[string]Emoji...
 	var intersectionEmojisMap map[string]Emoji
 
-	//
+	// Declaration of the 'intersectionEmojis' ListOfEmojis...
 	var intersectionEmojis ListOfEmojis
 
 	// Definition of the 'intersectionEmojisMap' map[string]Emoji which will contain all emojis from the intersection of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
@@ -26,17 +26,17 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 	// Initialization of the 'intersectionEmojis' ListOfEmojis to make it contain all emojis from the intersection of the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
 	intersectionEmojis.InitializeListOfEmojis(intersectionEmojisMap)
 
-	//
+	// Returning the 'intersectionEmojis' ListOfEmojis...
 	return intersectionEmojis
 }
 
 // Function to determine the union of the 'loe' ListOfEmojis with the 'currentListOfEmojis' ListOfEmojis...
 func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 
-	//
+	// Declaration of the 'unionEmojisMap' map[string]Emoji...
 	var unionEmojisMap map[string]Emoji
 
-	//
+	// Declaration of the 'unionEmojis' ListOfEmojis...
 	var unionEmojis ListOfEmojis
 
 	// Definition of the 'intersectionEmojisMap' map[string]Emoji which will contain all emojis in the 'loe' ListOfEmojis with all emojis in the 'currentListOfEmojis' ListOfEmojis...
@@ -63,7 +63,7 @@ func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 	// Initialization of the 'unionEmojis' ListOfEmojis to make it contain all emojis in the 'loe' ListOfEmojis with all emojis in the 'currentListOfEmojis' ListOfEmojis...
 	unionEmojis.InitializeListOfEmojis(unionEmojisMap)
 
-	//
+	// Returning the 'unionEmojis' ListOfEmojis...
 	return unionEmojis
 }
 
