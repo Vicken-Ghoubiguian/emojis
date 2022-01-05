@@ -138,10 +138,10 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 }
 
 //
-func (loe *ListOfEmojis) ToString() []string {
+func (loe *ListOfEmojis) ToString() string {
 
 	//
-	return []string{"", "", "", "", "", ""}
+	return ""
 }
 
 //
