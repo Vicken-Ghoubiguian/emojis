@@ -140,12 +140,22 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 //
 func (loe *ListOfEmojis) ToString() string {
 
+	// Initialization of the main loop of this function...
+	/*for _, emoji := range loe.GetListOfEmojis() {
+
+	}*/
+
 	//
 	return ""
 }
 
 //
 func (loe *ListOfEmojis) ToSlice() []string {
+
+	// Initialization of the main loop of this function...
+	/*for _, emoji := range loe.GetListOfEmojis() {
+
+	}*/
 
 	//
 	return []string{"", "", "", "", "", ""}
