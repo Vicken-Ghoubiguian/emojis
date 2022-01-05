@@ -28,6 +28,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 16 - Delete an emoji from a list of emojis](#example_16)
 	* [Example 17 - Add an emoji to a list of emojis](#example_17)
 	* [Example 18](#example_18)
+	* [Example 19](#example_19)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
