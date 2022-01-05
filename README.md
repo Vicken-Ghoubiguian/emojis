@@ -729,6 +729,37 @@ func main() {
 ```go
 ```
 
+### Example 19
+
+```go
+package main
+
+import (
+	
+	"fmt"
+	"github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+	// Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+	// Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'smileys-emotion' category...
+	allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
+
+	//
+	result := allSmileysEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
+
+	//
+	fmt.Println("All_smiley_emojis_set ⊂ All_emojis_set ? ")
+
+	//
+	fmt.Println(result)
+}
+```
+
 <a name="where_to_use_it"></a>
 ## Where to use it ?
 
