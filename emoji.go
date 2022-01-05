@@ -72,7 +72,7 @@ func (ej *Emoji) GetEmoji() string {
 	return string(rune(resultAsRune))
 }
 
-//
+// Defining the function 'ToString' to display an emoji with all of its datas...
 func (ej *Emoji) ToString() string {
 
 	// Return the string with all datas of the current emojis...
