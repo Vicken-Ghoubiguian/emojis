@@ -751,13 +751,13 @@ func main() {
     allFacesEmojisListOfEmojis := allEmojisListOfEmojis.GetSearchedForEmojis("face")
 
 	//
-	resultListOfEmojis := allFacesEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
+	intersectionListOfEmojis := allFacesEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
 
 	//
 	fmt.Println("All_faces_emojis_set ⊂ All_emojis_set = ")
 
 	//
-	fmt.Println(resultListOfEmojis)
+	fmt.Println(intersectionListOfEmojis)
 }
 ```
 
