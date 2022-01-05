@@ -71,3 +71,10 @@ func (ej *Emoji) GetEmoji() string {
 	// Returning finally the emoticon with some necessary operations...
 	return string(rune(resultAsRune))
 }
+
+//
+func (ej *Emoji) ToString() string {
+
+	//
+	return ""
+}
