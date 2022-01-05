@@ -751,13 +751,13 @@ func main() {
 	allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
 
 	//
-	result := allSmileysEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
+	resultListOfEmojis := allSmileysEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
 
 	//
 	fmt.Println("All_smiley_emojis_set ⊂ All_emojis_set ? ")
 
 	//
-	fmt.Println(result)
+	fmt.Println(resultListOfEmojis)
 }
 ```
 
