@@ -75,6 +75,11 @@ func (ej *Emoji) GetEmoji() string {
 //
 func (ej *Emoji) ToString() string {
 
-	//
-	return ""
+	// Return the string with all datas of the current emojis...
+	return "Character: " + ej.character + "\n" +
+		   "Slug: " + ej.slug + "\n" +
+		   "Unicode name: " + ej.unicodeName + "\n" +
+		   "Code point: " + ej.codePoint + "\n" +
+		   "Group: " + ej.group + "\n" +
+		   "Subgroup: " + ej.subGroup + "\n"
 }
