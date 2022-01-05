@@ -747,14 +747,14 @@ func main() {
 	// Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
 	allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
 
-	// Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'smileys-emotion' category...
-	allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
+	// Declaration and initialization of the 'allFacesEmojisListOfEmojis' variable which will contain all existing emojis all existing emojis attached to the string 'face'...
+    allFacesEmojisListOfEmojis := allEmojisListOfEmojis.GetSearchedForEmojis("face")
 
 	//
-	resultListOfEmojis := allSmileysEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
+	resultListOfEmojis := allFacesEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
 
 	//
-	fmt.Println("All_smiley_emojis_set ⊂ All_emojis_set = ")
+	fmt.Println("All_faces_emojis_set ⊂ All_emojis_set = ")
 
 	//
 	fmt.Println(resultListOfEmojis)
