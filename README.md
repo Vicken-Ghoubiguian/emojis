@@ -98,12 +98,7 @@ func main() {
 	for _, emoji := range allEmojisListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
-		fmt.Println("Character: " + emoji.GetCharacter())
-		fmt.Println("Slug: " + emoji.GetSlug())
-		fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-		fmt.Println("Code point: " + emoji.GetCodePoint())
-		fmt.Println("Group: " + emoji.GetGroup())
-		fmt.Println("Subgroup: " + emoji.GetSubGroup())
+		fmt.Println(emoji.ToString())
 
 		// Break one line...
 		fmt.Println("\n")
@@ -136,12 +131,7 @@ func main() {
 	fmt.Println("\n\n\n")	
 
 	// Display all attributes of the 'anatomical heart' emoji...
-	fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
-	fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
-	fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
-	fmt.Println("Code point: " + anatomicalHeartEmoji.GetCodePoint())
-	fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
-	fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
+	fmt.Println(emoji.ToString())
 
 	// Break 3 lines...
 	fmt.Println("\n\n\n")
@@ -176,12 +166,7 @@ func main() {
 		for _, emoji := range allSmileysEmojisListOfEmojis.GetListOfEmojis() {
 
 			// Display datas of the current emojis...
-			fmt.Println("Character: " + emoji.GetCharacter())
-			fmt.Println("Slug: " + emoji.GetSlug())
-			fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-			fmt.Println("Code point: " + emoji.GetCodePoint())
-			fmt.Println("Group: " + emoji.GetGroup())
-			fmt.Println("Subgroup: " + emoji.GetSubGroup())
+			fmt.Println(emoji.ToString())
 
 			// Break one line...
 			fmt.Println("\n")
@@ -220,12 +205,7 @@ func main() {
 	for _, emoji := range allCatFacesEmojisListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
-		fmt.Println("Character: " + emoji.GetCharacter())
-		fmt.Println("Slug: " + emoji.GetSlug())
-		fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-		fmt.Println("Code point: " + emoji.GetCodePoint())
-		fmt.Println("Group: " + emoji.GetGroup())
-		fmt.Println("Subgroup: " + emoji.GetSubGroup())
+		fmt.Println(emoji.ToString())
 
 		// Break one line...
 		fmt.Println("\n")
@@ -261,12 +241,7 @@ func main() {
 	for _, emoji := range allSmileysEmojisListOfEmojis.GetListOfEmojis() {
 
 			// Display datas of the current emojis...
-			fmt.Println("Character: " + emoji.GetCharacter())
-			fmt.Println("Slug: " + emoji.GetSlug())
-			fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-			fmt.Println("Code point: " + emoji.GetCodePoint())
-			fmt.Println("Group: " + emoji.GetGroup())
-			fmt.Println("Subgroup: " + emoji.GetSubGroup())
+			fmt.Println(emoji.ToString())
 
 			// Break one line...
 			fmt.Println("\n")
@@ -302,12 +277,7 @@ func main() {
 	for _, emoji := range allSearchForCatListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
-		fmt.Println("Character: " + emoji.GetCharacter())
-		fmt.Println("Slug: " + emoji.GetSlug())
-		fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-		fmt.Println("Code point: " + emoji.GetCodePoint())
-		fmt.Println("Group: " + emoji.GetGroup())
-		fmt.Println("Subgroup: " + emoji.GetSubGroup())
+		fmt.Println(emoji.ToString())
 
 		// Break one line...
 		fmt.Println("\n")
@@ -343,12 +313,7 @@ func main() {
         fmt.Println("\n\n\n")
 
         // Display all attributes of the 'anatomical heart' emoji...
-        fmt.Println("Character: " + anatomicalHeartEmoji.GetCharacter())
-        fmt.Println("Slug: " + anatomicalHeartEmoji.GetSlug())
-        fmt.Println("Unicode name: " + anatomicalHeartEmoji.GetUnicodeName())
-        fmt.Println("Code point: " + anatomicalHeartEmoji.GetCodePoint())
-        fmt.Println("Group: " + anatomicalHeartEmoji.GetGroup())
-        fmt.Println("Subgroup: " + anatomicalHeartEmoji.GetSubGroup())
+        fmt.Println(emoji.ToString())
 
         // Break 3 lines...
         fmt.Println("\n\n\n")
@@ -382,12 +347,7 @@ func main() {
 		for _, emoji := range allSearchForCatListOfEmojis.GetListOfEmojis() {
 
 			// Display datas of the current emojis...
-			fmt.Println("Character: " + emoji.GetCharacter())
-			fmt.Println("Slug: " + emoji.GetSlug())
-			fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-			fmt.Println("Code point: " + emoji.GetCodePoint())
-			fmt.Println("Group: " + emoji.GetGroup())
-			fmt.Println("Subgroup: " + emoji.GetSubGroup())
+			fmt.Println(emoji.ToString())
 
 			// Break one line...
 			fmt.Println("\n")
@@ -422,12 +382,7 @@ func main() {
 	for _, emoji := range allCatFacesEmojisListOfEmojis.GetListOfEmojis() {
 
 		// Display datas of the current emojis...
-		fmt.Println("Character: " + emoji.GetCharacter())
-		fmt.Println("Slug: " + emoji.GetSlug())
-		fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-		fmt.Println("Code point: " + emoji.GetCodePoint())
-		fmt.Println("Group: " + emoji.GetGroup())
-		fmt.Println("Subgroup: " + emoji.GetSubGroup())
+		fmt.Println(emoji.ToString())
 
 		// Break one line...
 		fmt.Println("\n")
@@ -702,12 +657,7 @@ func main() {
         for _, emoji := range allSearchForCatListOfEmojis.GetListOfEmojis() {
 
                 // Display datas of the current emojis...
-                fmt.Println("Character: " + emoji.GetCharacter())
-                fmt.Println("Slug: " + emoji.GetSlug())
-                fmt.Println("Unicode name: " + emoji.GetUnicodeName())
-                fmt.Println("Code point: " + emoji.GetCodePoint())
-                fmt.Println("Group: " + emoji.GetGroup())
-                fmt.Println("Subgroup: " + emoji.GetSubGroup())
+                fmt.Println(emoji.ToString())
 
                 // Break one line...
                 fmt.Println("\n")
