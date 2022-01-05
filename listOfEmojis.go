@@ -137,6 +137,13 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 	return searchedForEmojis
 }
 
+//
+func (loe *ListOfEmojis) ToString() []string {
+
+	//
+	return []string{"", "", "", "", "", ""}
+}
+
 // Defining a function named 'Add' to add an emoji in the 'loe' emojis list...
 func (loe *ListOfEmojis) Add(emoji Emoji) {
 
