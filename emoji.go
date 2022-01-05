@@ -81,5 +81,5 @@ func (ej *Emoji) ToString() string {
 		   "Unicode name: " + ej.unicodeName + "\n" +
 		   "Code point: " + ej.codePoint + "\n" +
 		   "Group: " + ej.group + "\n" +
-		   "Subgroup: " + ej.subGroup + "\n"
+		   "Subgroup: " + ej.subGroup
 }
