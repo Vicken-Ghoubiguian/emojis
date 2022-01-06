@@ -39,7 +39,7 @@ func (loe *ListOfEmojis) GetEmojisFromGroup(group string) ListOfEmojis {
 	returnedEmojisMap := make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
-	for slug, emoji := range loe.GetListOfEmojis() {
+	for slug, emoji := range loe.mapOfEmojis {
 
 		// If the current emoji's group is equal to the wished 'group' group so...
 		if emoji.GetGroup() == group {
@@ -66,7 +66,7 @@ func (loe *ListOfEmojis) GetEmojisFromSubGroup(subGroup string) ListOfEmojis {
 	returnedEmojisMap := make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
-	for slug, emoji := range loe.GetListOfEmojis() {
+	for slug, emoji := range loe.mapOfEmojis {
 
 		// If the current emoji's subgroup is equal to the wished 'subGroup' subgroup so...
 		if emoji.GetSubGroup() == subGroup {
@@ -120,7 +120,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 	mapOfSearchedForEmojis := make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
-	for _, currentEmoji := range loe.GetListOfEmojis() {
+	for _, currentEmoji := range loe.mapOfEmojis {
 
 		// In the case where the 'currentEmoji' slug contains the 'searchedFor' string...
 		if strings.Contains(currentEmoji.GetSlug(), searchedFor) {
@@ -141,7 +141,7 @@ func (loe *ListOfEmojis) GetSearchedForEmojis(searchedFor string) ListOfEmojis {
 func (loe *ListOfEmojis) ToString() string {
 
 	// Initialization of the main loop of this function...
-	/*for _, emoji := range loe.GetListOfEmojis() {
+	/*for _, emoji := range loe.mapOfEmojis {
 
 	}*/
 
@@ -153,7 +153,7 @@ func (loe *ListOfEmojis) ToString() string {
 func (loe *ListOfEmojis) ToSlice() []string {
 
 	// Initialization of the main loop of this function...
-	/*for _, emoji := range loe.GetListOfEmojis() {
+	/*for _, emoji := range loe.mapOfEmojis {
 
 	}*/
 
@@ -165,7 +165,7 @@ func (loe *ListOfEmojis) ToSlice() []string {
 /*func (loe *ListOfEmojis) ToSlice() []Emoji {
 
 	// Initialization of the main loop of this function...
-	/*for _, emoji := range loe.GetListOfEmojis() {
+	/*for _, emoji := range loe.mapOfEmojis {
 
 	}*/
 
@@ -197,7 +197,7 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 func (loe *ListOfEmojis) Contains(emoji Emoji) bool {
 
 	// Initialization of the main loop of this function...
-	for _, currentEmoji := range loe.GetListOfEmojis() {
+	for _, currentEmoji := range loe.mapOfEmojis {
 
 		// In the case where the 'emoji' is equal to the 'currentEmoji' emoji in the 'loe' emojis list...
 		if currentEmoji.GetSlug() == emoji.GetSlug() &&

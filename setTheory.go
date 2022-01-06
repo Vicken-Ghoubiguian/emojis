@@ -21,7 +21,7 @@ func (loe *ListOfEmojis) Intersection(currentListOfEmojis ListOfEmojis) ListOfEm
 	intersectionEmojisMap = make(map[string]Emoji)
 
 	// Initialization of the main loop of this function...
-	for _, emoji := range loe.GetListOfEmojis() {
+	for _, emoji := range loe.mapOfEmojis {
 
 		// If the 'currentListOfEmojis' ListOfEmojis does not contains the 'emoji' Emoji...
 		if currentListOfEmojis.Contains(emoji) {
@@ -51,7 +51,7 @@ func (loe *ListOfEmojis) Union(currentListOfEmojis ListOfEmojis) ListOfEmojis {
 	unionEmojisMap = make(map[string]Emoji)
 
 	// Initialization of the first main loop of this function...
-	for _, emoji := range loe.GetListOfEmojis() {
+	for _, emoji := range loe.mapOfEmojis {
 
 		// Put the emoji inside the 'unionEmojisMap' map[string]Emoji...
 		unionEmojisMap[emoji.GetSlug()] = emoji
