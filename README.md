@@ -719,8 +719,8 @@ func main() {
         //
         intersectionListOfEmojis := allSmileysEmojisListOfEmojis.Intersection(allComputersEmojisListOfEmojis)
 
-        // Break 3 lines...
-        fmt.Println("\n\n\n")
+        // Display a separator...
+        fmt.Println("\n==================================\n")
 
 		//
 		fmt.Println("All_smileys_emojis_set ⊂ All_computers_emojis_set = ")
@@ -728,8 +728,8 @@ func main() {
         //
 		fmt.Println(intersectionListOfEmojis)
 
-        // Break 3 lines...
-        fmt.Println("\n\n\n")
+        // Display a separator...
+        fmt.Println("\n==================================\n")
 }
 ```
 <a name="example_19"></a>
@@ -756,11 +756,17 @@ func main() {
 	//
 	intersectionListOfEmojis := allFacesEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
 
+	// Display a separator...
+    fmt.Println("\n==================================\n")
+
 	//
 	fmt.Println("All_faces_emojis_set ⊂ All_emojis_set = ")
 
 	//
 	fmt.Println(intersectionListOfEmojis)
+
+	// Display a separator...
+    fmt.Println("\n==================================\n")
 }
 ```
 
