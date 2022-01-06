@@ -678,6 +678,56 @@ func main() {
 ### Example 18
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+        //
+        allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
+
+        //
+        allComputersEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("computer")
+
+        //
+        anatomicalHeartEmoji := allEmojisListOfEmojis.GetASingleEmoji("anatomical-heart")
+
+        // Get the 'zzz' emoji...
+        ZzzEmoji := allEmojisListOfEmojis.GetASingleEmoji("zzz")
+
+        //
+        allSmileysEmojisListOfEmojis.Add(anatomicalHeartEmoji)
+
+        //
+        allSmileysEmojisListOfEmojis.Add(ZzzEmoji)
+
+        //
+        allComputersEmojisListOfEmojis.Add(anatomicalHeartEmoji)
+
+        //
+        allComputersEmojisListOfEmojis.Add(ZzzEmoji)
+
+        //
+        intersectionListOfEmojis := allSmileysEmojisListOfEmojis.Intersection(allComputersEmojisListOfEmojis)
+
+        // Break 3 lines...
+        fmt.Println("\n\n\n")
+
+        //
+		fmt.Println(intersectionListOfEmojis)
+
+        // Break 3 lines...
+        fmt.Println("\n\n\n")
+}
 ```
 <a name="example_19"></a>
 ### Example 19
