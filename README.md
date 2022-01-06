@@ -29,7 +29,7 @@ Package written in Go to get, return, treat and manage emojis ⛑ 🪱 💥 🏵
 	* [Example 17 - Add an emoji to a list of emojis](#example_17)
 	* [Example 18](#example_18)
 	* [Example 19](#example_19)
-	* [Example 21 - Check if an emoji belong to a list of emojis](#example_21)
+	* [Example 20 - Check if an emoji belong to a list of emojis](#example_20)
 * [Where to use it ?](#where_to_use_it)
 * [Useful links](#useful_links)
 * [Conclusion](#conclusion)
@@ -809,8 +809,8 @@ func main() {
     fmt.Println("\n==================================\n")
 }
 ```
-<a name="example_21"></a>
-### Example 21 - Check if an emoji belong to a list of emojis...
+<a name="example_20"></a>
+### Example 20 - Check if an emoji belong to a list of emojis...
 
 ```go
 ```
