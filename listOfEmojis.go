@@ -161,6 +161,18 @@ func (loe *ListOfEmojis) ToSlice() []string {
 	return []string{"", "", "", "", "", ""}
 }
 
+//
+/*func (loe *ListOfEmojis) ToSlice() []Emoji {
+
+	// Initialization of the main loop of this function...
+	/*for _, emoji := range loe.GetListOfEmojis() {
+
+	}*/
+
+	//
+	//return []string{"", "", "", "", "", ""}
+//}
+
 // Defining a function named 'Add' to add an emoji in the 'loe' emojis list...
 func (loe *ListOfEmojis) Add(emoji Emoji) {
 
