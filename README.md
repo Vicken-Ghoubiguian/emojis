@@ -674,6 +674,45 @@ func main() {
 ### Example 17 - Add an emoji to a list of emojis...
 
 ```go
+package main
+
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+        // Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'smileys-emotion' category...
+        allSmileysEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromGroup("smileys-emotion")
+
+		// Initialization of the 'anatomicalHeartEmoji' variable which will contain the 'anatomical heart' emoji...
+        anatomicalHeartEmoji := allEmojisListOfEmojis.GetASingleEmoji("anatomical-heart")
+
+		// Add the 'anatomicalHeartEmoji' to the 'allSmileysEmojisListOfEmojis' list of emojis...
+        allSmileysEmojisListOfEmojis.Add(anatomicalHeartEmoji)
+
+		// Display a separator...
+        fmt.Println("\n==================================\n")
+
+        // Defining the loop to display datas of all existing emojis of the 'smileys-emotion' category...
+        for _, emoji := range allSmileysEmojisListOfEmojis.GetListOfEmojis() {
+
+                // Display datas of the current emojis...
+                fmt.Println(emoji.ToString())
+
+                // Break one line...
+                fmt.Println("\n")
+        }
+
+        // Display a separator...
+        fmt.Println("\n==================================\n")
+}
 ```
 
 <a name="example_18"></a>
@@ -775,6 +814,7 @@ func main() {
 ### Example 20 - Delete an emoji to a list of emojis...
 
 ```go
+
 ```
 <a name="example_21"></a>
 ### Example 21 - Check if an emoji belong to a list of emojis...
