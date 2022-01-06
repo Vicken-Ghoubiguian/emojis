@@ -770,12 +770,12 @@ func main() {
 }
 ```
 <a name="example_20"></a>
-### Example 17 - Add an emoji to a list of emojis...
+### Example 20 - Delete an emoji to a list of emojis...
 
 ```go
 ```
 <a name="example_21"></a>
-### Example 17 - Add an emoji to a list of emojis...
+### Example 21 - Check if an emoji belong to a list of emojis...
 
 ```go
 ```
