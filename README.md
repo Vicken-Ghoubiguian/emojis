@@ -131,7 +131,7 @@ func main() {
 	fmt.Println("\n\n\n")	
 
 	// Display the 'anatomical heart' emoji...
-	fmt.Println(emoji.ToString())
+	fmt.Println(anatomicalHeartEmoji.ToString())
 
 	// Break 3 lines...
 	fmt.Println("\n\n\n")
@@ -313,7 +313,7 @@ func main() {
         fmt.Println("\n\n\n")
 
         // Display the 'anatomical heart' emoji...
-        fmt.Println(emoji.ToString())
+        fmt.Println(anatomicalHeartEmoji.ToString())
 
         // Break 3 lines...
         fmt.Println("\n\n\n")
