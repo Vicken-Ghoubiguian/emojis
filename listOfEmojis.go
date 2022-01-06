@@ -100,7 +100,7 @@ func (loe *ListOfEmojis) GetASingleEmoji(slug string) Emoji {
 	var returnedEmoji Emoji
 
 	// In the case where the 'slug' key exists and have an Emoji...
-	if foundedEmoji, currentEmoji := loe.GetListOfEmojis()[slug]; currentEmoji {
+	if foundedEmoji, currentEmoji := loe.mapOfEmojis[slug]; currentEmoji {
 
 		// Initialization of the 'returnedEmoji' Emoji with the 'foundedEmoji' Emoji...
 		returnedEmoji = foundedEmoji
