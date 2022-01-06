@@ -722,6 +722,9 @@ func main() {
         // Break 3 lines...
         fmt.Println("\n\n\n")
 
+		//
+		fmt.Println("All_smileys_emojis_set ⊂ All_computers_emojis_set = ")
+
         //
 		fmt.Println(intersectionListOfEmojis)
 
