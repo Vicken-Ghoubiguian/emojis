@@ -756,16 +756,16 @@ func main() {
         //
         allComputersEmojisListOfEmojis.Add(ZzzEmoji)
 
-        //
+        // Determine the intersection between the 'allFacesEmojisListOfEmojis' set and the 'allEmojisListOfEmojis' set...
         intersectionListOfEmojis := allSmileysEmojisListOfEmojis.Intersection(allComputersEmojisListOfEmojis)
 
         // Display a separator...
         fmt.Println("\n==================================\n")
 
-		//
+		// Display some explanations...
 		fmt.Println("All_smileys_emojis_set ⊂ All_computers_emojis_set = ")
 
-        //
+        // Display the intersection as the 'intersectionListOfEmojis' list of emojis...
 		fmt.Println(intersectionListOfEmojis)
 
         // Display a separator...
@@ -793,16 +793,16 @@ func main() {
 	// Declaration and initialization of the 'allFacesEmojisListOfEmojis' variable which will contain all existing emojis all existing emojis attached to the string 'face'...
     allFacesEmojisListOfEmojis := allEmojisListOfEmojis.GetSearchedForEmojis("face")
 
-	//
+	// Determine the intersection between the 'allFacesEmojisListOfEmojis' set and the 'allEmojisListOfEmojis' set...
 	intersectionListOfEmojis := allFacesEmojisListOfEmojis.Intersection(allEmojisListOfEmojis)
 
 	// Display a separator...
     fmt.Println("\n==================================\n")
 
-	//
+	// Display some explanations...
 	fmt.Println("All_faces_emojis_set ⊂ All_emojis_set = ")
 
-	//
+	// Display the intersection as the 'intersectionListOfEmojis' list of emojis...
 	fmt.Println(intersectionListOfEmojis)
 
 	// Display a separator...
