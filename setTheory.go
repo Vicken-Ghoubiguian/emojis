@@ -3,6 +3,10 @@ package emojis
 // =============================================================== For the 'CartesianProductEmojis' type ===============================================================
 
 //
+type orderedPairAccordingKuratowski struct {
+}
+
+//
 type CartesianProductEmojis struct {
 }
 
