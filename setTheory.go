@@ -28,6 +28,10 @@ func (opak *OrderedPairAccordingKuratowski) GetSecondEmoji() Emoji {
 }
 
 //
+func (opak *OrderedPairAccordingKuratowski) ToString() string {
+
+	return ""
+}
 
 // =============================================================== For the 'CartesianProductEmojis' type ===============================================================
 
