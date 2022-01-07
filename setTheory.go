@@ -4,6 +4,8 @@ package emojis
 
 //
 type orderedPairAccordingKuratowski struct {
+	firstEmoji  Emoji
+	secondEmoji Emoji
 }
 
 //
