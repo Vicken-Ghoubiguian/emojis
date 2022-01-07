@@ -1,15 +1,15 @@
 package emojis
 
-// =============================================================== For the 'orderedPairAccordingKuratowski' type ===============================================================
+// =============================================================== For the 'OrderedPairAccordingKuratowski' type ===============================================================
 
-// Defining the type 'orderedPairAccordingKuratowski' which will define an ordered pair according Kuratowski made up of 2 emojis...
-type orderedPairAccordingKuratowski struct {
+// Defining the type 'OrderedPairAccordingKuratowski' which will define an ordered pair according Kuratowski made up of 2 emojis...
+type OrderedPairAccordingKuratowski struct {
 	firstEmoji  Emoji
 	secondEmoji Emoji
 }
 
 // Defining the orderedPairAccordingKuratowski initializer...
-func (opak *orderedPairAccordingKuratowski) InitializeOrderedPairAccordingKuratowski(firstEmoji Emoji, secondEmoji Emoji) {
+func (opak *OrderedPairAccordingKuratowski) InitializeOrderedPairAccordingKuratowski(firstEmoji Emoji, secondEmoji Emoji) {
 
 	opak.firstEmoji = firstEmoji
 	opak.secondEmoji = secondEmoji
@@ -19,7 +19,7 @@ func (opak *orderedPairAccordingKuratowski) InitializeOrderedPairAccordingKurato
 
 // Defining the type 'CartesianProductEmojis' which will define a cartesian product between two emojis set (formally 'ListOfEmojis')...
 type CartesianProductEmojis struct {
-	cartesianProductEmojisResult  []orderedPairAccordingKuratowski
+	cartesianProductEmojisResult  []OrderedPairAccordingKuratowski
 	cartesianProductEmojisAccount int
 }
 
