@@ -8,7 +8,7 @@ type orderedPairAccordingKuratowski struct {
 	secondEmoji Emoji
 }
 
-//
+// Defining the orderedPairAccordingKuratowski initializer...
 func (opak *orderedPairAccordingKuratowski) InitializeOrderedPairAccordingKuratowski(firstEmoji Emoji, secondEmoji Emoji) {
 
 	opak.firstEmoji = firstEmoji
