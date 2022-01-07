@@ -1,12 +1,14 @@
 package emojis
 
-// =============================================================== For the 'CartesianProductEmojis' type ===============================================================
+// =============================================================== For the 'orderedPairAccordingKuratowski' type ===============================================================
 
-//
+// Defining the type 'orderedPairAccordingKuratowski' which will define an ordered pair according Kuratowski made up of 2 emojis...
 type orderedPairAccordingKuratowski struct {
 	firstEmoji  Emoji
 	secondEmoji Emoji
 }
+
+// =============================================================== For the 'CartesianProductEmojis' type ===============================================================
 
 // Defining the type 'CartesianProductEmojis' which will define a cartesian product between two emojis set (formally 'ListOfEmojis')...
 type CartesianProductEmojis struct {
