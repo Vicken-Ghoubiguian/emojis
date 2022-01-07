@@ -23,6 +23,11 @@ type CartesianProductEmojis struct {
 	cartesianProductEmojisAccount int
 }
 
+//
+func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
+
+}
+
 // =============================================================== For all the set theory functions ===============================================================
 
 // Function to determine the intersection between the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
