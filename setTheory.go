@@ -15,13 +15,13 @@ func (opak *OrderedPairAccordingKuratowski) InitializeOrderedPairAccordingKurato
 	opak.secondEmoji = secondEmoji
 }
 
-//
+// Defining the 'firstEmoji' field getter...
 func (opak *OrderedPairAccordingKuratowski) GetFirstEmoji() Emoji {
 
 	return opak.firstEmoji
 }
 
-//
+// Defining the 'secondEmoji' field getter...
 func (opak *OrderedPairAccordingKuratowski) GetSecondEmoji() Emoji {
 
 	return opak.secondEmoji
