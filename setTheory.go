@@ -15,6 +15,20 @@ func (opak *OrderedPairAccordingKuratowski) InitializeOrderedPairAccordingKurato
 	opak.secondEmoji = secondEmoji
 }
 
+//
+func (opak *OrderedPairAccordingKuratowski) GetFirstEmoji() Emoji {
+
+	return opak.firstEmoji
+}
+
+//
+func (opak *OrderedPairAccordingKuratowski) GetSecondEmoji() Emoji {
+
+	return opak.secondEmoji
+}
+
+//
+
 // =============================================================== For the 'CartesianProductEmojis' type ===============================================================
 
 // Defining the type 'CartesianProductEmojis' which will define a cartesian product between two emojis set (formally 'ListOfEmojis')...
