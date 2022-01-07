@@ -164,13 +164,13 @@ func (loe *ListOfEmojis) ToSlice() []string {
 //
 /*func (loe *ListOfEmojis) ToSlice() []Emoji {
 
-	// Initialization of the main loop of this function...
-	/*for _, emoji := range loe.mapOfEmojis {
+// Initialization of the main loop of this function...
+/*for _, emoji := range loe.mapOfEmojis {
 
-	}*/
+}*/
 
-	//
-	//return []string{"", "", "", "", "", ""}
+//
+//return []string{"", "", "", "", "", ""}
 //}
 
 // Defining a function named 'Add' to add an emoji in the 'loe' emojis list...

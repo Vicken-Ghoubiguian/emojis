@@ -8,6 +8,13 @@ type orderedPairAccordingKuratowski struct {
 	secondEmoji Emoji
 }
 
+//
+func (opak *orderedPairAccordingKuratowski) InitializeOrderedPairAccordingKuratowski(firstEmoji Emoji, secondEmoji Emoji) {
+
+	opak.firstEmoji = firstEmoji
+	opak.secondEmoji = secondEmoji
+}
+
 // =============================================================== For the 'CartesianProductEmojis' type ===============================================================
 
 // Defining the type 'CartesianProductEmojis' which will define a cartesian product between two emojis set (formally 'ListOfEmojis')...
