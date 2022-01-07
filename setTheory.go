@@ -8,7 +8,7 @@ type orderedPairAccordingKuratowski struct {
 	secondEmoji Emoji
 }
 
-//
+// Defining the type 'CartesianProductEmojis' which will define a cartesian product between two emojis set (formally 'ListOfEmojis')...
 type CartesianProductEmojis struct {
 	cartesianProductEmojisResult  []orderedPairAccordingKuratowski
 	cartesianProductEmojisAccount int
