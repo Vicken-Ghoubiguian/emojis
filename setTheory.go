@@ -10,6 +10,8 @@ type orderedPairAccordingKuratowski struct {
 
 //
 type CartesianProductEmojis struct {
+	cartesianProductEmojisResult  []orderedPairAccordingKuratowski
+	cartesianProductEmojisAccount int
 }
 
 // =============================================================== For all the set theory functions ===============================================================
