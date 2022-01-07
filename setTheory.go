@@ -30,7 +30,7 @@ func (opak *OrderedPairAccordingKuratowski) GetSecondEmoji() Emoji {
 //
 func (opak *OrderedPairAccordingKuratowski) ToString() string {
 
-	return ""
+	return "(" + opak.firstEmoji.GetCharacter() + ", " + opak.secondEmoji.GetCharacter() + ")"
 }
 
 // =============================================================== For the 'CartesianProductEmojis' type ===============================================================
