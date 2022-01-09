@@ -80,7 +80,9 @@ func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
 //
 func (cpe *CartesianProductEmojis) ToString() string {
 
-	return "{" + "}"
+	cartesianProductAsString := "{" + "}"
+
+	return cartesianProductAsString
 }
 
 // =============================================================== For all the set theory functions ===============================================================
