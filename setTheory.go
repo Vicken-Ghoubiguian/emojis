@@ -42,6 +42,13 @@ type CartesianProductEmojis struct {
 }
 
 //
+func (cpe *CartesianProductEmojis) getCartesianProductEmojisResult() []OrderedPairAccordingKuratowski {
+
+	//
+	return cpe.cartesianProductEmojisResult
+}
+
+//
 func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
 
 }
