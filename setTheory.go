@@ -42,7 +42,7 @@ type CartesianProductEmojis struct {
 }
 
 //
-/*func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
+func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
 
 	//
 	var currentOrderedPairAccordingKuratowski OrderedPairAccordingKuratowski
@@ -54,12 +54,13 @@ type CartesianProductEmojis struct {
 		for _, emojisSecondLoe := range secondLoe.GetListOfEmojis() {
 
 			//
-			OrderedPairAccordingKuratowski.InitializeOrderedPairAccordingKuratowski(emojisFirstLoe, emojisSecondLoe)
+			currentOrderedPairAccordingKuratowski.InitializeOrderedPairAccordingKuratowski(emojisFirstLoe, emojisSecondLoe)
 
 			//
-			cpe.cartesianProductEmojisResult = append(cpe.cartesianProductEmojisResult, OrderedPairAccordingKuratowski)
+			cpe.cartesianProductEmojisResult = append(cpe.cartesianProductEmojisResult, currentOrderedPairAccordingKuratowski)
+		}
 	}
-}*/
+}
 
 // Defining the 'cartesianProductEmojisResult' field getter...
 func (cpe *CartesianProductEmojis) getCartesianProductEmojisResult() []OrderedPairAccordingKuratowski {
