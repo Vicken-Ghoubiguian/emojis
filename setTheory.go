@@ -27,7 +27,7 @@ func (opak *OrderedPairAccordingKuratowski) GetSecondEmoji() Emoji {
 	return opak.secondEmoji
 }
 
-//
+// Defining the 'ToString' function to return the opak 'OrderedPairAccordingKuratowski' as a string...
 func (opak *OrderedPairAccordingKuratowski) ToString() string {
 
 	return "(" + opak.firstEmoji.GetCharacter() + ", " + opak.secondEmoji.GetCharacter() + ")"
