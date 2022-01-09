@@ -84,6 +84,10 @@ func (cpe *CartesianProductEmojis) ToString() string {
 	cartesianProductAsString := "{"
 
 	//
+	for _, orderedPairAccordingKuratowski := range cpe.cartesianProductEmojisResult {
+
+		cartesianProductAsString += orderedPairAccordingKuratowski.ToString() + ";"
+	}
 
 	//
 	cartesianProductAsString += "}"
