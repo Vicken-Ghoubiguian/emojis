@@ -77,6 +77,12 @@ func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
 	return cpe.cartesianProductEmojisAccount
 }
 
+//
+func (cpe *CartesianProductEmojis) ToString() string {
+
+	return ""
+}
+
 // =============================================================== For all the set theory functions ===============================================================
 
 // Function to determine the intersection between the 'loe' ListOfEmojis and the 'currentListOfEmojis' ListOfEmojis...
