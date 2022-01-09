@@ -49,14 +49,12 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 // Defining the 'cartesianProductEmojisResult' field getter...
 func (cpe *CartesianProductEmojis) getCartesianProductEmojisResult() []OrderedPairAccordingKuratowski {
 
-	//
 	return cpe.cartesianProductEmojisResult
 }
 
 // Defining the 'cartesianProductEmojisAccount' field getter...
 func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
 
-	//
 	return cpe.cartesianProductEmojisAccount
 }
 
