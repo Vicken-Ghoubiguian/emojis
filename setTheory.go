@@ -160,22 +160,4 @@ func (loe *ListOfEmojis) Complement(currentListOfEmojis ListOfEmojis) ListOfEmoj
 	return complementEmojis
 }
 
-//
-func (loe *ListOfEmojis) CartesianProduct(currentListOfEmojis ListOfEmojis) ListOfEmojis {
-
-	//
-	var cartesianProductEmojisMap map[string]Emoji
-
-	//
-	var cartesianProductEmojis ListOfEmojis
-
-	/**/
-
-	//
-	cartesianProductEmojis.InitializeListOfEmojis(cartesianProductEmojisMap)
-
-	//
-	return cartesianProductEmojis
-}
-
 // => YOU MUST DEFINE AND DEVELOP SOME FUNCTIONS TO MAKE OPERATIONS OF SET THEORY IN LIST OF EMOJIS...
