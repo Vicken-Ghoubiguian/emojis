@@ -60,6 +60,9 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 			cpe.cartesianProductEmojisResult = append(cpe.cartesianProductEmojisResult, currentOrderedPairAccordingKuratowski)
 		}
 	}
+
+	//
+	cpe.cartesianProductEmojisAccount = len(cpe.cartesianProductEmojisResult)
 }
 
 // Defining the 'cartesianProductEmojisResult' field getter...
