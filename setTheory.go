@@ -41,6 +41,13 @@ type CartesianProductEmojis struct {
 	cartesianProductEmojisAccount int
 }
 
+// Defining the 'cartesianProductEmojisAccount' field getter...
+func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
+
+	//
+	return cpe.cartesianProductEmojisAccount
+}
+
 //
 func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
 
