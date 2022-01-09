@@ -41,16 +41,16 @@ type CartesianProductEmojis struct {
 	cartesianProductEmojisAccount int
 }
 
+//
+func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
+
+}
+
 // Defining the 'cartesianProductEmojisAccount' field getter...
 func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
 
 	//
 	return cpe.cartesianProductEmojisAccount
-}
-
-//
-func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
-
 }
 
 // =============================================================== For all the set theory functions ===============================================================
