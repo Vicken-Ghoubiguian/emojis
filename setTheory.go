@@ -80,8 +80,15 @@ func (cpe *CartesianProductEmojis) GetCartesianProductEmojisAccount() int {
 //
 func (cpe *CartesianProductEmojis) ToString() string {
 
-	cartesianProductAsString := "{" + "}"
+	//
+	cartesianProductAsString := "{"
 
+	//
+
+	//
+	cartesianProductAsString += "}"
+
+	//
 	return cartesianProductAsString
 }
 
