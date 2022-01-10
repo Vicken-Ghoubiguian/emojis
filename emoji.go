@@ -76,6 +76,18 @@ func (ej *Emoji) GetEmoji() string {
 func (ej *Emoji) Equal(secondEmoji Emoji) bool {
 
 	//
+	if ej.slug == secondEmoji.slug &&
+		ej.character == secondEmoji.character &&
+		ej.unicodeName == secondEmoji.unicodeName &&
+		ej.codePoint == secondEmoji.codePoint &&
+		ej.group == secondEmoji.group &&
+		ej.subGroup == secondEmoji.subGroup {
+
+		//
+		return true
+	}
+
+	//
 	return false
 }
 
