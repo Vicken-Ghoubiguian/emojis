@@ -42,7 +42,7 @@ type CartesianProductEmojis struct {
 }
 
 //
-func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
+func (cpe *CartesianProductEmojis) InitializeCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
 
 	//
 	var currentOrderedPairAccordingKuratowski OrderedPairAccordingKuratowski

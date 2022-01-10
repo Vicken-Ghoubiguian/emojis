@@ -843,7 +843,7 @@ func main() {
         var cartesianProduct emojis.CartesianProductEmojis
 
         // Initialization and calculation of the cartesian product of both 'allCatFaceEmojisListOfEmojis' and 'allComputersEmojisListOfEmojis' set...
-        cartesianProduct.InitializeOrderedCartesianProductEmojis(allCatFaceEmojisListOfEmojis, allComputersEmojisListOfEmojis)
+        cartesianProduct.InitializeCartesianProductEmojis(allCatFaceEmojisListOfEmojis, allComputersEmojisListOfEmojis)
 
         // Display the 'cartesianProduct' CartesianProductEmojis as a string...
         fmt.Println(cartesianProduct.ToString())
