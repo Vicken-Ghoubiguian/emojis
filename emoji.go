@@ -72,10 +72,10 @@ func (ej *Emoji) GetEmoji() string {
 	return string(rune(resultAsRune))
 }
 
-//
+// Defining the function 'Equal' which will determine if two emojis are equal or not...
 func (ej *Emoji) Equal(secondEmoji Emoji) bool {
 
-	//
+	// In the case where each value for each attribute of both emojis are equal...
 	if ej.slug == secondEmoji.slug &&
 		ej.character == secondEmoji.character &&
 		ej.unicodeName == secondEmoji.unicodeName &&
@@ -83,11 +83,11 @@ func (ej *Emoji) Equal(secondEmoji Emoji) bool {
 		ej.group == secondEmoji.group &&
 		ej.subGroup == secondEmoji.subGroup {
 
-		//
+		// Returning the 'true' boolean value...
 		return true
 	}
 
-	//
+	// Returning the 'false' boolean value...
 	return false
 }
 
