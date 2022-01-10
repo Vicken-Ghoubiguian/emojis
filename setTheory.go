@@ -54,10 +54,14 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 	//
 	for _, emojisFirstLoe := range firstLoe.GetListOfEmojis() {
 
+		fmt.Println("test 2")
+
 		//
 		for _, emojisSecondLoe := range secondLoe.GetListOfEmojis() {
 
-			fmt.Println("(" + emojisFirstLoe.GetCharacter() + ", " + emojisSecondLoe.GetCharacter() + ")")
+			fmt.Println("test 3")
+
+			//fmt.Println("(" + emojisFirstLoe.GetCharacter() + ", " + emojisSecondLoe.GetCharacter() + ")")
 
 			//
 			currentOrderedPairAccordingKuratowski.InitializeOrderedPairAccordingKuratowski(emojisFirstLoe, emojisSecondLoe)
