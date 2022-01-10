@@ -44,27 +44,17 @@ type CartesianProductEmojis struct {
 //
 func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(firstLoe ListOfEmojis, secondLoe ListOfEmojis) {
 
-	//fmt.Println("test")
-
 	//
 	var currentOrderedPairAccordingKuratowski OrderedPairAccordingKuratowski
 
 	//
 	for _, emojisFirstLoe := range firstLoe.GetListOfEmojis() {
 
-		//fmt.Println("test 2")
-
 		//
 		for _, emojisSecondLoe := range secondLoe.GetListOfEmojis() {
 
-			//fmt.Println("test 3")
-
-			//fmt.Println("(" + emojisFirstLoe.GetCharacter() + ", " + emojisSecondLoe.GetCharacter() + ")")
-
 			//
 			currentOrderedPairAccordingKuratowski.InitializeOrderedPairAccordingKuratowski(emojisFirstLoe, emojisSecondLoe)
-
-			//fmt.Println(currentOrderedPairAccordingKuratowski.ToString())
 
 			//
 			cpe.cartesianProductEmojisResult = append(cpe.cartesianProductEmojisResult, currentOrderedPairAccordingKuratowski)
@@ -73,10 +63,6 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 
 	//
 	cpe.cartesianProductEmojisAccount = len(cpe.cartesianProductEmojisResult)
-
-	//fmt.Println(cpe.cartesianProductEmojisResult)
-
-	//fmt.Println(cpe.cartesianProductEmojisAccount)
 }
 
 // Defining the 'cartesianProductEmojisResult' field getter...
