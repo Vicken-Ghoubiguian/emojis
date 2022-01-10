@@ -58,6 +58,8 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 			//
 			currentOrderedPairAccordingKuratowski.InitializeOrderedPairAccordingKuratowski(emojisFirstLoe, emojisSecondLoe)
 
+			fmt.Println(currentOrderedPairAccordingKuratowski)
+
 			//
 			cpe.cartesianProductEmojisResult = append(cpe.cartesianProductEmojisResult, currentOrderedPairAccordingKuratowski)
 		}
