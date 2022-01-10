@@ -1,8 +1,8 @@
 package emojis
 
 import (
-	"strings"
 	"strconv"
+	"strings"
 )
 
 // Defining the type 'Emoji' which define an emoji...
@@ -72,14 +72,21 @@ func (ej *Emoji) GetEmoji() string {
 	return string(rune(resultAsRune))
 }
 
+//
+func (ej *Emoji) Equal(secondEmoji Emoji) bool {
+
+	//
+	return false
+}
+
 // Defining the function 'ToString' to display an emoji with all of its datas...
 func (ej *Emoji) ToString() string {
 
 	// Return the string with all datas of the current emojis...
 	return "Character: " + ej.character + "\n" +
-		   "Slug: " + ej.slug + "\n" +
-		   "Unicode name: " + ej.unicodeName + "\n" +
-		   "Code point: " + ej.codePoint + "\n" +
-		   "Group: " + ej.group + "\n" +
-		   "Subgroup: " + ej.subGroup
+		"Slug: " + ej.slug + "\n" +
+		"Unicode name: " + ej.unicodeName + "\n" +
+		"Code point: " + ej.codePoint + "\n" +
+		"Group: " + ej.group + "\n" +
+		"Subgroup: " + ej.subGroup
 }

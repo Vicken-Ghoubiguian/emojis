@@ -193,6 +193,13 @@ func (loe *ListOfEmojis) Delete(emoji Emoji) {
 	loe.emojisAccount = len(loe.mapOfEmojis)
 }
 
+//
+func (loe *ListOfEmojis) Equal(secondLoe ListOfEmojis) bool {
+
+	//
+	return false
+}
+
 // Defining a function named 'Contains' which check if the 'emoji' Emoji is in the 'loe' emojis list...
 func (loe *ListOfEmojis) Contains(emoji Emoji) bool {
 
