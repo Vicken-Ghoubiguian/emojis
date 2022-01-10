@@ -1,5 +1,7 @@
 package emojis
 
+import "fmt"
+
 // =============================================================== For the 'OrderedPairAccordingKuratowski' type ===============================================================
 
 // Defining the type 'OrderedPairAccordingKuratowski' which will define an ordered pair according Kuratowski made up of 2 emojis...
@@ -63,6 +65,10 @@ func (cpe *CartesianProductEmojis) InitializeOrderedCartesianProductEmojis(first
 
 	//
 	cpe.cartesianProductEmojisAccount = len(cpe.cartesianProductEmojisResult)
+
+	fmt.Println(cpe.cartesianProductEmojisResult)
+
+	fmt.Println(cpe.cartesianProductEmojisAccount)
 }
 
 // Defining the 'cartesianProductEmojisResult' field getter...
