@@ -819,7 +819,35 @@ func main() {
 ### Example 21 -
 
 ```go
+package main
 
+import (
+
+        "fmt"
+        "github.com/Vicken-Ghoubiguian/emojis"
+)
+
+// Definition of the main function...
+func main() {
+
+        // Declaration and initialization of the 'allEmojisListOfEmojis' variable which will contain all existing emojis...
+        allEmojisListOfEmojis := emojis.GetAllEmojis("<Your_access_key>")
+
+        // Declaration and initialization of the 'allSmileysEmojisListOfEmojis' variable which will contain all existing emojis of the 'cat-face' subcategory...
+        allCatFaceEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromSubGroup("cat-face")
+
+        // Declaration and initialization of the 'allComputersEmojisListOfEmojis' variable which will contain all existing emojis of the 'computer' subcategory...
+        allComputersEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromSubGroup("computer")
+
+        //
+        var cartesianProduct emojis.CartesianProductEmojis
+
+        //
+        cartesianProduct.InitializeOrderedCartesianProductEmojis(allCatFaceEmojisListOfEmojis, allComputersEmojisListOfEmojis)
+
+        //
+        fmt.Println(cartesianProduct.ToString())
+}
 ```
 
 <a name="where_to_use_it"></a>
