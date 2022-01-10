@@ -839,13 +839,13 @@ func main() {
         // Declaration and initialization of the 'allComputersEmojisListOfEmojis' variable which will contain all existing emojis of the 'computer' subcategory...
         allComputersEmojisListOfEmojis := allEmojisListOfEmojis.GetEmojisFromSubGroup("computer")
 
-        //
+        // Declaration of the 'cartesianProduct' variable which will contain the cartesian product of both 'allCatFaceEmojisListOfEmojis' and 'allComputersEmojisListOfEmojis' set...
         var cartesianProduct emojis.CartesianProductEmojis
 
-        //
+        // Initialization and calculation of the cartesian product of both 'allCatFaceEmojisListOfEmojis' and 'allComputersEmojisListOfEmojis' set...
         cartesianProduct.InitializeOrderedCartesianProductEmojis(allCatFaceEmojisListOfEmojis, allComputersEmojisListOfEmojis)
 
-        //
+        // Display the 'cartesianProduct' CartesianProductEmojis as a string...
         fmt.Println(cartesianProduct.ToString())
 }
 ```
