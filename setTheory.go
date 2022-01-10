@@ -84,10 +84,26 @@ func (cpe *CartesianProductEmojis) ToString() string {
 	cartesianProductAsString := "{"
 
 	//
+	emojisIterator := 1
+
+	//
+	separator := ";"
+
+	//
 	for _, orderedPairAccordingKuratowski := range cpe.cartesianProductEmojisResult {
 
 		//
-		cartesianProductAsString += orderedPairAccordingKuratowski.ToString() + ";"
+		if emojisIterator == cpe.cartesianProductEmojisAccount {
+
+			//
+			separator = ""
+		}
+
+		//
+		cartesianProductAsString += orderedPairAccordingKuratowski.ToString() + separator
+
+		//
+		emojisIterator = emojisIterator + 1
 	}
 
 	//
